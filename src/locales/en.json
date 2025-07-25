@@ -1,0 +1,643 @@
+{
+    "heading": {
+        "title": "Your title text here",
+        "subtitle": "Your subtitle text here"
+    },
+    "book_appointment": "Book an Appointment",
+    "navbar": {
+        "home": "Home",
+        "services": "Treatments",
+        "team": "Team",
+        "blog": "Blog",
+        "jobs": "Jobs",
+        "appointment": "Make an Appointment"
+      },
+      "services": {
+        "title": "Our treatments",
+        "cards": {
+          "anxiety": "Dental Anxiety Care & Sedation",
+          "anxiety_desc": "Our multilingual team is specially trained in trauma-aware dentistry. We recognize the signs of dental anxiety and build a calm, judgment-free space where you stay in control. Soft lighting, clear explanations and extra time make visits smooth and safe.\n\nNeed more help relaxing? We offer a full range of sedation options, from nitrous oxide to gentle full anesthesia, so even severe phobia doesn't stand between you and healthy teeth.\n\nCTA: Discover truly anxiety-free dental treatment in Berlin-Kreuzberg, where your comfort comes first.",
+          "aesthetic": "Aesthetic Dentistry & Smile Design",
+          "aesthetic_desc": "Your smile is one of a kind and your treatment plan should be too. At die drei zahnärzte we start every case with Digital Smile Design: high-resolution photos, 3-D scans, and facial analysis that let us preview how different shapes, shades and proportions will look on you before we start. Whether you want subtle tweaks or a full makeover, our approach is always conservative and natural-looking. Veneers Berlin: Ultra-thin ceramic shells that hide cracks, stains, or small gaps while letting light pass through like real enamel. Composite fillings & bonding: Tooth-coloured material sculpted by hand for seamless repairs. Gentle whitening: We brighten first so your new smile matches your ideal shade. Sparkles: Grillz and Gems Because we're also restorative dentists, we make sure beauty and bite work together, meaning no compromises on function or long-term health. Every step is photographed, measured, and quality-checked, so the result fits your face, your personality and your lifestyle. CTA: Looking for an aesthetic dentist in Berlin-Kreuzberg who designs smiles you can actually live with? Book a consultation at our clinic and see your future smile before treatment even begins.",
+          "implantology": "Implantology: Titanium & Ceramic Implants",
+          "implantology_desc": "Missing teeth shouldn't mean missing confidence. In our modern clinic, implant therapy begins with a relaxed chat, a quick 3-D scan, a clear plan, and no surprises. Whether you choose time-tested titanium or metal-free ceramic implants, we place each root-shaped post with computer-guided precision, protecting nerves and neighboring teeth. To speed up healing, we can add PRGF® (Plasma Rich in Growth Factors), a concentrate made from a small sample of your blood. Think of it as nature's booster pack: less swelling, better bone integration, and fewer post-op worries. Once the implant fuses with your jaw, we top it with an all-ceramic crown or bridge that matches your bite and skin tone. Why choose us for dental implants in Berlin? Experience in complex cases, from single gaps to full-arch solutions Ceramic implant option for patients seeking metal-free, biocompatible care In-house oral surgery and sedation for a calm, one-stop experience Transparent pricing, installment plans, and multilingual staff CTA; Book a consultation at die drei zahnärzte, Kottbusser Tor, and discover a tooth replacement that feels like it's always been yours.",
+          "root_canal": "Microscope Root-Canal Therapy (Endodontics)",
+          "root_canal_desc": "A root canal succeeds or fails on precision. That's why we work under a high-magnification dental microscope that enlarges tiny canal openings up to twenty-five times. With this level of detail, we can locate hidden branches, remove every trace of infection, and shape the canal system without removing healthy tooth structure. How your visit unfolds 3-D imaging pinpoints the exact depth and direction of each canal before we start. Microscope-guided cleaning eliminates bacteria and biofilm from spaces thinner than a hair. Warm vertical filling seals the tooth three-dimensionally, blocking future reinfections. Digital scan and crown (when required) use an **intra-oral scanner** instead of messy impressions, letting us design a perfectly fitting ceramic onlay or crown while you relax. For anxious patients we offer gentle sedation, you stay comfortable, and we stay precise. The result is a painless, one-visit solution that saves your natural tooth and avoids extraction. Why choose us for root canal therapy? Microscope accuracy for higher long-term success Digital workflow from diagnosis to final crown Anxiety-aware care with a multilingual team Metal-free ceramic restorations milled on-site CTA: Book a consultation at die drei zahnärzte, Kottbusser Tor, and keep your smile whole without the root-canal horror stories.",
+          "prosthetics": "Dental Prosthetics: Crowns, Bridges & Inlays",
+          "prosthetics_desc": "Missing structure, worn enamel, or cracks that won't heal on their own? Sometimes a tooth needs more than a filling. Our dental prosthetics studio restores strength and beauty with solutions that look and feel like the real thing. We start with a quick intra-oral scan (no gooey impressions) and design your restoration digitally. Depending on what you need, that might be an all-ceramic crown to cap a single tooth, a bridge to span a gap, or a precision-milled inlay / onlay that fits like a puzzle piece. Every material is biocompatible, metal-free and colour-matched to your smile. Key benefits Metal-free materials – zirconia and lithium-disilicate for life-like translucency Digital design – consistent accuracy from scan to final glaze Works seamlessly with implant crowns for single-tooth replacement Option to combine with teeth-whitening or Invisalign® so color and alignment line up with your long-term smile goals Want to know how crowns differ from veneers? Curious about combining a bridge with teeth whitening or Invisalign? Tap the links to explore each treatment in detail, or book a consultation to see which option is best for you.",
+          "surgery": "Oral Surgery – Extractions, Apicoectomies & Soft-Tissue Care",
+          "surgery_desc": "From a simple wisdom tooth removal to a precise apicoectomy (WSR), oral surgery at die drei zahnärzte is designed to be as gentle as possible. We combine high-resolution 3-D imaging with minimally invasive techniques, so we remove only what's necessary and leave healthy tissue untouched. What to expect Digital planning: Cone-beam images show nerves, bone density and root shape before we start. Comfort first:  Local anesthetic keeps you relaxed throughout the procedure. PRGF® healing boost: We place a small membrane of plasma rich in growth factors (made from your own blood sample) into the surgical site. This bioactive layer encourages faster bone regeneration, reduces swelling and cuts recovery time. Precise closure:  Fine sutures and, when needed, a laser finish promote clean, predictable healing. We also perform aesthetic soft-tissue work such as gingivectomy or gum recontouring, often paired with aesthetic dentistry and implantology to complete your smile makeover. Wondering whether you need a surgical extraction or if a microscope root-canal therapy could save the tooth? Click through the links or book a consultation at our Kottbusser Tor clinic to explore every option in one visit.",
+          "invisalign": "Orthodontics – Invisalign® Clear Aligners",
+          "invisalign_desc": "If you're dreaming of straighter teeth but hate the idea of metal braces, Invisalign® is the discreet solution we offer right now. After a fast intra-oral scan we create a digital 3-D model of your bite, then order a series of clear, removable aligners custom-made to guide your teeth into place. You'll switch trays every one to two weeks, come in for quick progress checks, and watch progress without brackets, wires or food restrictions. Why you should do your invisalign at our clinic at kotti? Nearly invisible, people hardly notice Removable, you can eat what you like, brush as usual Predictable, the software shows your finish before you start Comfortable with no sharp edges or emergency wire fixes Our multilingual team tracks every step, adjusts timelines when needed, and can combine Invisalign with teeth whitening or aesthetic veneers once alignment is complete. Coming soon: we're adding Invisalign Go® for quick cosmetic straightening of the front teeth. A perfect add-on to Digital Smile Design cases. Keep an eye on our news page for launch updates, or book a consultation today to see if full Invisalign aligners are the right next move for your smile.",
+          "pediatric": "Paediatric Dentistry",
+          "pediatric_desc": "Good dental health starts long before the first adult tooth appears. Our role is to guide children and their parents through each stage with information, patience and age-appropriate care. At our practice we: Fissure seal new molars to keep food and bacteria out of deep grooves. Catch and treat early caries in children with minimally invasive fillings and home-care coaching. Offer pediatric orthodontic checks to spot bite issues while the jaw is still flexible. Schedule gentle child prophylaxis appointments where kids learn brushing techniques, try plaque-disclosing dye and leave with a clean, polished smile. Provide light anesthesia or laughing gas when anxiety or extensive work makes it hard for a child to sit comfortably. Our goal is simple: turn dental care into a routine children understand and trust, not something they fear. Parents are welcome chair-side, questions are encouraged, and every small success, like mastering circular brushing, gets a high-five. Looking for a kids' dentist in Berlin-Kreuzberg who teaches as much as they treat? We're here from a child's first tooth through every stage that follows.",
+          "cleaning": "Professional Cleaning (GBT)",
+          "cleaning_desc": "Plaque and biofilm build up even with good brushing. Our answer is Guided Biofilm Therapy (GBT): an eight-step protocol that removes deposits gently and thoroughly while teaching you how to keep new ones from forming. Disclosure – A harmless dye colours plaque so you (and we) can see what needs attention. Personalised advice – We show you where everyday brushing misses and suggest small habit tweaks. Air-polishing – A fine erythritol powder and warm water spray lift away soft biofilm without scratching enamel or implants. Ultrasonic scaling – Remaining mineralised tartar is removed with quiet, tooth-friendly tips. Final check & polish – We confirm every surface is clean, then use a low-abrasion paste for smoothness. Fluoride or hydroxyapatite – Reinforces enamel and reduces sensitivity. The whole session is painless, usually finished in under an hour, and safe for crowns, veneers and orthodontic appliances. Regular GBT appointments lower the risk of cavities, gum disease and implant loss—and keep your smile naturally brighter without bleaching chemicals. Looking for professional teeth cleaning in Berlin-Kreuzberg that's as informative as it is effective? Book a prophylaxis visit at unsere Praxis am Kottbusser Tor and leave knowing exactly how to protect your teeth until we see you next.",
+          "bleaching": "bleaching",
+          "bleaching_desc": "A white smile looks fresh, but only when the shade fits your complexion and the rest of your teeth. Every whitening journey at die drei zahnärzte starts with a professional cleaning (Guided Biofilm Therapy). Clearing away plaque first lets the whitening gel reach enamel evenly and keeps results stable. Our four-step approach Clean & check – After GBT we examine gums, fillings and veneers to be sure everything can lighten safely. Shade-mapping photo – Together we decide what \"natural bright\" means for you, matching the target colour to skin tone and eyes. Gentle in-office gel – A pH-balanced peroxide gel is applied in two or three short cycles—no harsh heat lamps, minimal sensitivity. Colour lock & home boost – A remineralising rinse seals enamel; custom trays and low-dose gel let you top-up gradually if you wish. Most smiles lift four to eight shades while staying comfortably believable, fresh and vibrant, never fluorescent. And because whitening is performed by dentists, you avoid the risks common in beauty salons: burned gums, uneven spots and surprise sensitivity. Planning veneers or Invisalign®? Whitening first ensures new ceramics and aligner attachments blend seamlessly. Ready for professional teeth whitening in Berlin-Kreuzberg? Book your cleaning-plus-whitening combo at our Kottbusser Tor clinic and see how a subtle lift can brighten your whole face.",
+          "periodontitis": "Periodontitis Therapy",
+          "periodontitis_desc": "Bleeding when you brush, persistent bad breath, teeth that feel a little loose? These are early signs of periodontitis (advanced gum disease). Left untreated, it can damage the bone that holds your teeth and even affect overall health. At die drei zahnärzte we combine gentle techniques with modern diagnostics to stop the infection and rebuild support. Our gum-health protocol Pocket mapping & 3-D imaging – We measure gum depth and scan bone levels to locate hidden inflammation. Guided Biofilm Therapy – Air-polishing removes the soft film that feeds harmful bacteria. Deep scaling & root smoothing – Ultrasonic tips clear hardened tartar beneath the gumline; hand instruments polish roots so tissue can re-attach. Targeted irrigation or laser – An antibacterial rinse or soft-tissue laser reduces residual germs inside pockets. Personalised home routine – We show you the exact brush angle, floss or interdental tool that suits your spacing, then set a recall schedule to keep gums stable. If pockets remain deep we can add a regenerative procedure—tiny bone grafts or enamel matrix proteins to regain lost support. Regular professional cleanings and, when needed, a short course of antibiotics keep bacteria under control. Looking for periodontitis treatment in Berlin-Kreuzberg that's thorough yet comfortable? Book a gum assessment at our Kottbusser Tor clinic and give your smile the solid foundation it deserves."
+        }
+      },
+      "services-mobile": {
+        "title": "Our Services",
+        "cards": {
+          "anxiety": "Anxiety Patients",
+          "surgery": "Oral Surgery",
+          "veneers": "Veneers",
+          "root_canal": "Root Canal Treatment",
+          "invisalign": "Invisalign",
+          "invisalign2": "Invisalign"
+
+        }
+      },
+      "sticky_services": {
+    "heading": {
+      "title": "More than Dental Care",
+      "subtitle": "Discover what makes us unique"
+    },
+    "sections": {
+      "elite_smile": {
+        "title": "Elite Smile Design",
+        "description": "Every smile we design starts with you. Using Digital Smile Design™, precise intra-oral scans, and aesthetic principles, we create smiles that look beautifully natural and not artificial. Whether it's subtle adjustments with veneers or a complete smile makeover, each treatment plan reflects your face, personality, and personal goals."
+      },
+      "next_gen": {
+        "title": "Next-Gen Dental Technology",
+        "description": "From high-resolution 3D imaging and microscopic root canal treatments, to laser dentistry and Guided Biofilm Therapy, technology at die drei zahnärzte means fewer visits, quicker recovery, and exceptional results that last. "
+      },
+      "smile_sparkle": {
+        "title": "Dental Jewerly by professionals",
+        "description": "Grillz, tooth gems, and professional teeth whitening are more than just dental trends but an expressions of your style and personality. Whether your look is subtle or bold, we combine dental expertise with stylish aesthetics to deliver safe, dental-grade sparkle. Trust professionals who genuinely understand both dentistry and personal expression"
+      }
+    }
+  },
+  "doctors": {
+    "title": "Our Doctors",
+    "subtitle": "Testimonials and Reviews",
+    "list": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "description": "Fabian specializes in surgery, implantology, prosthetics, and front tooth aesthetics. He also treats anxious patients and offers consultations in Arabic, English, and German to ensure comprehensive care."
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "description": "Hakam is an expert in various dental fields, including microscopic root canal treatment, prosthetics, and aesthetic dentistry for veneers and front tooth aesthetics. He provides compassionate care, especially for anxious patients, and speaks German, English, and Arabic."
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "description": "Prabh specializes in surgery, implantology, prosthetics, and front tooth aesthetics. He also treats anxious patients and offers consultations in Punjabi, Hindi, Urdu, English, and German to provide well-rounded care."
+      }
+    }
+  },  "smile_gallery": {
+    "title": "Our Smile Gallery",
+    "words": {
+      "our": "Our",
+      "smile": "Smile",
+      "gallery": "Gallery"
+    }
+  },"half_screen_video": {
+    "title": "Who We Are & What We Believe",
+    "description": "Our team is dedicated to delivering exceptional care guided by a shared philosophy of trust, innovation, and compassion.",
+    "book_button": "BOOK AN APPOINTMENT"
+  },
+  "new_full_screen_video": {
+    "heading": {
+      "title": "Die Drei Zahnärzte",
+      "subtitle": "Your Smile, Our Mission"
+    },
+    "book_button": "Book an Appointment",
+    "services_title": "Our Services",
+    "services_description": "We understand your needs and offer a wide range of services. You are in the best hands with us!"
+  },
+  "grid_hover": {
+    "items": {
+      "Anxiety Patients": "Anxiety Patients",
+      "Oral Surgery": "Oral Surgery",
+      "Veneers": "Veneers",
+      "Root Canal Treatment": "Root Canal Treatment",
+      "Invisalign": "Invisalign"
+    }
+  },
+  "services_mobile": {
+    "items": {
+      "Surgery": "Surgery",
+      "Veneers": "Veneers",
+      "Implantology": "Implantology",
+      "Dentures": "Dentures",
+      "Bleaching": "Bleaching",
+      "Pediatric Dentistry": "Pediatric Dentistry"
+    }
+  },
+  "new_sticky_sections": {
+    "heading": "Our Specialties",
+    "items": {
+      "Next-Gen Dental Technology": "Next-Gen Dental Technology",
+      "Next-Gen Dental Technology_desc": "We offer cutting-edge services like 3D scanning, laser dentistry, and digital imaging to ensure precise, painless, and efficient dental care tailored to your needs.",
+      
+      "Hollywood Smile": "Hollywood Smile",
+      "Hollywood Smile_desc": "Aligned, bright white teeth. Using advanced techniques like veneers, crowns, and teeth whitening, it creates a flawless, natural-looking smile that radiates confidence and charm—just like your favorite stars!",
+      
+      "Smile Sparkle": "Smile Sparkle",
+      "Smile Sparkle_desc": "Enhance your smile with a touch of elegance using our custom tooth jewels—designed to add a subtle sparkle and unique charm to your look."
+    }
+  },
+  "new_doctors": {
+    "title": "Our Doctors",
+    "items": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "description": "Fabian specializes in surgery, implantology, prosthetics, and front tooth aesthetics. He also treats patients with dental anxiety. Fabian is available for consultations in Arabic, English, and German to provide comprehensive patient care."
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "description": "Hakam specializes in microscopic root canal treatment, prosthetics, and aesthetic dentistry, including veneers and front tooth aesthetics. He provides compassionate care, particularly for anxious patients, and offers consultations in German, English, and Arabic."
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "description": "Prabh focuses on surgery, implantology, prosthetics, and front tooth aesthetics. He also treats patients with dental anxiety. He provides consultations in Punjabi, Hindi, Urdu, English, and German."
+      }
+    }
+    
+  },
+  "philosophy": {
+    "title": "Our Philosophy",
+    "quotes": {
+      "1": "Our practice is all about a special dental experience, where openness and expertise are the focus.",
+      "2": "Our cultural diversity and warm atmosphere make us special.",
+      "3": "For us, every patient is unique, and together we achieve unbeatable results.",
+      "4": "We stand for tailor-made solutions, characterized by communication, trust, and a passion for dental health."
+    }
+  },
+  "new_footer": {
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "monday_thursday": "Monday-Thursday:",
+    "wednesday": "Wednesday:",
+    "friday": "Friday:",
+    "book_appointment": "Book an Appointment",
+    "copyright": "All rights reserved."
+  },
+  "services_grid": {
+    "title": "Dental treatments",
+    "subtitle": "Our Services",
+    "description": "Whether it's a check-up, teeth whitening or dentures: we want to ensure you receive the best of care. That's why we continuously train our medical staff and work exclusively with state-of-the-art technology.",
+    "items": {
+      "item1": "Dental Anxiety Care & Sedation",
+      "item1_desc": "Our multilingual team is specially trained in **trauma-aware** dentistry. We recognize the signs of dental fear and build a calm, judgment-free space where you feel safe. Soft lighting, nice music, clear explanations and extra time make visits smooth and pain free.\n\nNeed more help relaxing? We offer a full range of **sedation** options, from nitrous oxide to gentle full anesthesia, so even severe phobia doesn't stand between you and healthy teeth.\n\nCTA: Discover truly anxiety-free dental treatment in Berlin-Kreuzberg, where your comfort comes first.",
+      "item2": "Aesthetic Dentistry & Smile Design",
+      "item2_desc": "Your smile is one of a kind and your treatment plan should be too.\n\nAt Die Drei zahnärzte we start every case with **Digital Smile Design**: high-resolution photos, 3-D scans, and facial analysis that let us preview how different shapes, shades and proportions will look on you before we start. Whether you want subtle tweaks or a full makeover, our approach is always conservative and natural-looking.\n\n- Veneers: Ultra-thin ceramic shells that hide cracks, stains, or small gaps while letting light pass through like real enamel.\n- Composite fillings & bonding: Tooth-coloured material sculpted by hand for seamless repairs.\n- [Gentle whitening](/service/bleaching): We brighten so your new smile matches your ideal shade.\n- Sparkles: Grillz and Gems\n\nComprehensive Dentistry is our philosophy, we make sure beauty and bite work together, meaning no compromises on function or long-term health. Every step is photographed, measured, and quality-checked, so the result fits your face, your personality and your lifestyle.\n\nCTA: Looking for an aesthetic dentist in Berlin-Kreuzberg who designs smiles you can actually live with? Book a consultation at our clinic and see your future smile before treatment even begins.",
+      "item3": "Implantology: Titanium & Ceramic Implants",
+      "item3_desc": "",
+      "item4": "Microscope Root-Canal Therapy (Endodontics)",
+      "item4_desc": "",
+      "item5": "Dental Prosthetics: Crowns, Bridges & Inlays",
+      "item5_desc": "",
+      "item6": " Oral Surgery – Extractions, Apicoectomies & Soft-Tissue Care",
+      "item6_desc": "",
+      "item7": " Orthodontics – Invisalign® Clear Aligners",
+      "item7_desc": "",
+      "item8": "Paediatric Dentistry ",
+      "item8_desc": "",
+      "item9": " Professional Cleaning (GBT)",
+      "item9_desc": "",
+      "item10": "Teeth Whitening",
+      "item10_desc": "",
+      "item11": "Periodontitis Therapy",
+      "item11_desc": ""
+    }
+  },
+  "new_services": {
+    "title": "OUR TREATMENTS",
+    "description": "All the care you need from daily checkups to aesthetic treatments, in your language, and at your pace.",
+    "book_appointment": "Book an Appointment",
+    "services": {
+      "dental_anxiety": {
+        "title": "DENTAL ANXIETY",
+        "subtitle": "Care & Sedation",
+        "img": "/Assets/DENTAL ANXIETY.jpg"
+      },
+      "aesthetic_dentistry": {
+        "title": "AESTHETIC DENTISTRY",
+        "subtitle": "Digital Smile Design",
+        "img": "/Assets/DENTISTRY.jpg"
+      },
+      "implantology": {
+        "title": "IMPLANTOLOGY",
+        "subtitle": "Titanium & Ceramic Implants",
+        "img": "/Assets/implantology.jpg"
+      },
+      "root_canal_therapy": {
+        "title": "ROOT-CANAL THERAPY",
+        "subtitle": "Endodontics",
+        "img": "/Assets/ROOT-CANAl.jpg"
+      },
+      "dental_prosthetics": {
+        "title": "DENTAL PROSTHETICS",
+        "subtitle": "Crowns, Bridges & Inlays",
+        "img": "/Assets/DENTAL PROSTHETICS.jpg"
+      },
+      "oral_surgery": {
+        "title": "ORAL SURGERY",
+        "subtitle": "Extractions, Apicoectomies & Soft-Tissue Care",
+        "img": "/Assets/oral.jpg"
+      },
+      "orthodontics": {
+        "title": "Orthodontics",
+        "subtitle": "Invisalign® Clear Aligners",
+        "img": "/Assets/Orthodontics Invisalign.jpg"
+      },
+      "paediatric_dentistry": {
+        "title": "Paediatric Dentistry",
+        "subtitle": "Gentle care for children",
+        "img": "/Assets/Paediatric Dentistry.jpg"
+      },
+      "professional_cleaning": {
+        "title": "Professional Cleaning (GBT)",
+        "subtitle": "Prophylaxis and Guided Biofilm Therapy",
+        "img": "/Assets/Professional Cleaning.jpg"
+      },
+      "bleaching": {
+        "title": "Bleaching",
+        "subtitle": "Teeth Whitening",
+        "img": "/Assets/Bleaching.jpg"
+      },
+      "periodontitis_therapy": {
+        "title": "Periodontitis Therapy",
+        "subtitle": "Gum Disease",
+        "img": "/Assets/Periodontitis Therapy.jpg"
+      }
+    }
+  },
+  "galery2": {
+    "title": "Clinic Tour",
+    "description1": "Where design meets comfort and a little bit of nostalgia.",
+    "description2": "Our space was designed by Studio Karhard, the Berlin architects behind iconic places like Halle am Berghain. The interior blends soft lighting, textured surfaces, and warm tones inspired by a motorcycle trip through the Himalayas; earthy greens, dusty reds, and natural wood.",
+    "description3": "There are subtle references to Arabic and Indian aesthetics, a living olive tree in the center, and a calm, grounding atmosphere that makes the practice feel less clinical — and more like a place you can exhale."
+  },
+  "team": {
+    "title": "Our Doctors",
+    "subtitle": "Meet our experienced dental professionals",
+    "members": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "title": "Dentist"
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "title": "Dentist"
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "title": "Dentist"
+      },
+      "majd": {
+        "name": "Majd Saad",
+        "title": "Dentist"
+      }
+    },
+    "specialties": {
+      "periodontology": "Periodontology",
+      "implantology": "Implantology",
+      "anxiety_patients": "Anxiety Patients",
+      "dentures": "Dentures",
+      "cmd": "CMD",
+      "dentistry_for_elderly": "Dentistry for the elderly",
+      "aesthetic_dentistry": "Aesthetic dentistry",
+      "teeth_preservation": "Teeth preservation",
+      "oralsurgery": "Oral surgery"
+    }
+  },
+  "home_video": {
+    "video_unsupported": "Your browser does not support the video tag."
+  },
+  "footer": {
+    "opening_hours": "OPENING HOURS",
+    "mon_thu": "Mon-Thu",
+    "wed": "Wed",
+    "fri": "Fri",
+    "clinic_name": "DENTAL21 BERLIN KUDAMM",
+    "phone_number": "PHONE NUMBER",
+    "book_appointment": "Book an Appointment",
+    "homepage": "Homepage",
+    "treatments": "Treatments",
+    "team": "Team",
+    "jobs": "Jobs",
+    "equipment": "Equipment",
+    "made_with": "Made with"
+  },
+  "service_page": {
+    "the_service": "The Service",
+    "default_description": "This is the main description for the service. We can add several paragraphs here to detail what the service involves, its benefits, and what patients can expect. This section will provide comprehensive information to help patients feel informed and comfortable.",
+    "extra_description1": "Their mission is to help brands build a future where design and code are integral to their success, transforming their digital presence into a digital destination.",
+    "extra_description2": "A creator and thinker, Dust cares as much about how things look and feel as he does about why they exist and how they develop. Whether it's branding, design or storytelling, he helps teams build digital experiences with taste and purpose. He has been sharing these passions with the community for over ten years.",
+    "prev": "PREV",
+    "next": "NEXT"
+  },
+  "service_content": {
+    "dental_anxiety": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Our multilingual team is specially trained in <strong>trauma-aware</strong> dentistry. We recognize the signs of dental fear and build a calm, judgment-free space where you feel safe. Soft lighting, nice music, clear explanations and extra time make visits smooth and pain free."
+        },
+        {
+          "type": "paragraph",
+          "content": "Need more help relaxing? We offer a full range of <strong>sedation</strong> options, from nitrous oxide to gentle full anesthesia, so even severe phobia doesn't stand between you and healthy teeth."
+        },
+        {
+          "type": "cta",
+          "content": "Discover truly anxiety-free dental treatment in Berlin-Kreuzberg, where your comfort comes first."
+        }
+      ]
+    },
+    "aesthetic_dentistry": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Your smile is one of a kind and your treatment plan should be too."
+        },
+        {
+          "type": "paragraph",
+          "content": "At Die Drei zahnärzte we start every case with <strong>Digital Smile Design</strong>: high-resolution photos, 3-D scans, and facial analysis that let us preview how different shapes, shades and proportions will look on you before we start. Whether you want subtle tweaks or a full makeover, our approach is always conservative and natural-looking."
+        },
+        {
+          "type": "list",
+          "items": [
+            "Veneers: Ultra-thin ceramic shells that hide cracks, stains, or small gaps while letting light pass through like real enamel.",
+            "Composite fillings & bonding: Tooth-coloured material sculpted by hand for seamless repairs.",
+            "<a href='/service/bleaching' class='underline hover:opacity-75'>Gentle whitening</a>: We brighten so your new smile matches your ideal shade.",
+            "Sparkles: Grillz and Gems"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Comprehensive Dentistry is our philosophy, we make sure beauty and bite work together, meaning no compromises on function or long-term health. Every step is photographed, measured, and quality-checked, so the result fits your face, your personality and your lifestyle."
+        },
+        {
+          "type": "cta",
+          "content": "Looking for an aesthetic dentist in Berlin-Kreuzberg who designs smiles you can actually live with? Book a consultation at our clinic and see your future smile before treatment even begins."
+        }
+      ]
+    },
+    "implantology": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Missing teeth shouldn't mean missing confidence."
+        },
+        {
+          "type": "paragraph",
+          "content": "In our modern clinic, implant therapy begins with a relaxed chat, a quick <strong>3-D scan</strong>, a clear plan, and no surprises. Whether you choose time-tested titanium or metal-free ceramic implants, we place each root-shaped post with computer-guided precision, protecting nerves and neighboring teeth."
+        },
+        {
+          "type": "paragraph",
+          "content": "To speed up healing, we can add <strong>PRGF® (Plasma Rich in Growth Factors)</strong>, a concentrate made from a small sample of your blood. Think of it as nature's booster pack: less swelling, better bone integration, and fewer post-op worries. Once the implant fuses with your jaw, we top it with an all-ceramic crown or bridge that matches your bite and skin tone."
+        },
+        {
+          "type": "paragraph",
+          "content": "Why choose us for dental implants in Berlin?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Experience in complex cases, from single gaps to full-arch solutions",
+            "Ceramic implant option for patients seeking metal-free, biocompatible care",
+            "In-house <a href='/service/oral_surgery' class='underline hover:opacity-75'>oral surgery</a> and <a href='/service/dental_anxiety' class='underline hover:opacity-75'>sedation</a> for a calm, one-stop experience",
+            "Transparent pricing, installment plans, and multilingual staff"
+          ]
+        },
+        {
+          "type": "cta",
+          "content": "Book a consultation at Die Drei Zahnärzte, Kottbusser Tor, and discover a tooth replacement that feels like it's always been yours."
+        }
+      ]
+    },
+    "root_canal_therapy": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "A root canal succeeds or fails on precision. That's why we work under a <strong>high-magnification dental microscope</strong> that enlarges tiny canal openings up to twenty-five times. With this level of detail, we can locate hidden branches, remove every trace of infection, and shape the canal system without removing healthy tooth structure."
+        },
+        {
+          "type": "heading",
+          "content": "How your visit unfolds"
+        },
+        {
+          "type": "paragraph",
+          "content": "1. 3-D imaging pinpoints the exact depth and direction of each canal before we start.<br/>2. Microscope-guided cleaning eliminates bacteria and biofilm from spaces thinner than a hair.<br/>3. Warm vertical filling seals the canals three-dimensionally, blocking future reinfections.<br/>4. Digital scan and crown use an <strong>intra-oral scanner</strong> instead of messy impressions, letting us design a perfectly fitting <a href='/service/dental_prosthetics' class='underline hover:opacity-75'>ceramic onlay</a> or <a href='/service/dental_prosthetics' class='underline hover:opacity-75'>crown</a> while you relax."
+        },
+        {
+          "type": "paragraph",
+          "content": "For anxious patients we offer gentle <a href='/service/dental_anxiety' class='underline hover:opacity-75'>sedation</a>, you stay comfortable, and we stay precise. The result is a painless, one-visit solution that saves your natural tooth and avoids <a href='/service/oral_surgery' class='underline hover:opacity-75'>extraction</a>."
+        },
+        {
+          "type": "paragraph",
+          "content": "Why choose us for root canal therapy?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Microscope accuracy for higher long-term success",
+            "Digital workflow from diagnosis to final <a href='/service/dental_prosthetics' class='underline hover:opacity-75'>crown</a>",
+            "<a href='/service/dental_anxiety' class='underline hover:opacity-75'>Anxiety-aware care</a> with a multilingual team",
+            "<a href='/service/implantology' class='underline hover:opacity-75'>Metal-free ceramic</a> restorations milled on-site",
+            "(first one) specialized Dentists for Microscopic Rootcanaltreatment"
+          ]
+        },
+        {
+          "type": "cta",
+          "content": "Book a consultation at <em>Die Drei zahnärzte</em>, Kottbusser Tor, and keep your smile whole without the root-canal horror stories."
+        }
+      ]
+    },
+    "dental_prosthetics": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Missing structure, worn enamel, or cracks that won't heal on their own? Sometimes a tooth needs more than a filling. Our <strong>dental prosthetics studio</strong> restores strength and beauty with solutions that look and feel like the real thing."
+        },
+        {
+          "type": "paragraph",
+          "content": "We start with a quick <strong>intra-oral scan</strong> (no gooey impressions) and design your restoration digitally. Depending on what you need, that might be an all-ceramic <strong>crown</strong> to cap a single tooth, a <strong>bridge</strong> to span a gap, or a precision-milled inlay/ onlay that fits like a puzzle piece. Every material is biocompatible, metal-free and colour-matched to your smile."
+        },
+        {
+          "type": "heading",
+          "content": "Key benefits"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<a href='/service/implantology' class='underline hover:opacity-75'>Metal-free materials</a> – zirconia and lithium-disilicate for life-like translucency",
+            "<a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>Digital design</a> – consistent accuracy from scan to final glaze",
+            "Works seamlessly with implant crowns for single-tooth replacement",
+            "Option to combine with <a href='/service/bleaching' class='underline hover:opacity-75'>teeth-whitening</a> or <a href='/service/orthodontics' class='underline hover:opacity-75'>Invisalign®</a> so color and alignment line up with your long-term smile goals"
+          ]
+        },
+        {
+          "type": "cta",
+          "content": "Want to know how crowns differ from veneers? Curious about combining a bridge with teeth whitening or Invisalign? Tap the links to explore each treatment in detail, or book a consultation to see which option is best for you."
+        }
+      ]
+    },
+    "oral_surgery": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "From a simple wisdom tooth removal to a precise apicoectomy (WSR), oral surgery at <em>die drei zahnärzte</em> is designed to be as gentle as possible. We combine high-resolution 3-D imaging with minimally invasive techniques, so we remove only what's necessary and leave healthy tissue untouched."
+        },
+        {
+          "type": "heading",
+          "content": "What to expect"
+        },
+        {
+          "type": "paragraph",
+          "content": "1. <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>Digital planning</a>: Cone-beam images show nerves, bone density and root shape before we start.<br/>2. Comfort first: Local anesthetic keeps you relaxed throughout the procedure.<br/>3. <strong>PRGF® healing boost</strong>: We place a small membrane of <strong>plasma rich in growth factors</strong> (made from your own blood sample) into the surgical site. This bioactive layer encourages faster bone regeneration, reduces swelling and cuts recovery time.<br/>4. Precise closure: Fine sutures and, predictable healing."
+        },
+        {
+          "type": "paragraph",
+          "content": "We also perform aesthetic soft-tissue work such as <strong>gingivectomy</strong> or gum recontouring, often paired with <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>aesthetic dentistry</a> and <a href='/service/implantology' class='underline hover:opacity-75'>implantology</a> to complete your smile makeover."
+        },
+        {
+          "type": "paragraph",
+          "content": "Wondering whether you need a surgical extraction or if a <a href='/service/root_canal_therapy' class='underline hover:opacity-75'>microscope root-canal therapy</a> could save the tooth? Click through the links or book a consultation at our Kottbusser Tor clinic to explore every option in one visit."
+        }
+      ]
+    },
+    "orthodontics": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "If you're dreaming of straighter teeth but hate the idea of metal braces, Invisalign® is the discreet solution we offer right now. After a fast <strong>intra-oral scan</strong> we create a digital 3-D model of your bite, then order a series of clear, removable aligners custom-made to guide your teeth into place. You'll switch trays every one to two weeks, come in for quick progress checks, and watch progress without brackets, wires or food restrictions."
+        },
+        {
+          "type": "paragraph",
+          "content": "Why should you do your invisalign at our clinic at Kotti?"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Nearly invisible, people hardly notice",
+            "Removable, you can eat what you like, brush as usual",
+            "Predictable, the software shows your finish before you start",
+            "Comfortable with no sharp edges or emergency wire fixes"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Our multilingual team tracks every step, adjusts timelines when needed, and can combine Invisalign with teeth whitening or aesthetic veneers once alignment is complete."
+        },
+        {
+          "type": "paragraph",
+          "content": "Coming soon: we're adding Invisalign Go® for quick cosmetic straightening of the front teeth. A perfect add-on to Digital Smile Design cases. Keep an eye on our news page for launch updates, or book a consultation today to see if full Invisalign aligners are the right next move for your smile."
+        }
+      ]
+    },
+    "paediatric_dentistry": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Good dental health starts long before the first adult tooth appears. Our role is to guide children and their parents through each stage with information, patience and age-appropriate care."
+        },
+        {
+          "type": "paragraph",
+          "content": "At our practice we:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "<a href='/service/oral_surgery' class='underline hover:opacity-75'>Fissure seal</a> permanent teeth to keep food and bacteria out of deep grooves.",
+            "Catch and treat early caries in children with minimally invasive fillings and home-care coaching.",
+            "Offer pediatric orthodontic checks to spot bite issues while the jaw is still flexible.",
+            "Schedule gentle child prophylaxis appointments where kids learn brushing techniques, try plaque-disclosing dye and leave with a clean, polished smile.",
+            "Provide light anesthesia or laughing gas when anxiety or extensive work makes it hard for a child to sit comfortably."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": "Our goal is simple: turn dental care into a routine children understand and trust, not something they fear. Parents are welcome chair-side, questions are encouraged, and every small success, like mastering circular brushing, gets a high-five."
+        },
+        {
+          "type": "cta",
+          "content": "Looking for a <strong>kids' dentist in Berlin-Kreuzberg</strong> who teaches as much as they treat? We're here from a child's first tooth through every stage that follows."
+        }
+      ]
+    },
+    "professional_cleaning": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Plaque and biofilm build up even with good brushing. Our answer is <strong>Guided Biofilm Therapy (GBT)</strong>: an eight-step protocol that removes deposits gently and thoroughly while teaching you how to keep new ones from forming."
+        },
+        {
+          "type": "paragraph",
+          "content": "1. Disclosure – A harmless dye colours plaque so you (and we) can see what needs attention.<br/>2. Personalised advice – We show you where everyday brushing misses and suggest small habit tweaks.<br/>3. Air-polishing – A fine erythritol powder and warm water spray lift away soft biofilm without scratching enamel or implants.<br/>4. Ultrasonic scaling – Remaining mineralised tartar is removed with quiet, tooth-friendly tips.<br/>5. Final check & polish – We confirm every surface is clean, then use a low-abrasion paste for smoothness.<br/>6. Fluoride or hydroxyapatite – Reinforces enamel and reduces sensitivity."
+        },
+        {
+          "type": "paragraph",
+          "content": "The whole session is painless, usually finished in under an hour, and safe for crowns, <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>veneers</a> and orthodontic appliances. Regular GBT appointments lower the risk of cavities, gum disease and implant loss—and keep your smile naturally brighter without bleaching chemicals."
+        },
+        {
+          "type": "cta",
+          "content": "Looking for professional teeth cleaning in Berlin-Kreuzberg that's as informative as it is effective? Book a prophylaxis visit at unsere Praxis am Kottbusser Tor and leave knowing exactly how to protect your teeth until we see you next."
+        }
+      ]
+    },
+    "bleaching": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "A white smile looks fresh, but only when the shade fits your complexion and the rest of your teeth. Every whitening journey at Die Drei Zahnärzte starts with a professional cleaning (<strong>Guided Biofilm Therapy</strong>). Clearing away plaque first lets the whitening gel reach enamel evenly and keeps results stable."
+        },
+        {
+          "type": "heading",
+          "content": "Our four-step approach"
+        },
+        {
+          "type": "paragraph",
+          "content": "1. Clean & check – After GBT we examine gums, fillings and veneers to be sure everything can lighten safely.<br/>2. Shade-mapping photo – Together we decide what “natural bright” means for you, matching the target colour to skin tone and eyes.<br/>3. Gentle in-office gel – A pH-balanced peroxide gel is applied in two or three short cycles—no harsh heat lamps, minimal sensitivity.<br/>4. Colour lock & home boost – A remineralising rinse seals enamel; custom trays and low-dose gel let you top-up gradually if you wish."
+        },
+        {
+          "type": "paragraph",
+          "content": "Most smiles lift four to eight shades while staying comfortably believable, fresh and vibrant, never fluorescent. And because whitening is performed by dentists, you avoid the risks common in beauty salons: burned gums, uneven spots and surprise sensitivity."
+        },
+        {
+          "type": "paragraph",
+          "content": "Planning <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>veneers</a> or <a href='/service/orthodontics' class='underline hover:opacity-75'>Invisalign®</a>? Whitening first ensures new ceramics and <a href='/service/orthodontics' class='underline hover:opacity-75'>aligner</a> attachments blend seamlessly."
+        },
+        {
+          "type": "cta",
+          "content": "Ready for professional teeth whitening in Berlin-Kreuzberg? Book your cleaning-plus-whitening combo at our Kottbusser Tor clinic and see how a subtle lift can brighten your whole face."
+        }
+      ]
+    },
+    "periodontitis_therapy": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Bleeding when you brush, persistent bad breath, teeth that feel a little loose?"
+        },
+        {
+          "type": "paragraph",
+          "content": "These are early signs of <strong>periodontitis</strong> (advanced gum disease). Left untreated, it can damage the bone that holds your teeth and even affect overall health. At Die Drei Zahnärzte we combine gentle techniques with modern diagnostics to stop the infection and rebuild support."
+        },
+        {
+          "type": "heading",
+          "content": "Our gum-health protocol"
+        },
+        {
+          "type": "paragraph",
+          "content": "1. Pocket mapping & <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>3-D imaging</a> – We measure gum depth and scan bone levels to locate hidden inflammation.<br/>2. <a href='/service/professional_cleaning' class='underline hover:opacity-75'>Guided Biofilm Therapy</a> – Air-polishing removes the soft film that feeds harmful bacteria.<br/>3. Deep scaling & root smoothing – Ultrasonic tips clear hardened tartar beneath the gumline; hand instruments polish roots so tissue can re-attach.<br/>4. Targeted irrigation – An antibacterial rinse reduces residual germs inside pockets.<br/>5. Personalised home routine – We show you the exact brush angle, floss or interdental tool that suits your spacing, then set a recall schedule to keep gums stable."
+        },
+        {
+          "type": "paragraph",
+          "content": "If pockets remain deep we can add a <strong>regenerative procedure</strong>—tiny bone grafts or enamel matrix proteins to regain lost support. Regular <a href='/service/professional_cleaning' class='underline hover:opacity-75'>professional cleanings</a> and, when needed, a short course of antibiotics keep bacteria under control."
+        },
+        {
+          "type": "cta",
+          "content": "Looking for periodontitis treatment in Berlin-Kreuzberg that's thorough yet comfortable? Book a gum assessment at our Kottbusser Tor clinic and give your smile the solid foundation it deserves."
+        }
+      ]
+    }
+  }
+}

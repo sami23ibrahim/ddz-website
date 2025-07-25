@@ -1,0 +1,383 @@
+{
+    "heading": "Diş sağlığınızı <br />öncelik haline getirelim!",
+    "book_appointment": "Randevu Alın",
+    "navbar": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "team": "Takım",
+    "appointment": "Randevu"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "cards": {
+      "anxiety": "Kaygılı Hastalar",
+      "anxiety_desc": "Diş hekimi korkusu olan hastalar için nazik ve anlayışlı bakım. Ziyaretinizi olabildiğince rahat hale getiriyoruz.",
+      "surgery": "Ağız Cerrahisi",
+      "surgery_desc": "Her yaş için uzman ağız cerrahisi. Deneyimli cerrahlarımız en son teknikleri kullanır.",
+      "veneers": "Kaplamalar",
+      "veneers_desc": "Gülüşünüzü güzelleştiren ve özgüveninizi artıran doğal görünümlü kaplamalar.",
+      "root_canal": "Kanal Tedavisi",
+      "root_canal_desc": "Doğal dişlerinizi korumak için ileri teknolojiyle ağrısız kanal tedavileri.",
+      "invisalign": "Şeffaf Plak (Invisalign)",
+      "invisalign_desc": "Görünmez, konforlu diş düzeltme için şeffaf plaklarla kendinden emin bir gülümseme."
+    }
+  },
+  "services-mobile": {
+    "title": "Hizmetlerimiz",
+    "cards": {
+      "anxiety": "Kaygılı Hastalar",
+      "surgery": "Ağız Cerrahisi",
+      "veneers": "Kaplamalar",
+      "root_canal": "Kanal Tedavisi",
+      "invisalign": "Şeffaf Plak (Invisalign)",
+      "invisalign2": "Şeffaf Plak (Invisalign)"
+
+    }
+  },
+  
+    "sticky_services": {
+      "sections": {
+        "elite_smile": {
+          "title": "Elit Gülüş Tasarımı",
+          "description": "Düzgün hizalanmış, parlak beyaz dişler. Veneerler, kronlar ve diş beyazlatma gibi ileri teknikler kullanılarak doğal görünümlü, kusursuz bir gülümseme oluşturulur—tam olarak ünlülerin gülüşü gibi!"
+        },
+        "next_gen": {
+          "title": "Yeni Nesil Diş Hekimliği Teknolojisi",
+          "description": "3D tarama, lazer diş hekimliği ve dijital görüntüleme gibi en son teknolojileri sunarak hassas, ağrısız ve verimli bir diş bakımı sağlıyoruz."
+        },
+        "smile_sparkle": {
+          "title": "Gülüş Işıltısı",
+          "description": "Kişiye özel tasarlanmış diş mücevherlerimizle gülüşünüze zarif bir dokunuş katın—hafif bir parlaklık ve benzersiz bir çekicilik sağlayın."
+        }
+      }
+    },"doctors": {
+    "title": "Doktorlarımız",
+    "subtitle": "Hasta Görüşleri ve Değerlendirmeler",
+    "list": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "description": "Fabian cerrahi, implantoloji, protez ve ön diş estetiği alanlarında uzmanlaşmıştır. Ayrıca kaygılı hastaları tedavi eder ve Arapça, İngilizce ve Almanca dillerinde danışmanlık hizmeti sunar."
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "description": "Hakam çeşitli diş hekimliği alanlarında uzmandır ve özellikle mikroskobik kanal tedavisi, protezler ve ön diş estetiği üzerine çalışmaktadır. Kaygılı hastalara duyarlı bir bakım sunar ve Almanca, İngilizce ve Arapça konuşur."
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "description": "Prabh cerrahi, implantoloji, protez ve ön diş estetiği alanlarında uzmanlaşmıştır. Kaygılı hastalarla ilgilenir ve Pencapça, Hintçe, Urduca, İngilizce ve Almanca dillerinde danışmanlık hizmeti sunar."
+      }
+    }
+  },"smile_gallery": {
+    "title": "Gülüş Galerimiz",
+    "words": {
+      "our": "Bizim",
+      "smile": "Gülüş",
+      "gallery": "Galeri"
+    }
+  },"half_screen_video": {
+    "title": "Kim Olduğumuz ve Ne İnandığımız",
+    "description": "Ekibimiz, güven, yenilik ve şefkat üzerine kurulu ortak bir felsefe ile olağanüstü bakım sağlamaya kendini adamıştır.",
+    "book_button": "RANDEVU ALIN"
+  },
+  "new_full_screen_video": {
+    "heading": {
+      "title": "Die Drei Zahnärzte",
+      "subtitle": "Gülüşünüz Misyonumuzdur"
+    },
+    "book_button": "Randevu Al"
+  },
+  "grid_hover": {
+    "items": {
+      "Anxiety Patients": "Kaygılı Hastalar",
+      "Oral Surgery": "Ağız Cerrahisi",
+      "Veneers": "Kaplamalar",
+      "Root Canal Treatment": "Kanal Tedavisi",
+      "Invisalign": "Şeffaf Plaklar"
+    }
+  },
+  "services_mobile": {
+    "items": {
+      "Surgery": "Cerrahi",
+      "Veneers": "Kaplamalar",
+      "Implantology": "İmplantoloji",
+      "Dentures": "Protez Dişler",
+      "Bleaching": "Diş Beyazlatma",
+      "Pediatric Dentistry": "Pedodonti (Çocuk Diş Hekimliği)"
+    }
+  },
+  "new_sticky_sections": {
+    "heading": "Uzmanlık Alanlarımız",
+    "items": {
+      "Next-Gen Dental Technology": "Yeni Nesil Diş Teknolojisi",
+      "Next-Gen Dental Technology_desc": "3D tarama, lazer diş hekimliği ve dijital görüntüleme gibi en son hizmetleri sunarak hassas, ağrısız ve etkili bir diş tedavisi sağlıyoruz.",
+      
+      "Hollywood Smile": "Hollywood Gülüşü",
+      "Hollywood Smile_desc": "Düzgün, parlak beyaz dişler. Veneerler, kronlar ve diş beyazlatma gibi gelişmiş tekniklerle, doğal ve çekici bir gülümseme yaratıyoruz – tam olarak ünlülerinki gibi!",
+      
+      "Smile Sparkle": "Parlayan Gülümseme",
+      "Smile Sparkle_desc": "Özel diş mücevherlerimizle gülümsemenize zarif bir dokunuş katın – hafif bir ışıltı ve benzersiz bir çekicilik sunar."
+    }
+  },
+  "new_doctors": {
+    "title": "Doktorlarımız",
+    "items": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "description": "Fabian, cerrahi, implantoloji, protez ve ön diş estetiği alanlarında uzmandır. Diş hekimi korkusu olan hastalar için de tedavi sunmaktadır. Arapça, İngilizce ve Almanca dillerinde danışmanlık hizmeti vermektedir."
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "description": "Hakam, mikroskobik kanal tedavisi, protez diş ve estetik diş hekimliği (veneers ve ön diş estetiği) konularında uzmanlaşmıştır. Almanca, İngilizce ve Arapça dillerinde danışmanlık sunmaktadır."
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "description": "Prabh, cerrahi, implantoloji, protez diş ve ön diş estetiği alanlarında çalışmaktadır. Pencapça, Hintçe, Urduca, İngilizce ve Almanca dillerinde danışmanlık vermektedir."
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Felsefemiz",
+    "quotes": {
+      "1": "Klinik uygulamamız, açıklık ve uzmanlığın ön planda olduğu özel bir diş deneyimi sunmaktadır.",
+      "2": "Kültürel çeşitliliğimiz ve sıcak atmosferimiz bizi özel kılar.",
+      "3": "Bizim için her hasta benzersizdir ve birlikte mükemmel sonuçlara ulaşırız.",
+      "4": "İletişim, güven ve diş sağlığına duyulan tutkuyla şekillenen, kişiye özel çözümler sunuyoruz."
+    }
+  },
+  "new_footer": {
+    "email": "E-posta",
+    "phone": "Telefon",
+    "address": "Adres",
+    "monday_thursday": "Pazartesi-Perşembe:",
+    "wednesday": "Çarşamba:",
+    "friday": "Cuma:",
+    "book_appointment": "Randevu Al",
+    "copyright": "Tüm hakları saklıdır."
+  },
+  "new_services": {
+    "title": "Tedavilerimiz",
+    "description": "Günlük kontrollerden estetik tedavilere kadar ihtiyacınız olan tüm bakım, sizin dilinizde ve sizin hızınızda.",
+    "book_appointment": "Randevu Al",
+    "services": {
+      "dental_anxiety": {
+        "title": "DİŞ ANKSİYETESİ",
+        "subtitle": "Bakım ve Sedasyon",
+        "img": "/Assets/tech.jpg"
+      },
+      "aesthetic_dentistry": {
+        "title": "ESTETİK DİŞ HEKİMLİĞİ",
+        "subtitle": "Dijital Gülüş Tasarımı",
+        "img": "/Assets/pala.jpg"
+      },
+      "implantology": {
+        "title": "İMPLANTOLOJİ",
+        "subtitle": "Titanyum ve Seramik İmplantlar",
+        "img": "/Assets/g.webp"
+      },
+      "root_canal_therapy": {
+        "title": "KÖK KANAL TEDAVİSİ",
+        "subtitle": "Endodonti",
+        "img": "/Assets/g3.png"
+      },
+      "dental_prosthetics": {
+        "title": "DİŞ PROTEZLERİ",
+        "subtitle": "Kronlar, Köprüler ve İnleyler",
+        "img": "/Assets/majd.png"
+      },
+      "oral_surgery": {
+        "title": "AĞIZ CERRAHİSİ",
+        "subtitle": "Çekimler, Apikoektomiler ve Yumuşak Doku Bakımı",
+        "img": "/Assets/fab.png"
+      },
+      "orthodontics": {
+        "title": "Ortodonti",
+        "subtitle": "Invisalign® Şeffaf Plaklar",
+        "img": "/Assets/hak.png"
+      },
+      "paediatric_dentistry": {
+        "title": "Pediatrik Diş Hekimliği",
+        "subtitle": "Çocuklar için nazik bakım",
+        "img": "/Assets/rev.png"
+      },
+      "professional_cleaning": {
+        "title": "Profesyonel Temizlik (GBT)",
+        "subtitle": "Profilaksi ve Yönlendirilmiş Biyofilm Terapisi",
+        "img": "/Assets/prab.png"
+      },
+      "bleaching": {
+        "title": "Beyazlatma",
+        "subtitle": "Diş Beyazlatma",
+        "img": "/Assets/logo-gray.png"
+      },
+      "periodontitis_therapy": {
+        "title": "Periodontitis Terapisi",
+        "subtitle": "Diş Eti Hastalığı",
+        "img": "/Assets/logo2.png"
+      }
+    }
+  },
+  "galery2": {
+    "title": "Klinik Turu",
+    "description1": "Tasarımın konfor ve biraz nostalji ile buluştuğu yer.",
+    "description2": "Mekanımız, Halle am Berghain gibi ikonik yerlerin arkasındaki Berlinli mimarlar olan Studio Karhard tarafından tasarlandı. İç mekan, Himalayalar'da bir motosiklet gezisinden esinlenen yumuşak aydınlatma, dokulu yüzeyler ve sıcak tonları birleştiriyor; toprak yeşilleri, tozlu kırmızılar ve doğal ahşap.",
+    "description3": "Arap ve Hint estetiğine ince referanslar, merkezde canlı bir zeytin ağacı ve pratiği daha az klinik hissettiren ve daha çok nefes alabileceğiniz bir yer gibi hissettiren sakin, topraklayıcı bir atmosfer var."
+  },
+  "team": {
+    "title": "Doktorlarımız",
+    "subtitle": "Deneyimli diş hekimlerimizle tanışın",
+    "members": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "title": "Diş Hekimi"
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "title": "Diş Hekimi"
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "title": "Diş Hekimi"
+      },
+      "majd": {
+        "name": "Majd Saad",
+        "title": "Diş Hekimi"
+      }
+    },
+    "specialties": {
+      "periodontology": "Periodontoloji",
+      "implantology": "İmplantoloji",
+      "anxiety_patients": "Anksiyete Hastaları",
+      "dentures": "Protezler",
+      "cmd": "CMD",
+      "dentistry_for_elderly": "Yaşlılar için diş hekimliği",
+      "aesthetic_dentistry": "Estetik diş hekimliği",
+      "teeth_preservation": "Diş koruma",
+      "oralsurgery": "Ağız cerrahisi"
+    }
+  },
+  "home_video": {
+    "video_unsupported": "Tarayıcınız video etiketini desteklemiyor."
+  },
+  "footer": {
+    "opening_hours": "ÇALIŞMA SAATLERİ",
+    "mon_thu": "Pzt-Per",
+    "wed": "Çar",
+    "fri": "Cum",
+    "clinic_name": "DENTAL21 BERLIN KUDAMM",
+    "phone_number": "TELEFON NUMARASI",
+    "book_appointment": "Randevu Al",
+    "homepage": "Anasayfa",
+    "treatments": "Tedaviler",
+    "team": "Takım",
+    "jobs": "İşler",
+    "equipment": "Ekipman",
+    "made_with": "İle yapıldı"
+  },
+  "service_page": {
+    "the_service": "Hizmet",
+    "default_description": "Bu, hizmetin ana açıklamasıdır. Hizmetin neleri içerdiğini, faydalarını ve hastaların neler bekleyebileceğini ayrıntılı olarak açıklamak için buraya birkaç paragraf ekleyebiliriz. Bu bölüm, hastaların bilgili ve rahat hissetmelerine yardımcı olacak kapsamlı bilgiler sağlayacaktır.",
+    "extra_description1": "Misyonları, markaların tasarım ve kodun başarılarının ayrılmaz bir parçası olduğu bir gelecek inşa etmelerine yardımcı olmak ve dijital varlıklarını bir dijital hedefe dönüştürmektir.",
+    "extra_description2": "Bir yaratıcı ve düşünür olan Dust, bir şeylerin nasıl göründüğüne ve hissettirdiğine, neden var olduklarına ve nasıl geliştiklerine olduğu kadar önem verir. Markalaşma, tasarım veya hikaye anlatımı olsun, ekiplerin zevk ve amaç ile dijital deneyimler oluşturmasına yardımcı olur. Bu tutkularını on yıldan fazla bir süredir toplulukla paylaşıyor.",
+    "prev": "ÖNCEKİ",
+    "next": "SONRAKİ"
+  },
+  "service_content": {
+    "dental_anxiety": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Çok dilli ekibimiz, <strong>travma bilincine sahip</strong> diş hekimliği konusunda özel olarak eğitilmiştir. Diş korkusu belirtilerini tanır ve kendinizi güvende hissedeceğiniz sakin, yargılamayan bir alan yaratırız. Yumuşak aydınlatma, güzel müzik, net açıklamalar ve ekstra zaman, ziyaretleri sorunsuz ve ağrısız hale getirir."
+        },
+        {
+          "type": "paragraph",
+          "content": "Rahatlamak için daha fazla yardıma mı ihtiyacınız var? Azot oksitten nazik tam anesteziye kadar eksiksiz bir <strong>sedasyon</strong> seçenekleri yelpazesi sunuyoruz, bu nedenle şiddetli fobi bile sağlıklı dişler ile aranızda durmaz."
+        },
+        {
+          "type": "cta",
+          "content": "Berlin-Kreuzberg'de konforunuzun öncelikli olduğu gerçekten endişesiz bir diş tedavisi keşfedin."
+        }
+      ]
+    },
+    "aesthetic_dentistry": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Gülüşünüz eşsizdir ve tedavi planınız da öyle olmalıdır."
+            }
+        ]
+    },
+    "implantology": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Eksik dişler, eksik güven anlamına gelmemelidir."
+            }
+        ]
+    },
+    "root_canal_therapy": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Bir kök kanalı hassasiyete göre başarılı olur veya başarısız olur."
+            }
+        ]
+    },
+    "dental_prosthetics": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Eksik yapı, aşınmış mine veya kendi kendine iyileşmeyen çatlaklar? Bazen bir dişin dolgudan daha fazlasına ihtiyacı vardır."
+            }
+        ]
+    },
+    "oral_surgery": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Basit bir yirmi yaş dişi çekiminden hassas bir apikoektomiye (WSR) kadar, die drei zahnärzte'deki ağız cerrahisi mümkün olduğunca nazik olacak şekilde tasarlanmıştır."
+            }
+        ]
+    },
+    "orthodontics": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Daha düz dişler hayal ediyorsanız ancak metal diş tellerinden nefret ediyorsanız, Invisalign® şu anda sunduğumuz gizli çözümdür."
+            }
+        ]
+    },
+    "paediatric_dentistry": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "İyi diş sağlığı, ilk kalıcı diş ortaya çıkmadan çok önce başlar."
+            }
+        ]
+    },
+    "professional_cleaning": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "İyi fırçalamayla bile plak ve biyofilm birikir. Cevabımız Kılavuzlu Biyofilm Terapisi (GBT): birikintileri nazikçe ve tamamen temizleyen ve yenilerinin oluşmasını nasıl önleyeceğinizi öğreten sekiz adımlı bir protokol."
+            }
+        ]
+    },
+    "bleaching": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Beyaz bir gülümseme taze görünür, ancak yalnızca gölge teninize ve dişlerinizin geri kalanına uyduğunda."
+            }
+        ]
+    },
+    "periodontitis_therapy": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Fırçalarken kanama, sürekli ağız kokusu, biraz gevşek hissettiren dişler?"
+            }
+        ]
+    }
+  }
+}
+  

@@ -1,0 +1,403 @@
+{
+    "heading": "Lassen Sie uns Ihre <br /> Zahngesundheit <br /> priorisieren!",
+    "book_appointment": "Einen Termin vereinbaren",
+    "navbar": {
+        "home": "Startseite",
+        "services": "leistungen",
+        "team": "Team",
+        "appointment": "Termin"
+      },
+      "services": {
+        "title": "Unsere Leistungen",
+        "cards": {
+          "anxiety": "Angstpatienten",
+          "anxiety_desc": "Einfühlsame Betreuung für Angstpatienten. Wir gestalten Ihren Besuch so angenehm wie möglich.",
+          "surgery": "Mundchirurgie",
+          "surgery_desc": "Fachkundige Mundchirurgie für jedes Alter. Unsere erfahrenen Chirurgen verwenden modernste Techniken für Ihre Sicherheit und Ihr Wohlbefinden.",
+          "veneers": "Veneers",
+          "veneers_desc": "Schöne, natürlich aussehende Veneers für ein strahlendes Lächeln und mehr Selbstbewusstsein.",
+          "root_canal": "Wurzelkanalbehandlung",
+          "root_canal_desc": "Schmerzfreie Wurzelkanalbehandlungen mit modernster Technik zum Erhalt Ihrer natürlichen Zähne.",
+          "invisalign": "Invisalign",
+          "invisalign_desc": "Unauffällige, komfortable Zahnkorrektur mit transparenten Schienen für ein selbstbewusstes Lächeln."
+        }
+      },
+      "services-mobile": {
+        "title": "Unsere Leistungen",
+        "cards": {
+          "anxiety": "Angstpatienten",
+          "surgery": "Mundchirurgie",
+          "veneers": "Veneers",
+          "root_canal": "Wurzelkanalbehandlung",
+          "invisalign": "Invisalign",
+          "invisalign2": "Invisalign"
+
+        }
+      },
+      
+        "sticky_services": {
+          "sections": {
+            "elite_smile": {
+              "title": "Elite Smile Design",
+              "description": "Gleichmäßige, strahlend weiße Zähne. Mit fortschrittlichen Techniken wie Veneers, Kronen und Zahnaufhellung wird ein makelloses, natürlich aussehendes Lächeln geschaffen, das Selbstvertrauen und Charme ausstrahlt – genau wie deine Lieblingsstars!"
+            },
+            "next_gen": {
+              "title": "Zahnmedizin der nächsten Generation",
+              "description": "Wir bieten modernste Dienstleistungen wie 3D-Scannen, Laserzahnmedizin und digitale Bildgebung an, um eine präzise, schmerzfreie und effiziente Zahnversorgung zu gewährleisten."
+            },
+            "smile_sparkle": {
+              "title": "Smile Sparkle",
+              "description": "Verleihen Sie Ihrem Lächeln mit unseren individuell gestalteten Zahnjuwelen einen Hauch von Eleganz – für einen dezenten Glanz und einzigartigen Charme."
+            }
+          }
+        },"doctors": {
+    "title": "Unsere Ärzte",
+    "subtitle": "Erfahrungen und Bewertungen",
+    "list": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "description": "Fabian behandelt innerhalb der Chirurgie, Implantologie, Zahnersatz (Prothetik) und Frontzahnästhetik. Seine Behandlung erstreckt sich auch auf die von Angstpatienten. Fabian steht für Beratungen in Arabisch, Englisch und Deutsch zur Verfügung, um eine ganzheitliche Versorgung sicherzustellen."
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "description": "Hakam hat Expertise in verschiedenen Bereichen der Zahnmedizin, einschließlich mikroskopischer Wurzelkanalbehandlung, Zahnersatz (Prothetik) und ästhetischer Zahnmedizin für Veneers und Frontzahnästhetik. Er betreut Angstpatienten einfühlsam und spricht Deutsch, Englisch und Arabisch."
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "description": "Prabh hat sich auf Chirurgie, Implantologie, Zahnersatz (Prothetik) und Frontzahnästhetik spezialisiert. Mit seiner patientennahen Betreuung widmet er sich auch der Behandlung von Angstpatienten. Prabh bietet Beratungen in Punjabi, Hindi, Urdu, Englisch und Deutsch an."
+      }
+    }
+  }, "smile_gallery": {
+    "title": "Unsere Lächelgalerie",
+    "words": {
+      "our": "Unsere",
+      "smile": "Lächeln",
+      "gallery": "Galerie"
+    }
+  },"half_screen_video": {
+    "title": "Wer wir sind & was wir glauben",
+    "description": "Unser Team widmet sich der Bereitstellung außergewöhnlicher Pflege, die von einer gemeinsamen Philosophie des Vertrauens, der Innovation und des Mitgefühls geleitet wird.",
+    "book_button": "TERMIN VEREINBAREN"
+  }, "footer": {
+    "clinic_hours": {
+      "title": "Öffnungszeiten",
+      "times": {
+        "monday": "Montag, Dienstag, Donnerstag: 08:30-20:00 Uhr",
+        "wednesday": "Mittwoch: 08:30-18:30 Uhr",
+        "friday": "Freitag: 09:00-15:00 Uhr"
+      }
+    },
+    "our_clinic": {
+      "title": "Unsere Klinik",
+      "info": {
+        "address": "Skalitzer Straße 137, 10999 Berlin",
+        "phone": "030 69005528",
+        "email": "team@diedreizahnaerzte.berlin"
+      }
+    },
+    "clinic_image_alt": "Klinikverfahren",
+    "qr_code_alt": "QR-Code"
+  },
+  "new_full_screen_video": {
+    "heading": {
+        "title": "Den Drei Zahnärzten",
+        "subtitle": "Ihr Lächeln, Unsere Leidenschaft"
+    },
+    "book_button": "Termin buchen",
+    "services_title": "Unsere Leistungen",
+    "services_description": "Wir verstehen Ihre Bedürfnisse und bieten eine breite Palette an Dienstleistungen an. Sie sind bei uns in den besten Händen!"
+  },
+  "grid_hover": {
+    "items": {
+      "Anxiety Patients": "Angstpatienten",
+      "Oral Surgery": "Mundchirurgie",
+      "Veneers": "Veneers",
+      "Root Canal Treatment": "Wurzelkanalbehandlung",
+      "Invisalign": "Invisalign"
+    }
+  },
+  "services_mobile": {
+    "items": {
+      "Surgery": "Chirurgie",
+      "Veneers": "Veneers",
+      "Implantology": "Implantologie",
+      "Dentures": "Zahnprothesen",
+      "Bleaching": "Zahnaufhellung",
+      "Pediatric Dentistry": "Kinderzahnmedizin"
+    }
+  },
+  "new_sticky_sections": {
+    "heading": "Unsere Spezialitäten",
+    "items": {
+      "Next-Gen Dental Technology": "Zahnmedizin der nächsten Generation",
+      "Next-Gen Dental Technology_desc": "Wir bieten modernste Dienstleistungen wie 3D-Scans, Laserzahnmedizin und digitale Bildgebung, um präzise, schmerzfreie und effiziente zahnärztliche Versorgung zu gewährleisten.",
+      
+      "Hollywood Smile": "Hollywood-Lächeln",
+      "Hollywood Smile_desc": "Gleichmäßige, strahlend weiße Zähne. Mit modernen Techniken wie Veneers, Kronen und Zahnaufhellung entsteht ein makelloses, natürliches Lächeln – genau wie bei den Stars!",
+      
+      "Smile Sparkle": "Lächeln mit Glanz",
+      "Smile Sparkle_desc": "Verleihen Sie Ihrem Lächeln eine elegante Note mit unseren maßgeschneiderten Zahnjuwelen – für einen subtilen Glanz und einen einzigartigen Look."
+    }
+  }, "new_doctors": {
+    "title": "Unsere Ärzte",
+    "items": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "description": "Fabian behandelt innerhalb der Chirurgie, Implantologie, Zahnersatz (Prothetik) und Frontzahnästhetik. Er steht für Beratungen in Arabisch, Englisch und Deutsch zur Verfügung."
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "description": "Hakam ist spezialisiert auf mikroskopische Wurzelkanalbehandlungen, Zahnersatz (Prothetik) und Ästhetische Zahnmedizin für Veneers und Frontzahnästhetik. Er bietet Beratungen in Deutsch, Englisch und Arabisch an."
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "description": "Prabh ist Experte für Chirurgie, Implantologie, Zahnersatz (Prothetik) und Frontzahnästhetik. Er bietet Beratungen in Punjabi, Hindi, Urdu, Englisch und Deutsch an."
+      }
+    }
+  },
+  "philosophy": {
+    "title": "Unsere Philosophie",
+    "quotes": {
+      "1": "Unsere Praxis dreht sich um eine besondere Zahnerfahrung, bei der Offenheit und Fachwissen im Mittelpunkt stehen.",
+      "2": "Unsere kulturelle Vielfalt und warme Atmosphäre machen uns einzigartig.",
+      "3": "Für uns ist jeder Patient einzigartig, und gemeinsam erzielen wir unschlagbare Ergebnisse.",
+      "4": "Wir stehen für maßgeschneiderte Lösungen, geprägt von Kommunikation, Vertrauen und Leidenschaft für die Zahngesundheit."
+    }
+  },
+  "new_footer": {
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "monday_thursday": "Mon-Donnerstag:",
+    "wednesday": "Mittwoch:",
+    "friday": "Freitag:",
+    "book_appointment": "Termin Buchen",
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "new_services": {
+    "title": "Unsere Behandlungen",
+    "description": "Alle Behandlungen, die Sie benötigen, von der täglichen Kontrolle bis zur ästhetischen Behandlung, in Ihrer Sprache und in Ihrem Tempo.",
+    "book_appointment": "Termin buchen",
+    "services": {
+      "dental_anxiety": {
+        "title": "ZAHNARZTANGST",
+        "subtitle": "Betreuung & Sedierung",
+        "img": "/Assets/tech.jpg"
+      },
+      "aesthetic_dentistry": {
+        "title": "ÄSTHETISCHE ZAHNMEDIZIN",
+        "subtitle": "Digitales Lächeln-Design",
+        "img": "/Assets/pala.jpg"
+      },
+      "implantology": {
+        "title": "IMPLANTOLOGIE",
+        "subtitle": "Titan- & Keramikimplantate",
+        "img": "/Assets/g.webp"
+      },
+      "root_canal_therapy": {
+        "title": "WURZELKANALBEHANDLUNG",
+        "subtitle": "Endodontie",
+        "img": "/Assets/g3.png"
+      },
+      "dental_prosthetics": {
+        "title": "ZAHNPROTHETIK",
+        "subtitle": "Kronen, Brücken & Inlays",
+        "img": "/Assets/majd.png"
+      },
+      "oral_surgery": {
+        "title": "ORALCHIRURGIE",
+        "subtitle": "Extraktionen, Apikoektomien & Weichgewebspflege",
+        "img": "/Assets/fab.png"
+      },
+      "orthodontics": {
+        "title": "Kieferorthopädie",
+        "subtitle": "Invisalign® Clear Aligner",
+        "img": "/Assets/hak.png"
+      },
+      "paediatric_dentistry": {
+        "title": "Kinderzahnheilkunde",
+        "subtitle": "Sanfte Pflege für Kinder",
+        "img": "/Assets/rev.png"
+      },
+      "professional_cleaning": {
+        "title": "Professionelle Zahnreinigung (GBT)",
+        "subtitle": "Prophylaxe und Gelenkte Biofilm-Therapie",
+        "img": "/Assets/prab.png"
+      },
+      "bleaching": {
+        "title": "Bleichen",
+        "subtitle": "Zahnaufhellung",
+        "img": "/Assets/logo-gray.png"
+      },
+      "periodontitis_therapy": {
+        "title": "Parodontitis-Therapie",
+        "subtitle": "Zahnfleischerkrankung",
+        "img": "/Assets/logo2.png"
+      }
+    }
+  },
+  "galery2": {
+    "title": "Klinik-Tour",
+    "description1": "Wo Design auf Komfort und ein bisschen Nostalgie trifft.",
+    "description2": "Unsere Räumlichkeiten wurden von Studio Karhard entworfen, den Berliner Architekten hinter ikonischen Orten wie der Halle am Berghain. Das Interieur verbindet sanftes Licht, strukturierte Oberflächen und warme Töne, inspiriert von einer Motorradtour durch den Himalaya; erdige Grüntöne, staubige Rottöne und natürliches Holz.",
+    "description3": "Es gibt subtile Anspielungen auf arabische und indische Ästhetik, einen lebenden Olivenbaum im Zentrum und eine ruhige, erdende Atmosphäre, die die Praxis weniger klinisch und mehr wie einen Ort zum Ausatmen wirken lässt."
+  },
+  "team": {
+    "title": "Unsere Ärzte",
+    "subtitle": "Lernen Sie unsere erfahrenen Zahnärzte kennen",
+    "members": {
+      "fabian": {
+        "name": "Fabian Badour",
+        "title": "Zahnarzt"
+      },
+      "hakam": {
+        "name": "Hakam El Daghma",
+        "title": "Zahnarzt"
+      },
+      "prabh": {
+        "name": "Prabh Singh Mahal",
+        "title": "Zahnarzt"
+      },
+      "majd": {
+        "name": "Majd Saad",
+        "title": "Zahnarzt"
+      }
+    },
+    "specialties": {
+      "periodontology": "Parodontologie",
+      "implantology": "Implantologie",
+      "anxiety_patients": "Angstpatienten",
+      "dentures": "Zahnersatz",
+      "cmd": "CMD",
+      "dentistry_for_elderly": "Alterszahnheilkunde",
+      "aesthetic_dentistry": "Ästhetische Zahnheilkunde",
+      "teeth_preservation": "Zahnerhaltung",
+      "oralsurgery": "Oralchirurgie"
+    }
+  },
+  "home_video": {
+    "video_unsupported": "Ihr Browser unterstützt das Video-Tag nicht."
+  },
+  "footer": {
+    "opening_hours": "ÖFFNUNGSZEITEN",
+    "mon_thu": "Mo-Do",
+    "wed": "Mi",
+    "fri": "Fr",
+    "clinic_name": "DENTAL21 BERLIN KUDAMM",
+    "phone_number": "TELEFONNUMMER",
+    "book_appointment": "Termin buchen",
+    "homepage": "Startseite",
+    "treatments": "Behandlungen",
+    "team": "Team",
+    "jobs": "Jobs",
+    "equipment": "Ausstattung",
+    "made_with": "Mit ❤️ gemacht von"
+  },
+  "service_page": {
+    "the_service": "Der Service",
+    "default_description": "Dies ist die Hauptbeschreibung für den Service. Hier können wir mehrere Absätze hinzufügen, um zu beschreiben, was der Service beinhaltet, welche Vorteile er hat und was die Patienten erwarten können. Dieser Abschnitt wird umfassende Informationen enthalten, damit sich die Patienten informiert und wohl fühlen.",
+    "extra_description1": "Ihre Mission ist es, Marken dabei zu helfen, eine Zukunft aufzubauen, in der Design und Code ein wesentlicher Bestandteil ihres Erfolgs sind und ihre digitale Präsenz in ein digitales Ziel verwandeln.",
+    "extra_description2": "Als Schöpfer und Denker kümmert sich Dust ebenso sehr darum, wie die Dinge aussehen und sich anfühlen, wie darum, warum sie existieren und wie sie sich entwickeln. Ob es sich um Branding, Design oder Storytelling handelt, er hilft Teams dabei, digitale Erlebnisse mit Geschmack und Zweck zu schaffen. Seit über zehn Jahren teilt er diese Leidenschaften mit der Community.",
+    "prev": "ZURÜCK",
+    "next": "NÄCHSTE"
+  },
+  "service_content": {
+    "dental_anxiety": {
+      "sections": [
+        {
+          "type": "paragraph",
+          "content": "Unser mehrsprachiges Team ist speziell in der <strong>traumasensiblen</strong> Zahnmedizin geschult. Wir erkennen die Anzeichen von Zahnarztangst und schaffen einen ruhigen, urteilsfreien Raum, in dem Sie sich sicher fühlen. Sanftes Licht, schöne Musik, klare Erklärungen und zusätzliche Zeit machen den Besuch reibungslos und schmerzfrei."
+        },
+        {
+          "type": "paragraph",
+          "content": "Benötigen Sie mehr Hilfe beim Entspannen? Wir bieten eine vollständige Palette von <strong>Sedierungsoptionen</strong> an, von Lachgas bis hin zu einer sanften Vollnarkose, sodass selbst schwere Phobien nicht zwischen Ihnen und gesunden Zähnen stehen."
+        },
+        {
+          "type": "cta",
+          "content": "Entdecken Sie eine wirklich angstfreie Zahnbehandlung in Berlin-Kreuzberg, bei der Ihr Komfort an erster Stelle steht."
+        }
+      ]
+    },
+    "aesthetic_dentistry": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Ihr Lächeln ist einzigartig und Ihr Behandlungsplan sollte es auch sein."
+            }
+        ]
+    },
+    "implantology": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Fehlende Zähne sollten nicht fehlendes Selbstvertrauen bedeuten."
+            }
+        ]
+    },
+    "root_canal_therapy": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Ein Wurzelkanal gelingt oder scheitert an der Präzision."
+            }
+        ]
+    },
+    "dental_prosthetics": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Fehlende Struktur, abgenutzter Zahnschmelz oder Risse, die nicht von selbst heilen? Manchmal braucht ein Zahn mehr als eine Füllung."
+            }
+        ]
+    },
+    "oral_surgery": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Von einer einfachen Weisheitszahnentfernung bis hin zu einer präzisen Apikoektomie (WSR) ist die Oralchirurgie bei den drei zahnärzten so schonend wie möglich gestaltet."
+            }
+        ]
+    },
+    "orthodontics": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Wenn Sie von geraderen Zähnen träumen, aber die Vorstellung von Metallspangen hassen, ist Invisalign® die diskrete Lösung, die wir jetzt anbieten."
+            }
+        ]
+    },
+    "paediatric_dentistry": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Eine gute Zahngesundheit beginnt lange vor dem Erscheinen des ersten bleibenden Zahns."
+            }
+        ]
+    },
+    "professional_cleaning": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Plaque und Biofilm bilden sich auch bei guter Mundhygiene. Unsere Antwort ist die Guided Biofilm Therapy (GBT): ein achtstufiges Protokoll, das Ablagerungen sanft und gründlich entfernt und Ihnen beibringt, wie Sie die Bildung neuer Ablagerungen verhindern können."
+            }
+        ]
+    },
+    "bleaching": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Ein weißes Lächeln sieht frisch aus, aber nur, wenn der Farbton zu Ihrem Teint und dem Rest Ihrer Zähne passt."
+            }
+        ]
+    },
+    "periodontitis_therapy": {
+        "sections": [
+            {
+                "type": "paragraph",
+                "content": "Bluten beim Zähneputzen, anhaltender Mundgeruch, Zähne, die sich etwas locker anfühlen?"
+            }
+        ]
+    }
+  }
+}
+  

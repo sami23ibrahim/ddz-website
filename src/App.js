@@ -1,51 +1,44 @@
-import React, { useState, useMemo } from "react";
-
-//Utils
-import { createMuiTheme, ThemeProvider, CssBaseline, useMediaQuery } from "@material-ui/core";
-
-//Styles
-import "./assets/scss/app.scss";
-
-//Pages
+import React from "react";
+import { Routes, Route, useLocation, Link } from "react-router-dom";
 import Home from "./pages/Home";
+import Service from "./pages/Service";
+import ServiceMobile from "./pages/ServiceMobile";
+import Blog from "./pages/Blog";
+import Jobs from "./pages/Jobs";
+import BeforePage from "./pages/beforePage";
+import LanguageSwitcher from './Components/LanguageSwitcher';
 
-//Components
-import Header from "./components/Header";
+function App() {
+  const location = useLocation();
+  const background = location.state && location.state.background;
 
-const App = () => {
-	const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-	const [page, setPage] = useState(0);
-	const theme = useMemo(
-		() =>
-			createMuiTheme({
-				palette: {
-					type: prefersDarkMode ? "dark" : "light"
-				}
-			}),
-		[prefersDarkMode]
-	);
-
-	const handleChangePage = (event, newPage) => {
-		setPage(newPage);
-	};
-	const switchPage = () => {
-		switch (page) {
-			case 0:
-				return <Home changePage={handleChangePage} />;
-			default:
-				return <h1>404 Page</h1>;
-		}
-	};
-
-	return (
-		<ThemeProvider theme={theme}>
-			<CssBaseline />
-
-			<Header />
-
-			{switchPage()}
-		</ThemeProvider>
-	);
-};
+  return (
+    <>
+      <LanguageSwitcher />
+      {/* <div style={{ position: 'fixed', top: 250, right: 20, zIndex: 1000 }}>
+        <Link to="/beforePage">
+          <button style={{ padding: '10px 10px', background: '#422f40', color: 'white', borderRadius: '8px', fontWeight: 'bold', border: 'none', cursor: 'pointer' }}>
+            B/A
+          </button>
+        </Link>
+      </div> */}
+      <Routes location={background || location}>
+        <Route path="/" element={<Home />} />
+        <Route path="/service/:title" element={<Service />} />
+        <Route path="/service-mobile/:title" element={<ServiceMobile />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/jobs" element={<Jobs />} />
+        <Route path="/beforePage" element={<BeforePage />} />
+      </Routes>
+      {/* Show the modal when a background page is set */}
+      {background && (
+        <Routes>
+          <Route path="/service/:title" element={<Service />} />
+          <Route path="/service-mobile/:title" element={<ServiceMobile />} />
+        </Routes>
+      )}
+    </>
+  );
+}
 
 export default App;
