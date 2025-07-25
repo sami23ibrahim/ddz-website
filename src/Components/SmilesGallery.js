@@ -77,7 +77,7 @@ const SmilesGallery = () => {
   // Three unique image arrays for each row
   const row1 = [
     "./Assets/sm7.png",
-    "./Assets/sm1.png",
+    "./Assets/sm5.png",
     "./Assets/sm2.png",
     "./Assets/sm2.png",
     "./Assets/sm3.png",
@@ -91,8 +91,8 @@ const SmilesGallery = () => {
     "./Assets/sm17.png",
     "./Assets/sm19.png",
     "./Assets/sm18.png",
-    "./Assets/sm16.png",
-    "./Assets/sm5.png",
+    "./Assets/sm1.png",
+    "./Assets/sm1.png",
     "./Assets/sm13.png",
   ];
   const row3 = [

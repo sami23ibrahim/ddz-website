@@ -85,7 +85,7 @@ const NewServicesMobile = () => {
                         hoverIntensity={0.2} 
                         enableHover={true}
                         color="#422f40"
-                        fontSize="clamp(3rem, 8vw, 2rem)"
+                        fontSize="clamp(2rem, 4vw, 4rem)"
                         fontWeight={700}
                     >
                         {t('new_services.title')}

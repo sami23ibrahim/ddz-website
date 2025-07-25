@@ -94,7 +94,7 @@ const ServiceMobile = () => {
                 <div className="h-full overflow-y-auto p-6 md:p-8 service-content-mobile">
                     <button 
                         onClick={handleClose}
-                        className="absolute top-6 right-6 text-4xl font-light text-gray-500  z-10"
+                        className="absolute top-6 right-6 text-5xl font-light text-white z-10"
                     >
                         &times;
                     </button>
@@ -103,7 +103,7 @@ const ServiceMobile = () => {
                         {/* Title & Image Section */}
                         <div className="mb-12 flex items-start justify-between">
                             <div className="flex-1 pr-6">
-                                <h1 className="text-4xl md:text-6xl font-bold text-[#422f40] uppercase tracking-tighter leading-none">{service.title}</h1>
+                                <h1 className="text-3xl md:text-6xl font-bold text-[#422f40] uppercase tracking-tighter leading-none break-words">{service.title}</h1>
                                 <p className="text-sm text-gray-500 uppercase mt-4 tracking-widest">{service.subtitle}</p>
                             </div>
                             <div className="w-32 md:w-40 aspect-[3/4] flex-shrink-0">
