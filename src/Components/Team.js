@@ -17,21 +17,22 @@ const Team = () => {
       reviews: 94,
       languages: [
         { code: "de", flag: "/Assets/de.png", name: "German" },
+        { code: "fa", flag: "/Assets/pala.jpg", name: "Persian" },
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.periodontology'), color: "#422f4099" },
-        { name: t('team.specialties.implantology'), color: "#422f4099" }
-      ],
-      expandedSpecialties: [
         { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
+        { name: t('team.specialties.endodontics'), color: "#422f4099" },
+        { name: t('team.specialties.implantology'), color: "#422f4099" },
+        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
+        { name: t('team.specialties.veneers'), color: "#422f4099" },
         { name: t('team.specialties.dentures'), color: "#422f4099" },
-        { name: t('team.specialties.cmd'), color: "#422f4099" },
-        { name: t('team.specialties.dentistry_for_elderly'), color: "#422f4099" },
-        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" },
-        { name: t('team.specialties.teeth_preservation'), color: "#422f4099" },
-        { name: t('team.specialties.oralsurgery'), color: "#422f4099" }
-      ]
+        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
+        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
+        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
+        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
+      ],
+      expandedSpecialties: []
     },
     {
       id: 2,
@@ -46,10 +47,16 @@ const Team = () => {
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.periodontology'), color: "#422f4099" },
+        { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
+        { name: t('team.specialties.endodontics'), color: "#422f4099" },
+        { name: t('team.specialties.implantology'), color: "#422f4099" },
+        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
+        { name: t('team.specialties.veneers'), color: "#422f4099" },
         { name: t('team.specialties.dentures'), color: "#422f4099" },
-        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" },
-        { name: t('team.specialties.teeth_preservation'), color: "#422f4099" }
+        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
+        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
+        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
+        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
       ],
       expandedSpecialties: []
     },
@@ -65,7 +72,16 @@ const Team = () => {
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.periodontology'), color: "#422f4099" }
+        { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
+        { name: t('team.specialties.endodontics'), color: "#422f4099" },
+        { name: t('team.specialties.implantology'), color: "#422f4099" },
+        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
+        { name: t('team.specialties.veneers'), color: "#422f4099" },
+        { name: t('team.specialties.dentures'), color: "#422f4099" },
+        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
+        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
+        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
+        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
       ],
       expandedSpecialties: []
     },
@@ -78,10 +94,20 @@ const Team = () => {
       reviews: 152,
       languages: [
         { code: "de", flag: "/Assets/de.png", name: "German" },
+        { code: "fa", flag: "/Assets/pala.jpg", name: "Persian" },
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.periodontology'), color: "#422f4099" }
+        { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
+        { name: t('team.specialties.endodontics'), color: "#422f4099" },
+        { name: t('team.specialties.implantology'), color: "#422f4099" },
+        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
+        { name: t('team.specialties.veneers'), color: "#422f4099" },
+        { name: t('team.specialties.dentures'), color: "#422f4099" },
+        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
+        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
+        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
+        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
       ],
       expandedSpecialties: []
     }

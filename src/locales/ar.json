@@ -265,15 +265,16 @@
       }
     },
     "specialties": {
-      "periodontology": "علاج اللثة",
-      "implantology": "زراعة الأسنان",
       "anxiety_patients": "مرضى القلق",
+      "endodontics": "علاج الجذور",
+      "implantology": "زراعة الأسنان",
+      "pediatric_dentistry": "طب أسنان الأطفال والمراهقين",
+      "veneers": "القشور السنية",
       "dentures": "أطقم الأسنان",
-      "cmd": "CMD",
-      "dentistry_for_elderly": "طب أسنان كبار السن",
-      "aesthetic_dentistry": "طب الأسنان التجميلي",
-      "teeth_preservation": "الحفاظ على الأسنان",
-      "oralsurgery": "جراحة الفم"
+      "gingivitis": "التهاب اللثة",
+      "dental_fractures": "كسور الأسنان",
+      "dental_restoration": "ترميم الأسنان",
+      "aesthetic_dentistry": "طب الأسنان التجميلي"
     }
   },
   "home_video": {

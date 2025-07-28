@@ -264,15 +264,16 @@
       }
     },
     "specialties": {
-      "periodontology": "Parodontologie",
-      "implantology": "Implantologie",
       "anxiety_patients": "Angstpatienten",
+      "endodontics": "Endodontie",
+      "implantology": "Implantologie",
+      "pediatric_dentistry": "Kinder- und Jugendmedizin",
+      "veneers": "Veneers",
       "dentures": "Zahnersatz",
-      "cmd": "CMD",
-      "dentistry_for_elderly": "Alterszahnheilkunde",
-      "aesthetic_dentistry": "Ästhetische Zahnheilkunde",
-      "teeth_preservation": "Zahnerhaltung",
-      "oralsurgery": "Oralchirurgie"
+      "gingivitis": "Zahnfleischentzündung",
+      "dental_fractures": "Zahnfrakturen",
+      "dental_restoration": "Zahnsanierung",
+      "aesthetic_dentistry": "Ästhetische Zahnmedizin"
     }
   },
   "home_video": {

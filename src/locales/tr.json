@@ -244,15 +244,16 @@
       }
     },
     "specialties": {
-      "periodontology": "Periodontoloji",
-      "implantology": "İmplantoloji",
       "anxiety_patients": "Anksiyete Hastaları",
+      "endodontics": "Endodonti",
+      "implantology": "İmplantoloji",
+      "pediatric_dentistry": "Çocuk ve Gençlik Diş Hekimliği",
+      "veneers": "Veneerler",
       "dentures": "Protezler",
-      "cmd": "CMD",
-      "dentistry_for_elderly": "Yaşlılar için diş hekimliği",
-      "aesthetic_dentistry": "Estetik diş hekimliği",
-      "teeth_preservation": "Diş koruma",
-      "oralsurgery": "Ağız cerrahisi"
+      "gingivitis": "Diş Eti İltihabı",
+      "dental_fractures": "Diş Kırıkları",
+      "dental_restoration": "Diş Restorasyonu",
+      "aesthetic_dentistry": "Estetik Diş Hekimliği"
     }
   },
   "home_video": {

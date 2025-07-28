@@ -45,7 +45,7 @@ const OptimizedStickyServices = () => {
         >
           {/* Title Section */}
           <div
-            className={`  w-full lg:pl-20 pt-20 sm:pt-16 md:pt-16 lg:pt-20 pb-4 sm:pb-6 md:pb-8 lg:pb-10 pl-8 sm:px-6 md:px-12 rounded-b-3xl relative z-10 ${section.titleBgColor}`}
+            className={`  w-full lg:pl-20 pt-20 sm:pt-16 md:pt-16 lg:pt-20 pb-4 sm:pb-6 md:pb-8 lg:pb-10 pl-4 pr-4 sm:px-6 md:px-12 rounded-b-3xl relative z-10 ${section.titleBgColor}`}
           >
             <h1
               className={`uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter ${section.titleTextColor}`}
