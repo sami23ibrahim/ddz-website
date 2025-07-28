@@ -137,14 +137,14 @@ const Navbar = () => {
 									{t("navbar.jobs")}
 								</Link> */}
 								<a
-									href="tel:0301234567"
+									href="tel:030 69005528"
 									className={`${
 										isScrolled
 											? "text-gray-600 hover:text-gray-800"
 											: "text-white hover:text-gray-200"
 									} text-base transition-colors duration-200 focus:outline-none no-underline`}
 								>
-									(030) 123 45 67
+									(030) 69005528
 								</a>
 								<a
 									href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral"

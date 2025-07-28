@@ -48,7 +48,7 @@ const NewServices = () => {
             key: 'root_canal_therapy',
             title: t('new_services.services.root_canal_therapy.title'),
             subtitle: t('new_services.services.root_canal_therapy.subtitle'),
-            img: '/Assets/ROOT-CANAl.jpg',
+            img: '/Assets/digital2.png',
         },
         {
             key: 'dental_prosthetics',
@@ -249,9 +249,14 @@ const NewServices = () => {
                     </div>
                 </div>
                 <div className="text-left mt-24 ml-[16.67%]">
-                    <button className="bg-gray-400 hover:bg-[#422f40] text-[#422f40] hover:text-gray-400 font-bold text-lg py-3 px-10 rounded-full transition-colors duration-300">
+                    <a 
+                        href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-gray-400 hover:bg-[#422f40] text-[#422f40] hover:text-gray-400 font-bold text-lg py-3 px-10 rounded-full transition-colors duration-300 inline-block"
+                    >
                         {t('new_services.book_appointment')}
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
