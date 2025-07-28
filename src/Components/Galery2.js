@@ -94,7 +94,7 @@ const Galery2 = () => {
   <p
     className="
        text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed text-left ml-8 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed text-left ml-8 mr-8 md:ml-16 lg:ml-16
    mb-4 md:mb-4 lg:mb-8
     "
   >
@@ -103,7 +103,7 @@ const Galery2 = () => {
   <p
     className="
      max-w-6xl  text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed text-left ml-8 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed text-left ml-8 mr-8 md:ml-16 lg:ml-16
    mb-2 md:mb-4 lg:mb-8
     "
   >
@@ -112,7 +112,7 @@ const Galery2 = () => {
   <p
     className="
       max-w-6xl text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed text-left ml-8 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed text-left ml-8 mr-8 md:ml-16 lg:ml-16
    mb-2 md:mb-4 lg:mb-8
     "
   >
