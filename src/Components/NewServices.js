@@ -8,7 +8,7 @@ import FuzzyText from './FuzzyText';
 import VariableProximity from './VariableProximity';
 
 const NewServices = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const location = useLocation();
     const [activeService, setActiveService] = useState(null);
     const [stickyTop, setStickyTop] = useState(0);
@@ -139,7 +139,8 @@ const NewServices = () => {
                 </div> */}
 
                 
-                <div className="uppercase flex justify-start mb-2  ">
+                <div className={`uppercase flex mb-2 ${i18n.language === 'ar' ? 'justify-end' : 'justify-start'}`}>
+                    <div className={i18n.language === 'ar' ? 'inline-block ml-auto mr-8 md:mr-16 lg:mr-16' : 'inline-block'}>
                     <FuzzyText 
                   
                         baseIntensity={0.0} 
@@ -148,12 +149,14 @@ const NewServices = () => {
                         color="#422f40"
                         fontSize="clamp(3rem, 7vw, 8rem)"
                         fontWeight={800}
+                        fontFamily={i18n.language === 'ar' ? 'RH-Zak, sans-serif' : 'inherit'}
                     >
                         {t('new_services.title')}
                     </FuzzyText>
+                    </div>
                 </div>
-                <div className="flex justify-start mb-20 ml-20 ">
-                    <p className="text-lg text-gray-600 leading-relaxed max-w-4xl text-center">
+                <div className={`flex mb-20 ${i18n.language === 'ar' ? 'justify-end' : 'justify-start'} ${i18n.language === 'ar' ? 'mr-8 md:mr-16 lg:mr-16' : 'ml-20'}`}>
+                    <p className={`text-lg text-gray-600 leading-relaxed max-w-4xl ${i18n.language === 'ar' ? 'text-right' : 'text-center'}`} style={i18n.language === 'ar' ? { direction: 'rtl' } : {}}>
                         {t('new_services.description')}
                     </p>
                 </div>

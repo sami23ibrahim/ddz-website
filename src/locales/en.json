@@ -297,16 +297,12 @@
       }
     },
     "specialties": {
-      "anxiety_patients": "Angstpatienten",
-      "endodontics": "Endodontie",
-      "implantology": "Implantologie",
-      "pediatric_dentistry": "Kinder- und Jugendmedizin",
-      "veneers": "Veneers",
-      "dentures": "Zahnersatz",
-      "gingivitis": "Zahnfleischentzündung",
-      "dental_fractures": "Zahnfrakturen",
-      "dental_restoration": "Zahnsanierung",
-      "aesthetic_dentistry": "Ästhetische Zahnmedizin"
+      "fabian": "Fabian treats patients in the areas of surgery, implantology, prosthetics, and anterior tooth aesthetics. His treatment also extends to those with anxiety. Fabian is available for consultations in various languages to ensure holistic care for his patients.",
+      "fabian_preview": "Fabian specializes in surgery, implantology, prosthetics...",
+      "hakam": "Hakam has expertise in various areas of dentistry. His specialization includes microscopic root canal treatment, dentures (prosthetics), and currently cosmetic dentistry for veneers and anterior tooth aesthetics. Hakam offers compassionate care, especially for anxious patients.",
+      "hakam_preview": "Hakam has expertise in various areas of dentistry...",
+      "prabh": "Prabh specializes in surgery, implantology, prosthetics, and anterior dental aesthetics. With his patient-centered approach, he also dedicates himself to treating anxious patients. Prabjit offers consultations in various languages to ensure comprehensive care for his patients.",
+      "prabh_preview": "Prabh specializes in surgery, implantology, prosthetics..."
     }
   },
   "home_video": {
@@ -443,7 +439,7 @@
             "Digital workflow from diagnosis to final <a href='/service/dental_prosthetics' class='underline hover:opacity-75'>crown</a>",
             "<a href='/service/dental_anxiety' class='underline hover:opacity-75'>Anxiety-aware care</a> with a multilingual team",
             "<a href='/service/implantology' class='underline hover:opacity-75'>Metal-free ceramic</a> restorations milled on-site",
-            "(first one) specialized Dentists for Microscopic Rootcanaltreatment"
+            "Specialized Dentists for Microscopic Rootcanaltreatment"
           ]
         },
         {
@@ -502,6 +498,10 @@
         {
           "type": "paragraph",
           "content": "Wondering whether you need a surgical extraction or if a <a href='/service/root_canal_therapy' class='underline hover:opacity-75'>microscope root-canal therapy</a> could save the tooth? Click through the links or book a consultation at our Kottbusser Tor clinic to explore every option in one visit."
+        },
+        {
+          "type": "booking",
+          "content": "Book an Appointment"
         }
       ]
     },
@@ -531,6 +531,10 @@
         {
           "type": "paragraph",
           "content": "Coming soon: we're adding Invisalign Go® for quick cosmetic straightening of the front teeth. A perfect add-on to Digital Smile Design cases. Keep an eye on our news page for launch updates, or book a consultation today to see if full Invisalign aligners are the right next move for your smile."
+        },
+        {
+          "type": "booking",
+          "content": "Book an Appointment"
         }
       ]
     },

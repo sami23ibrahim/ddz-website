@@ -12,6 +12,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Discover truly anxiety-free dental treatment in Berlin-Kreuzberg, where your comfort comes first."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -41,6 +45,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Looking for an aesthetic dentist in Berlin-Kreuzberg who designs smiles you can actually live with? Book a consultation at our clinic and see your future smile before treatment even begins."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -74,6 +82,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Book a consultation at Die Drei Zahnärzte, Kottbusser Tor, and discover a tooth replacement that feels like it's always been yours."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -112,6 +124,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Book a consultation at <em>Die Drei zahnärzte</em>, Kottbusser Tor, and keep your smile whole without the root-canal horror stories."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -141,6 +157,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Want to know how crowns differ from veneers? Curious about combining a bridge with teeth whitening or Invisalign? Tap the links to explore each treatment in detail, or book a consultation to see which option is best for you."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -165,6 +185,10 @@ export const serviceContent = {
             {
                 type: 'paragraph',
                 content: "Wondering whether you need a surgical extraction or if a <a href='/service/root_canal_therapy' class='underline hover:opacity-75'>microscope root-canal therapy</a> could save the tooth? Click through the links or book a consultation at our Kottbusser Tor clinic to explore every option in one visit."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -194,6 +218,10 @@ export const serviceContent = {
             {
                 type: 'paragraph',
                 content: "Coming soon: we're adding Invisalign Go® for quick cosmetic straightening of the front teeth. A perfect add-on to Digital Smile Design cases. Keep an eye on our news page for launch updates, or book a consultation today to see if full Invisalign aligners are the right next move for your smile."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -224,6 +252,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Looking for a <strong>kids' dentist in Berlin-Kreuzberg</strong> who teaches as much as they treat? We're here from a child's first tooth through every stage that follows."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -244,6 +276,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Looking for professional teeth cleaning in Berlin-Kreuzberg that's as informative as it is effective? Book a prophylaxis visit at unsere Praxis am Kottbusser Tor and leave knowing exactly how to protect your teeth until we see you next."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -272,6 +308,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Ready for professional teeth whitening in Berlin-Kreuzberg? Book your cleaning-plus-whitening combo at our Kottbusser Tor clinic and see how a subtle lift can brighten your whole face."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     },
@@ -300,6 +340,10 @@ export const serviceContent = {
             {
                 type: 'cta',
                 content: "Looking for periodontitis treatment in Berlin-Kreuzberg that's thorough yet comfortable? Book a gum assessment at our Kottbusser Tor clinic and give your smile the solid foundation it deserves."
+            },
+            {
+                type: 'booking',
+                content: "Book an Appointment"
             }
         ]
     }

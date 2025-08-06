@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import FuzzyText from './FuzzyText';
 
 const Team = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [hoveredCard, setHoveredCard] = useState(null);
 
   const teamMembers = [
@@ -21,18 +21,11 @@ const Team = () => {
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
-        { name: t('team.specialties.endodontics'), color: "#422f4099" },
-        { name: t('team.specialties.implantology'), color: "#422f4099" },
-        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
-        { name: t('team.specialties.veneers'), color: "#422f4099" },
-        { name: t('team.specialties.dentures'), color: "#422f4099" },
-        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
-        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
-        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
-        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
+        { name: t('team.specialties.fabian_preview'), color: "#422f4099", isPreview: true }
       ],
-      expandedSpecialties: []
+      expandedSpecialties: [
+        { name: t('team.specialties.fabian'), color: "#422f4099", isDescription: true }
+      ]
     },
     {
       id: 2,
@@ -47,18 +40,11 @@ const Team = () => {
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
-        { name: t('team.specialties.endodontics'), color: "#422f4099" },
-        { name: t('team.specialties.implantology'), color: "#422f4099" },
-        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
-        { name: t('team.specialties.veneers'), color: "#422f4099" },
-        { name: t('team.specialties.dentures'), color: "#422f4099" },
-        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
-        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
-        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
-        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
+        { name: t('team.specialties.hakam_preview'), color: "#422f4099", isPreview: true }
       ],
-      expandedSpecialties: []
+      expandedSpecialties: [
+        { name: t('team.specialties.hakam'), color: "#422f4099", isDescription: true }
+      ]
     },
     {
       id: 3,
@@ -72,18 +58,11 @@ const Team = () => {
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
-        { name: t('team.specialties.endodontics'), color: "#422f4099" },
-        { name: t('team.specialties.implantology'), color: "#422f4099" },
-        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
-        { name: t('team.specialties.veneers'), color: "#422f4099" },
-        { name: t('team.specialties.dentures'), color: "#422f4099" },
-        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
-        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
-        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
-        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
+        { name: t('team.specialties.prabh_preview'), color: "#422f4099", isPreview: true }
       ],
-      expandedSpecialties: []
+      expandedSpecialties: [
+        { name: t('team.specialties.prabh'), color: "#422f4099", isDescription: true }
+      ]
     },
     {
       id: 4,
@@ -119,23 +98,28 @@ const Team = () => {
 
   
 <div className="mb-4 md:mb-8">
-  <div className="flex justify-start mb-2 md:mb-4">
+  <div className={`flex mb-2 md:mb-4 ${i18n.language === 'ar' ? 'justify-end' : 'justify-start'} mr-8 md:mr-16 lg:mr-16`}>
+  <div className={i18n.language === 'ar' ? 'inline-block ml-auto' : 'inline-block'}>
   <FuzzyText
   baseIntensity={0.0}
   hoverIntensity={0.2}
   enableHover={true}
   color="#422f40"
   fontWeight={900}
+  fontFamily={i18n.language === 'ar' ? 'RH-Zak, sans-serif' : 'inherit'}
 >
   {t('team.title').toUpperCase()}
 </FuzzyText>
   </div>
+  </div>
   <p
-    className="
+    className={`
        text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed text-left ml-12 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed ml-12 md:ml-16 lg:ml-16
    mb-2 md:mb-4 lg:mb-8
-    "
+      ${i18n.language === 'ar' ? 'text-right mr-8 md:mr-16 lg:mr-16' : 'text-left'}
+    `}
+    style={i18n.language === 'ar' ? { direction: 'rtl' } : {}}
   >
     {t('team.subtitle')}
   </p>
@@ -184,31 +168,34 @@ const Team = () => {
                   </div>
                 </div>
 
-                {/* Specialties */}
+                                {/* Specialties */}
                 <div className="mb-2 sm:mb-3">
                   <div className="flex flex-wrap gap-1 sm:gap-1.5">
-                    {member.baseSpecialties.slice(0, 2).map((specialty, index) => (
-                      <span
-                        key={`base-${index}`}
-                        className="px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-full text-xs font-medium text-white"
-                        style={{ backgroundColor: specialty.color }}
-                      >
-                        {specialty.name}
-                      </span>
-                    ))}
-                    
-                    {hoveredCard === member.id && [
-                      ...member.baseSpecialties.slice(2),
-                      ...member.expandedSpecialties
-                    ].map((specialty, index) => (
-                      <span
-                        key={`expanded-${index}`}
-                        className="px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-full text-xs font-medium text-white animate-fadeIn"
-                        style={{ backgroundColor: specialty.color }}
-                      >
-                        {specialty.name}
-                      </span>
-                    ))}
+                    {!hoveredCard || hoveredCard !== member.id ? (
+                      // Show preview text when not hovering
+                      member.baseSpecialties.slice(0, 2).map((specialty, index) => (
+                        <span
+                          key={`base-${index}`}
+                          className={`text-xs sm:text-sm text-gray-700 leading-relaxed ${
+                            specialty.isPreview ? 'text-left' : ''
+                          }`}
+                        >
+                          {specialty.name}
+                        </span>
+                      ))
+                    ) : (
+                      // Show full description when hovering
+                      member.expandedSpecialties.map((specialty, index) => (
+                        <span
+                          key={`expanded-${index}`}
+                          className={`text-xs sm:text-sm text-gray-700 leading-relaxed animate-fadeIn ${
+                            specialty.isDescription ? 'text-left' : ''
+                          }`}
+                        >
+                          {specialty.name}
+                        </span>
+                      ))
+                    )}
                   </div>
                 </div>
 

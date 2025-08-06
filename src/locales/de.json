@@ -182,57 +182,57 @@
       "dental_anxiety": {
         "title": "ZAHNARZTANGST",
         "subtitle": "Betreuung & Sedierung",
-        "img": "/Assets/tech.jpg"
+        "img": "/Assets/DENTAL ANXIETY.jpg"
       },
       "aesthetic_dentistry": {
         "title": "ÄSTHETISCHE ZAHNMEDIZIN",
         "subtitle": "Digitales Lächeln-Design",
-        "img": "/Assets/pala.jpg"
+        "img": "/Assets/AESTHETIC DENTISTRY.jpg"
       },
       "implantology": {
         "title": "IMPLANTOLOGIE",
         "subtitle": "Titan- & Keramikimplantate",
-        "img": "/Assets/g.webp"
+        "img": "/Assets/IMPLANTOLOGY.jpg"
       },
       "root_canal_therapy": {
-        "title": "WURZELKANALBEHANDLUNG",
+        "title": "Mikroskopische Wurzelkanalbehandlung",
         "subtitle": "Endodontie",
-        "img": "/Assets/g3.png"
+        "img": "/Assets/ROOT CANAL THERAPY.jpg"
       },
       "dental_prosthetics": {
         "title": "ZAHNPROTHETIK",
         "subtitle": "Kronen, Brücken & Inlays",
-        "img": "/Assets/majd.png"
+        "img": "/Assets/DENTAL PROSTHETICS.jpg"
       },
       "oral_surgery": {
         "title": "ORALCHIRURGIE",
         "subtitle": "Extraktionen, Apikoektomien & Weichgewebspflege",
-        "img": "/Assets/fab.png"
+        "img": "/Assets/oral.jpg"
       },
       "orthodontics": {
         "title": "Kieferorthopädie",
         "subtitle": "Invisalign® Clear Aligner",
-        "img": "/Assets/hak.png"
+        "img": "/Assets/Orthodontics Invisalign.jpg"
       },
       "paediatric_dentistry": {
         "title": "Kinderzahnheilkunde",
         "subtitle": "Sanfte Pflege für Kinder",
-        "img": "/Assets/rev.png"
+        "img": "/Assets/Paediatric Dentistry.jpg"
       },
       "professional_cleaning": {
         "title": "Professionelle Zahnreinigung (GBT)",
         "subtitle": "Prophylaxe und Gelenkte Biofilm-Therapie",
-        "img": "/Assets/prab.png"
+        "img": "/Assets/Professional Cleaning.jpg"
       },
       "bleaching": {
         "title": "Bleichen",
         "subtitle": "Zahnaufhellung",
-        "img": "/Assets/logo-gray.png"
+        "img": "/Assets/Bleaching.jpg"
       },
       "periodontitis_therapy": {
         "title": "Parodontitis-Therapie",
         "subtitle": "Zahnfleischerkrankung",
-        "img": "/Assets/logo2.png"
+        "img": "/Assets/Periodontitis Therapy.jpg"
       }
     }
   },
@@ -264,6 +264,12 @@
       }
     },
     "specialties": {
+      "fabian": "Fabian behandelt Patienten in den Bereichen Chirurgie, Implantologie, Zahnersatz und ästhetische Frontzahnversorgung. Seine Behandlung erstreckt sich auch auf Angstpatienten. Fabian ist für Beratungen in verschiedenen Sprachen verfügbar, um eine ganzheitliche Versorgung seiner Patienten zu gewährleisten.",
+      "fabian_preview": "Fabian ist spezialisiert auf Chirurgie, Implantologie, Zahnersatz...",
+      "hakam": "Hakam hat Expertise in verschiedenen Bereichen der Zahnmedizin. Seine Spezialisierung umfasst mikroskopische Wurzelkanalbehandlung, Zahnersatz (Prothetik) und derzeit kosmetische Zahnmedizin für Veneers und ästhetische Frontzahnversorgung. Hakam bietet mitfühlende Behandlung, besonders für Angstpatienten.",
+      "hakam_preview": "Hakam hat Expertise in verschiedenen Bereichen der Zahnmedizin...",
+      "prabh": "Prabh ist spezialisiert auf Chirurgie, Implantologie, Zahnersatz und ästhetische Frontzahnversorgung. Mit seinem patientenzentrierten Ansatz widmet er sich auch der Behandlung von Angstpatienten. Prabh bietet Beratungen in verschiedenen Sprachen, um eine umfassende Versorgung seiner Patienten zu gewährleisten.",
+      "prabh_preview": "Prabh ist spezialisiert auf Chirurgie, Implantologie, Zahnersatz...",
       "anxiety_patients": "Angstpatienten",
       "endodontics": "Endodontie",
       "implantology": "Implantologie",
@@ -307,15 +313,15 @@
       "sections": [
         {
           "type": "paragraph",
-          "content": "Unser mehrsprachiges Team ist speziell in der <strong>traumasensiblen</strong> Zahnmedizin geschult. Wir erkennen die Anzeichen von Zahnarztangst und schaffen einen ruhigen, urteilsfreien Raum, in dem Sie sich sicher fühlen. Sanftes Licht, schöne Musik, klare Erklärungen und zusätzliche Zeit machen den Besuch reibungslos und schmerzfrei."
+          "content": "Unser mehrsprachiges Team ist speziell in <strong>traumasensibler</strong> Zahnmedizin geschult. Wir erkennen die Zeichen von Zahnarztangst und schaffen einen ruhigen, urteilsfreien Raum, in dem Du Dich sicher fühlen kannst. Sanftes Licht, angenehme Musik, verständliche Erklärungen und genügend Zeit sorgen dafür, dass Dein Besuch entspannt und schmerzfrei verläuft."
         },
         {
           "type": "paragraph",
-          "content": "Benötigen Sie mehr Hilfe beim Entspannen? Wir bieten eine vollständige Palette von <strong>Sedierungsoptionen</strong> an, von Lachgas bis hin zu einer sanften Vollnarkose, sodass selbst schwere Phobien nicht zwischen Ihnen und gesunden Zähnen stehen."
+          "content": "Du brauchst noch mehr Unterstützung beim Entspannen? Wir bieten Dir ein breites Spektrum an <strong>Sedierungsmöglichkeiten</strong> - Lachgas bis zur sanften Vollnarkose, sodass selbst starke Ängste nicht zwischen Dir und gesunden Zähnen stehen."
         },
         {
           "type": "cta",
-          "content": "Entdecken Sie eine wirklich angstfreie Zahnbehandlung in Berlin-Kreuzberg, bei der Ihr Komfort an erster Stelle steht."
+          "content": "Entdecke angstfreie Zahnbehandlungen in Berlin-Kreuzberg dort, wo Dein Wohlbefinden an erster Stelle steht."
         }
       ]
     },
@@ -323,7 +329,28 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Ihr Lächeln ist einzigartig und Ihr Behandlungsplan sollte es auch sein."
+                "content": "Dein Lächeln ist einzigartig und genauso individuell sollte auch dein Behandlungsplan sein."
+            },
+            {
+                "type": "paragraph",
+                "content": "Bei Die Drei Zahnärzte starten wir jede ästhetische Behandlung mit einem <strong>Digital Smile Design</strong>: Hochauflösende Fotos, 3D-Scans und eine genaue Analyse Deines Gesichts zeigen uns schon vor der Behandlung, welche Formen, Farben und Proportionen wirklich zu Dir passen. Ob kleine Veränderungen oder eine komplette Rundumerneuerung - unser Stil bleibt immer natürlich und minimalinvasiv."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Veneers: Ultrafeine Keramikschalen, die Risse, Verfärbungen oder kleine Lücken abdecken - lichtdurchlässig wie echter Zahnschmelz.",
+                    "Kompositfüllungen & Bonding: Zahnfarbene Materialien, von Hand modelliert für unsichtbare Reparaturen.",
+                    "<a href='/service/bleaching' class='underline hover:opacity-75'>Sanftes Bleaching</a>: Schonende Aufhellung, damit Dein Lächeln genau den richtigen Ton trifft.",
+                    "Sparkles: Grillz und Zahnschmuck - für Deinen ganz persönlichen Look."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Unser Ansatz ist ganzheitlich: Schönheit und Funktion gehören für uns zusammen – ohne Kompromisse bei Gesundheit oder Haltbarkeit. Jeder Schritt wird fotografisch dokumentiert, präzise vermessen und qualitätsgeprüft. So entsteht ein Ergebnis, das zu Deinem Gesicht, Deinem Charakter und Deinem Alltag passt."
+            },
+            {
+                "type": "cta",
+                "content": "Du suchst eine ästhetische Zahnärztin oder einen Zahnarzt in Berlin-Kreuzberg, die/der ein Lächeln gestaltet, das wirklich zu Dir passt? Dann buch Dir jetzt ein Beratungsgespräch – und sieh Dein neues Lächeln schon vor Beginn der Behandlung."
             }
         ]
     },
@@ -331,15 +358,74 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Fehlende Zähne sollten nicht fehlendes Selbstvertrauen bedeuten."
+                "content": "Fehlende Zähne bedeuten nicht, dass Du auf Selbstbewusstsein verzichten musst."
+            },
+            {
+                "type": "paragraph",
+                "content": "In unserer modernen Praxis beginnt die Implantatbehandlung mit einem entspannten Gespräch, einem schnellen <strong>3D-Scan</strong>, einem klaren Plan – und ohne böse Überraschungen. Egal ob bewährtes Titan oder metallfreie Keramik: Jedes wurzelförmige Implantat setzen wir mit computergestützter Präzision, sodass Nerven und Nachbarzähne geschützt bleiben."
+            },
+            {
+                "type": "paragraph",
+                "content": "Für eine schnellere Heilung setzen wir auf <strong>PRGF® (Plasma Rich in Growth Factors)</strong> – ein hochkonzentrierter Anteil aus Deinem eigenen Blut. Stell es Dir wie ein natürlicher Heil-Booster vor: weniger Schwellung, bessere Knochenintegration, geringere Beschwerden nach dem Eingriff. Sobald das Implantat fest im Kiefer sitzt, versorgen wir es mit einer vollkeramischen Krone oder Brücke, die perfekt zu Deinem Biss und Hautton passt."
+            },
+            {
+                "type": "heading",
+                "content": "Warum Implantate bei uns?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Erfahrung mit komplexen Fällen – vom Einzelzahn bis zur Komplettversorgung",
+                    "Metallfreie Keramikimplantate für maximale Biokompatibilität",
+                    "<a href='/service/oral_surgery' class='underline hover:opacity-75'>Oralchirurgie</a> und <a href='/service/dental_anxiety' class='underline hover:opacity-75'>Sedierung</a> direkt in der Praxis – für eine entspannte Behandlung ohne Umwege.",
+                    "Transparente Kosten, Ratenzahlung möglich, mehrsprachiges Team"
+                ]
+            },
+            {
+                "type": "cta",
+                "content": "Vereinbare jetzt Deine Beratung bei Die Drei Zahnärzte am Kottbusser Tor – und entdecke Zahnersatz, der sich anfühlt, als wäre er schon immer da gewesen."
             }
         ]
     },
     "root_canal_therapy": {
         "sections": [
             {
+                "type": "heading",
+                "content": "Mikroskopische Wurzelkanalbehandlung"
+            },
+            {
                 "type": "paragraph",
-                "content": "Ein Wurzelkanal gelingt oder scheitert an der Präzision."
+                "content": "Der Erfolg einer Wurzelbehandlung hängt von absoluter Präzision ab. Deshalb arbeiten wir unter einem <strong>hochauflösenden Dentalmikroskop</strong>, das selbst feinste Kanäle bis zu 25-fach vergrößert. So können wir versteckte Seitenäste erkennen, jede Spur von Infektion entfernen und den Wurzelkanal exakt formen ganz ohne gesundes Zahngewebe unnötig zu opfern."
+            },
+            {
+                "type": "heading",
+                "content": "So läuft Dein Termin ab:"
+            },
+            {
+                "type": "paragraph",
+                "content": "1. 3D-Bildgebung zeigt die genaue Tiefe und Richtung der Wurzelkanäle noch vor Behandlungsbeginn.<br/>2. Mikroskop-geführte Reinigung entfernt Bakterien und Biofilm selbst aus Kanälen, die dünner sind als ein Haar.<br/>3. Warme vertikale Füllung versiegelt die Kanäle dreidimensional für maximalen Schutz vor einer Reinfektion.<br/>4. Digitaler Scan und Kronenfertigung erfolgen mit einem <strong>Intraoralscanner</strong> ganz ohne lästige Abdruckmasse. So können wir während Deiner Entspannung passgenaue <a href='/service/dental_prosthetics' class='underline hover:opacity-75'>Keramik-Onlays</a> oder <a href='/service/dental_prosthetics' class='underline hover:opacity-75'>Kronen</a> designen."
+            },
+            {
+                "type": "paragraph",
+                "content": "Für nervöse Patient:innen bieten wir sanfte <a href='/service/dental_anxiety' class='underline hover:opacity-75'>Sedierung</a> an. Du bleibst entspannt, wir arbeiten konzentriert und präzise. Das Ergebnis: eine schmerzfreie Behandlung in nur einem Termin, die Deinen natürlichen Zahn erhält und eine <a href='/service/oral_surgery' class='underline hover:opacity-75'>Extraktion</a> überflüssig macht."
+            },
+            {
+                "type": "paragraph",
+                "content": "Warum zu uns für Deine Wurzelbehandlung?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Mikroskopische Präzision für langfristigen Erfolg",
+                    "Digitaler Workflow vom ersten Scan bis zur finalen <a href='/service/dental_prosthetics' class='underline hover:opacity-75'>Krone</a>",
+                    "<a href='/service/dental_anxiety' class='underline hover:opacity-75'>Angstbewusste Behandlung</a> durch ein erfahrenes, mehrsprachiges Team",
+                    "<a href='/service/implantology' class='underline hover:opacity-75'>Metallfreie Keramikrestaurationen</a> direkt bei uns vor Ort gefertigt",
+                    "Spezialisierte Ärzte für mikroskopische Wurzelkanalbehandlungen"
+                ]
+            },
+            {
+                "type": "cta",
+                "content": "Buche jetzt Deine Beratung bei Die Drei Zahnärzte am Kottbusser Tor und erlebe Wurzelbehandlungen ohne Horrorgeschichten"
             }
         ]
     },
@@ -347,7 +433,28 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Fehlende Struktur, abgenutzter Zahnschmelz oder Risse, die nicht von selbst heilen? Manchmal braucht ein Zahn mehr als eine Füllung."
+                "content": "Fehlende Substanz, abgenutzter Zahnschmelz oder Risse die nicht von selbst heilen? Manchmal reicht eine Füllung einfach nicht aus. Unser <strong>Zahntechnikstudio</strong> vereint Stärke und Ästhetik mit Zahnersatz der aussieht und sich anfühlt wie echte Zähne."
+            },
+            {
+                "type": "paragraph",
+                "content": "Wir starten mit einem schnellen <strong>Intraoralscan</strong> (kein unangenehmer Abdruck nötig) und designen Deine Versorgung digital. Je nach Bedarf kann das eine vollkeramische <strong>Krone</strong> für einen einzelnen Zahn sein, eine <strong>Brücke</strong>, um eine Lücke zu schließen, oder ein präzise gefertigtes <strong>Inlay</strong> oder <strong>Onlay</strong>, das sich passgenau einfügt wie ein Puzzlestück. Alle Materialien sind biokompatibel, metallfrei und farblich exakt auf Dein Lächeln abgestimmt."
+            },
+            {
+                "type": "heading",
+                "content": "Vorteile auf einen Blick:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "<a href='/service/implantology' class='underline hover:opacity-75'>Metallfreie Materialien</a> wie Zirkonoxid oder Lithium-Disilikat mit natürlicher Transparenz",
+                    "<a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>Digitales Design</a> für präzise Ergebnisse vom Scan bis zum letzten Schliff",
+                    "Perfekte Kombinierbarkeit mit Implantatkronen für Einzelzahnversorgungen",
+                    "Auf Wunsch kombinierbar mit <a href='/service/bleaching' class='underline hover:opacity-75'>Bleaching</a> oder <a href='/service/orthodontics' class='underline hover:opacity-75'>Invisalign®</a> – damit Farbe und Ausrichtung langfristig zu deinem Wunschlächeln passen"
+                ]
+            },
+            {
+                "type": "cta",
+                "content": "Du möchtest wissen, was der Unterschied zwischen Veneers und Kronen ist? Oder ob sich eine Brücke mit Zahnaufhellung oder Schienenbehandlung kombinieren lässt? Klick Dich durch die Behandlungsinfos oder buch direkt einen Termin – wir zeigen Dir die passende Lösung."
             }
         ]
     },
@@ -355,7 +462,23 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Von einer einfachen Weisheitszahnentfernung bis hin zu einer präzisen Apikoektomie (WSR) ist die Oralchirurgie bei den drei zahnärzten so schonend wie möglich gestaltet."
+                "content": "Von der unkomplizierten Weisheitszahnentfernung bis zur präzisen <strong>Wurzelspitzenresektion</strong> (WSR) – jede chirurgische Behandlung bei Die Drei Zahnärzte ist darauf ausgerichtet, möglichst schonend zu sein. Mithilfe hochauflösender 3D-Bildgebung und minimalinvasiver Techniken entfernen wir nur das, was wirklich nötig ist – gesundes Gewebe bleibt erhalten."
+            },
+            {
+                "type": "heading",
+                "content": "Was Dich erwartet:"
+            },
+            {
+                "type": "paragraph",
+                "content": "1. <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>Digitale Planung</a>: 3D-Röntgen zeigt Nervenverlauf, Knochendichte und Wurzelformen im Voraus.<br/>2. Sanfte Lokalanästhesie sorgt dafür, dass Du während des Eingriffs entspannt bleibst.<br/>3. <strong>Heilungs-Boost mit PRGF®</strong>: Eine <strong>körpereigene Plasma-Membran</strong> (das wir aus deinem eigenen Blut gewinnen) fördert die Knochenregeneration, reduziert Schwellung und beschleunigt die Heilung.<br/>4. Feinste Nähte für eine sichere Wundheilung mit minimalem Risiko."
+            },
+            {
+                "type": "paragraph",
+                "content": "Wir führen auch ästhetische Weichgewebeeingriffe durch – etwa Zahnfleischkorrekturen (Gingivektomien) oder Recontouring – oft in Kombination mit <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>ästhetischen Versorgungen</a> oder <a href='/service/implantology' class='underline hover:opacity-75'>Implantaten</a>, um Dein neues Lächeln zu vollenden."
+            },
+            {
+                "type": "cta",
+                "content": "Unsicher, ob Du eine chirurgische Entfernung brauchst – oder ob eine <a href='/service/root_canal_therapy' class='underline hover:opacity-75'>mikroskopische Wurzelbehandlung</a> den Zahn retten kann? Buche einen Beratungstermin und wir klären das direkt vor Ort in einem Besuch."
             }
         ]
     },
@@ -363,15 +486,59 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Wenn Sie von geraderen Zähnen träumen, aber die Vorstellung von Metallspangen hassen, ist Invisalign® die diskrete Lösung, die wir jetzt anbieten."
+                "content": "Du wünschst Dir gerade Zähne, aber hast keine Lust auf festen Spangen? Invisalign® ist unsere diskrete Lösung. Nach einem schnellen <strong>Intraoralscan</strong> erstellen wir ein digitales 3D-Modell Deines Bisses und lassen eine Serie transparenter, herausnehmbarer Aligner fertigen, die Deine Zähne Schritt für Schritt in die gewünschte Position bringen. Alle 1–2 Wochen wechselst Du zur nächsten Schiene, kommst zu kurzen Check-ups – und siehst die Fortschritte ganz ohne Drähte oder Einschränkungen beim Essen."
+            },
+            {
+                "type": "heading",
+                "content": "Warum Invisalign bei uns?"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Fast unsichtbar – fällt im Alltag kaum auf",
+                    "Herausnehmbar – essen, trinken & Zähneputzen wie gewohnt",
+                    "Vorhersehbar – die Software zeigt das Endergebnis schon vor dem Start",
+                    "Komfortabel – keine störenden Kanten, kein Notfallbesuch wegen Drahtbrüchen"
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Unser mehrsprachiges Team begleitet Dich durch jede Phase, passt Zeitpläne an und kann Invisalign auf Wunsch mit Bleaching oder Veneers kombinieren – für ein rundum harmonisches Lächeln."
+            },
+            {
+                "type": "cta",
+                "content": "Demnächst bei uns: Invisalign Go® – die schnelle Variante für leichte Frontzahnkorrekturen. Ideal als Zusatz zu Digital Smile Design. Schau auf unsere Newsseite für Updates – oder buch direkt Deine Beratung!"
             }
         ]
     },
     "paediatric_dentistry": {
         "sections": [
+            
             {
                 "type": "paragraph",
-                "content": "Eine gute Zahngesundheit beginnt lange vor dem Erscheinen des ersten bleibenden Zahns."
+                "content": "Gute Zahngesundheit beginnt lange bevor der erste bleibende Zahn da ist. Unsere Aufgabe ist es, Kinder und Eltern Schritt für Schritt zu begleiten – mit Geduld, altersgerechter Aufklärung und viel Fingerspitzengefühl."
+            },
+            {
+                "type": "heading",
+                "content": "In unserer Praxis:"
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Machen wir <a href='/service/oral_surgery' class='underline hover:opacity-75'>Fissuren Versiegelungen</a> an bleibende Zähne damit sich keine Bakterien und Essensreste in den tiefen Rillen festsetzen",
+                    "Erkennen und behandeln wir beginnende Karies mit minimalinvasiven Füllungen und Tipps für die richtige Zahnpflege daheim",
+                    "Führen wir bei Bedarf kieferorthopädische Kontrollen im Kindesalter durch um Fehlstellungen frühzeitig zu erkennen solange der Kiefer noch formbar ist",
+                    "Bieten wir sanfte kindgerechte Prophylaxe an – die Kinder lernen wie richtiges Zähneputzen funktioniert, können Plaque-Färbetabletten ausprobieren und gehen mit einem sauberen glänzenden Lächeln nach Hause",
+                    "Setzen wir bei Bedarf Lachgas oder leichte Sedierung ein, wenn Ängste oder längere Sitzungen ein entspanntes Arbeiten erschweren"
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Zahnmedizin soll für Kinder etwas Vertrautes sein, etwas das sie verstehen und nicht fürchten. Eltern dürfen gern neben dem Behandlungsstuhl sitzen und Fragen sind ausdrücklich erwünscht. Jeder kleine Fortschritt wird gefeiert - zum Beispiel wenn das kreisende Zähneputzen klappt gibt's ein High Five."
+            },
+            {
+                "type": "cta",
+                "content": "Du suchst eine <strong>Kinderzahnarztpraxis in Berlin Kreuzberg</strong> die nicht nur behandeln, sondern auch spielerisch erklären? Wir begleiten dein Kind vom ersten Zahn an durch alle weiteren Entwicklungsphasen."
             }
         ]
     },
@@ -379,7 +546,26 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Plaque und Biofilm bilden sich auch bei guter Mundhygiene. Unsere Antwort ist die Guided Biofilm Therapy (GBT): ein achtstufiges Protokoll, das Ablagerungen sanft und gründlich entfernt und Ihnen beibringt, wie Sie die Bildung neuer Ablagerungen verhindern können."
+                "content": "Auch bei guter Mundhygiene bilden sich Zahnbeläge und Biofilm. Unsere Antwort: <strong>Guided Biofilm Therapy (GBT)</strong>: ein 8-Schritte-Protokoll, das sanft, gründlich und nachhaltig reinigt und gleichzeitig zeigt, wie Du neue Beläge langfristig vermeidest."
+            },
+            {
+                "type": "list",
+                "items": [
+                    "Anfärben – Ein harmloser Farbstoff macht versteckte Beläge sichtbar.",
+                    "Individuelle Beratung – Wir zeigen, wo deine Zahnbürste nicht hinkommt, und geben konkrete Tipps für kleine Gewohnheitsänderungen",
+                    "Air-Polishing – Ein feines Erythritol-Pulver mit warmem Wasser entfernt weiche Beläge, ohne Zahnschmelz oder Implantate zu beschädigen",
+                    "Ultraschall-Scaling – Verhärteter Zahnstein wird leise und zahnschonend entfernt.",
+                    "Als Abschluss Check & Politur – Wir prüfen, ob alles sauber ist, und glätten die Zähne mit einer sanften Paste",
+                    "Fluorid oder Hydroxylapatit – Stärkt den Schmelz und senkt die Empfindlichkeit."
+                ]
+            },
+            {
+                "type": "paragraph",
+                "content": "Die ganze Sitzung ist schmerzfrei, dauert meist weniger als eine Stunde und ist sicher bei Kronen, <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>Veneers</a> und Spangen. Regelmäßige GBT-Termine senken das Risiko für Karies, Zahnfleischentzündungen und Implantatverlust – und halten dein Lächeln natürlich heller, ganz ohne Bleichmittel."
+            },
+            {
+                "type": "cta",
+                "content": "Du suchst eine professionelle Zahnreinigung in Berlin-Kreuzberg, die genauso aufklärt wie sie wirkt? Dann buch dir einen Prophylaxe-Termin bei uns am Kottbusser Tor – und geh mit dem Wissen nach Hause, wie du deine Zähne bis zum nächsten Besuch optimal schützt."
             }
         ]
     },
@@ -387,7 +573,27 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Ein weißes Lächeln sieht frisch aus, aber nur, wenn der Farbton zu Ihrem Teint und dem Rest Ihrer Zähne passt."
+                "content": "Ein weißes Lächeln wirkt frisch – aber nur dann, wenn der Farbton zu dir und deinen restlichen Zähnen passt. Bei uns beginnt jede Zahnaufhellung mit einer professionellen Reinigung (<strong>Geführte Biofilmentfernung</strong>). Wenn Zahnbelag zuerst entfernt wird, kann das Bleaching-Gel gleichmäßig bis zum Zahnschmelz vordringen und hält das Ergebnis stabil."
+            },
+            {
+                "type": "heading",
+                "content": "Unser 4-Schritte-Plan:"
+            },
+            {
+                "type": "paragraph",
+                "content": "1. <strong>Reinigung & Check</strong> – Nach der GBT prüfen wir, ob Zähne, Füllungen & Veneers bleichfähig sind.<br/>2. <strong>Farbabgleich mit Foto</strong> – Gemeinsam wählen wir den Farbton, der natürlich zu Dir passt.<br/>3. <strong>Schonendes In-Office-Gel</strong> – PH-neutrales Gel, aufgetragen in 2–3 kurzen Zyklen – ohne Hitze, mit minimaler Empfindlichkeit.<br/>4. <strong>Farbversiegelung & Home-Bleaching</strong> – Remineralisierungsspülung für längeren Halt, auf Wunsch mit Schienen für spätere Auffrischung."
+            },
+            {
+                "type": "paragraph",
+                "content": "Die meisten Lächeln werden 4–8 Nuancen heller – frisch, harmonisch, nie künstlich. Und weil das Bleaching von Zahnärzt:innen durchgeführt wird, gibt's keine Risiken wie in Kosmetikstudios: keine verbrannten Schleimhäute, keine Flecken, keine Überraschungen."
+            },
+            {
+                "type": "paragraph",
+                "content": "Planst du <a href='/service/aesthetic_dentistry' class='underline hover:opacity-75'>Veneers</a> oder eine <a href='/service/invisalign' class='underline hover:opacity-75'>Invisalign ®</a> Behandlung? Ein vorheriges Bleaching sorgt dafür, dass neue Keramiken und <a href='/service/invisalign' class='underline hover:opacity-75'>Aufsätze</a> sich nahtlos einfügen."
+            },
+            {
+                "type": "cta",
+                "content": "Bereit für professionelles Zähnebleaching in Berlin Kreuzberg? Buche deine Kombi aus Zahnreinigung und Bleaching in unserer Praxis am Kottbusser Tor und erlebe wie ein dezentes Plus an Helligkeit dein ganzes Gesicht zum Strahlen bringt."
             }
         ]
     },
@@ -395,7 +601,23 @@
         "sections": [
             {
                 "type": "paragraph",
-                "content": "Bluten beim Zähneputzen, anhaltender Mundgeruch, Zähne, die sich etwas locker anfühlen?"
+                "content": "Blut beim Zähneputzen, Mundgeruch oder locker wirkende Zähne? Das können Anzeichen für Parodontitis sein (fortgeschrittene Zahnfleischerkrankung). Unbehandelt kann sie nicht nur Zähne, sondern auch deine allgemeine Gesundheit beeinträchtigen. Bei Die Drei Zahnärzte setzen auf moderne Diagnostik und sanfte, aber wirksame Therapien, um die Entzündung zu stoppen und den Zahnhalteapparat zu stabilisieren."
+            },
+            {
+                "type": "heading",
+                "content": "Unser Zahnfleisch-Protokoll:"
+            },
+            {
+                "type": "paragraph",
+                "content": "1. Taschenmessung & 3D-Bildgebung – Wir messen die Zahnfleischtiefe und scannen den Knochen um versteckte Entzündungen aufzuspüren.<br/>2. <a href='/service/professional_cleaning' class='underline hover:opacity-75'>Geführte Biofilmentfernung</a> – Mit Air-Polishing wird der weiche Biofilm entfernt der schädlichen Bakterien als Nährboden dient.<br/>3. Tiefenreinigung & Wurzelglättung – Mit Ultraschallspitzen entfernen wir hartnäckigen Zahnstein unter dem Zahnfleischrand, danach werden die Wurzeloberflächen manuell geglättet, damit sich das Gewebe wieder anlagern kann.<br/>4. Gezielte Spülung – Antibakterielle Lösungen wirken direkt in den Zahnfleischtaschen.<br/>5. Individuelle Pflegeanleitung – Wir zeigen dir genau, welche Hilfsmittel du brauchst – und wie oft du zur Kontrolle kommen solltest."
+            },
+            {
+                "type": "paragraph",
+                "content": "Wenn die Zahnfleischtaschen tief bleiben kann eine <strong><a href='/service/periodontitis_therapy' class='underline hover:opacity-75'>regenerative Behandlung</a></strong> helfen - Zum Beispiel mit kleinen Knochenaufbauten oder Schmelzmatrixproteinen um verlorene Strukturen wieder aufzubauen. Regelmäßige <a href='/service/professional_cleaning' class='underline hover:opacity-75'>professionelle Zahnreinigungen</a> und bei Bedarf eine kurze Antibiotikatherapie halten die Bakterien unter Kontrolle."
+            },
+            {
+                "type": "cta",
+                "content": "Du suchst eine gründliche und zugleich angenehme Behandlung bei Parodontitis in Berlin Kreuzberg? Vereinbare einen Termin zur Zahnfleischuntersuchung in unserer Praxis am Kottbusser Tor und gib deinem Lächeln die stabile Basis die es verdient."
             }
         ]
     }

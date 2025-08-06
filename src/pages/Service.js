@@ -6,7 +6,7 @@ const Service = () => {
     const { title: serviceKey } = useParams();
     const navigate = useNavigate();
     const location = useLocation();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const services = t('new_services.services', { returnObjects: true });
     // Debug log
@@ -39,6 +39,21 @@ const Service = () => {
         }
     }, [serviceKey]);
 
+    // Handle internal service links
+    const handleInternalLink = (e, servicePath) => {
+        e.preventDefault();
+        const serviceName = servicePath.replace('/service/', '');
+        navigate(`/service/${serviceName}`, { state: { background: location.state?.background } });
+    };
+
+    // Add global function for link handling
+    useEffect(() => {
+        window.handleInternalLink = handleInternalLink;
+        return () => {
+            delete window.handleInternalLink;
+        };
+    }, [navigate, location.state?.background]);
+
     if (!service) {
         return (
             <div className="flex items-center justify-center h-screen">
@@ -55,42 +70,80 @@ const Service = () => {
     // Get content for the service
     const content = t(`service_content.${serviceKey}`, { returnObjects: true });
 
+    // Check if current language is Arabic for RTL styling
+    const isArabic = i18n.language === 'ar';
+
     // Render content section
     const renderContentSection = (section, index) => {
+        const rtlStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : {};
+        
         switch (section.type) {
             case 'paragraph':
                 return (
                     <p key={index} className="text-lg text-[#422f40] leading-relaxed mb-6" 
+                       style={rtlStyle}
                        dangerouslySetInnerHTML={{ __html: section.content }} />
                 );
             case 'heading':
                 return (
-                    <h3 key={index} className="text-xl font-bold text-[#422f40] mb-4 mt-8">
+                    <h3 key={index} className="text-xl font-bold text-[#422f40] mb-4 mt-8"
+                        style={rtlStyle}>
                         {section.content}
                     </h3>
                 );
             case 'list':
                 return (
-                    <ul key={index} className="text-lg text-[#422f40] leading-relaxed mb-6 ml-6 space-y-2">
+                    <ul key={index} className="text-lg text-[#422f40] leading-relaxed mb-6 ml-6 space-y-2"
+                        style={isArabic ? { direction: 'rtl', textAlign: 'right', marginRight: '1.5rem', marginLeft: '0' } : {}}>
                         {section.items.map((item, itemIndex) => (
                             <li key={itemIndex} className="list-disc" 
+                                style={rtlStyle}
                                 dangerouslySetInnerHTML={{ __html: item }} />
                         ))}
                     </ul>
                 );
             case 'cta':
                 return (
-                    <div key={index} className="mt-8 p-6 bg-[#422f40] text-[#e8e2d4] rounded-lg">
+                    <div key={index} className="mt-8 p-6 bg-[#422f40] text-[#e8e2d4] rounded-lg"
+                         style={rtlStyle}>
                         <p className="text-lg leading-relaxed font-semibold" 
+                           style={rtlStyle}
                            dangerouslySetInnerHTML={{ __html: section.content }} />
                         <button className="mt-6 bg-[#e8e2d4] hover:bg-opacity-80 text-[#422f40] font-bold text-lg py-3 px-8 rounded-full transition-colors duration-300">
                             {t('new_services.book_appointment')}
                         </button>
                     </div>
                 );
+            case 'booking':
+                return (
+                    <div key={index} className="mt-8 text-center"
+                         style={rtlStyle}>
+                        <a 
+                            href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-[#422f40] hover:bg-opacity-80 text-[#e8e2d4] font-bold text-lg py-3 px-8 rounded-full transition-colors duration-300"
+                        >
+                            {section.content}
+                        </a>
+                    </div>
+                );
             default:
                 return null;
         }
+    };
+
+    // Process content to handle internal links
+    const processContent = (content) => {
+        if (!content) return content;
+        
+        // Replace internal links with React Router navigation
+        return content.replace(
+            /<a href='\/service\/([^']+)'([^>]*)>/g,
+            (match, serviceName, attributes) => {
+                return `<a href="#" onclick="window.handleInternalLink(event, '/service/${serviceName}')"${attributes}>`;
+            }
+        );
     };
 
     return (
@@ -111,7 +164,8 @@ const Service = () => {
 
                 {/* Right Column - Content */}
                 <div className="w-2/3 h-full bg-[#e8e2d4] relative">
-                    <div className="h-full overflow-y-auto p-12 md:p-16 lg:p-24 service-content">
+                    <div className="h-full overflow-y-auto p-12 md:p-16 lg:p-24 service-content"
+                         style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
                         <button 
                             onClick={handleClose}
                             className="absolute top-8 right-8 text-5xl font-light text-gray-500 hover:text-gray-900 z-10"
@@ -121,25 +175,38 @@ const Service = () => {
 
                         <div className="max-w-3xl">
                             <div className="mb-12">
-                                <h1 className="text-6xl md:text-8xl font-bold text-[#422f40] uppercase tracking-tighter leading-none">{service.title}</h1>
-                                <p className="text-sm text-gray-500 uppercase mt-4 tracking-widest">{service.subtitle}</p>
+                                <h1 className="text-6xl md:text-8xl font-bold text-[#422f40] uppercase tracking-tighter leading-none"
+                                    style={isArabic ? { direction: 'rtl', textAlign: 'right', maxWidth: '100%', wordWrap: 'break-word' } : { maxWidth: '100%', wordWrap: 'break-word' }}>{service.title}</h1>
+                                <p className="text-sm text-gray-500 uppercase mt-4 tracking-widest"
+                                   style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>{service.subtitle}</p>
                             </div>
 
                             <div className="mb-12">
-                                <h3 className="text-xs text-gray-400 uppercase tracking-widest mb-4">{t('service_page.the_service')}</h3>
+                                <h3 className="text-xs text-gray-400 uppercase tracking-widest mb-4"
+                                    style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>{t('service_page.the_service')}</h3>
                                 {content && content.sections ? (
                                     <div>
-                                        {content.sections.map((section, index) => renderContentSection(section, index))}
+                                        {content.sections.map((section, index) => {
+                                            // Process content for internal links
+                                            const processedSection = {
+                                                ...section,
+                                                content: section.content ? processContent(section.content) : section.content,
+                                                items: section.items ? section.items.map(item => processContent(item)) : section.items
+                                            };
+                                            return renderContentSection(processedSection, index);
+                                        })}
                                     </div>
                                 ) : (
-                                    <p className="text-lg text-[#422f40] leading-relaxed">
+                                    <p className="text-lg text-[#422f40] leading-relaxed"
+                                       style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
                                         {t('service_page.default_description')}
                                     </p>
                                 )}
                             </div>
                             
                             {!content && (
-                                <div className="text-lg space-y-6 text-[#422f40] leading-relaxed">
+                                <div className="text-lg space-y-6 text-[#422f40] leading-relaxed"
+                                     style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
                                     <p>
                                         {t('service_page.extra_description1')}
                                     </p>

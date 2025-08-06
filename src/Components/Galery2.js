@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import useWindowWidth from "../hooks/useWindowWidth";
 import FuzzyText from './FuzzyText';
+import { useFontLoader } from '../hooks/useFontLoader';
 
 const images = [
   "/Assets/b1.jpg",
@@ -17,9 +18,11 @@ const images = [
 ];
 
 const Galery2 = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const windowWidth = useWindowWidth();
   const [position, setPosition] = useState(0);
+  const isArabic = i18n.language === 'ar';
+  const fontLoaded = useFontLoader('RH-Zak', isArabic);
 
   const prevSlide = () => {
     setPosition(prev => prev - 1);
@@ -79,42 +82,51 @@ const Galery2 = () => {
 
 
 
-      <div className="mb-4 md:mb-8 mt-4 md:mt-8">
-  <div className="flex justify-start mb-4 md:mb-4">
+      <div className="mb-4 md:mb-8 mt-4 md:mt-8" style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
+  <div className={`mb-4 md:mb-4 w-full ${isArabic ? 'text-right' : 'text-left'}`}>
+  <div className={isArabic ? 'inline-block ml-auto' : 'inline-block'}>
   <FuzzyText
   baseIntensity={0.0}
   hoverIntensity={0.2}
   enableHover={true}
   color="#422f40"
   fontWeight={900}
+  fontFamily={isArabic ? 'RH-Zak, sans-serif' : 'inherit'}
 >
   {t('galery2.title').toUpperCase()}
 </FuzzyText>
   </div>
+  </div>
   <p
-    className="
+    className={`
        text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed text-left ml-8 mr-8 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed ml-8 mr-8 md:ml-16 lg:ml-16
    mb-4 md:mb-4 lg:mb-8
-    "
+      ${isArabic ? 'text-right' : 'text-left'}
+    `}
+    style={isArabic ? { direction: 'rtl' } : {}}
   >
     {t('galery2.description1')}
   </p>
   <p
-    className="
+    className={`
      max-w-6xl  text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed text-left ml-8 mr-8 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed ml-8 mr-8 md:ml-16 lg:ml-16
    mb-2 md:mb-4 lg:mb-8
-    "
+      ${isArabic ? 'text-right' : 'text-left'}
+    `}
+    style={isArabic ? { direction: 'rtl' } : {}}
   >
     {t('galery2.description2')}
   </p>
   <p
-    className="
+    className={`
       max-w-6xl text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed text-left ml-8 mr-8 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed ml-8 mr-8 md:ml-16 lg:ml-16
    mb-2 md:mb-4 lg:mb-8
-    "
+      ${isArabic ? 'text-right' : 'text-left'}
+    `}
+    style={isArabic ? { direction: 'rtl' } : {}}
   >
     {t('galery2.description3')}
   </p>

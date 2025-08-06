@@ -2,7 +2,8 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const OptimizedStickyServices = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isArabic = i18n.language === 'ar';
 
   const sections = [
     {
@@ -45,15 +46,18 @@ const OptimizedStickyServices = () => {
         >
           {/* Title Section */}
           <div
-            className={`  w-full lg:pl-20 pt-20 sm:pt-16 md:pt-16 lg:pt-20 pb-4 sm:pb-6 md:pb-8 lg:pb-10 pl-4 pr-4 sm:px-6 md:px-12 rounded-b-3xl relative z-10 ${section.titleBgColor}`}
+            className={`w-full lg:pl-20 pt-20 sm:pt-16 md:pt-16 lg:pt-20 pb-4 sm:pb-6 md:pb-8 lg:pb-10 pl-4 pr-4 sm:px-6 md:px-12 rounded-b-3xl relative z-10 ${section.titleBgColor}`}
+            style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}
           >
             <h1
               className={`uppercase text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter ${section.titleTextColor}`}
+              style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}
             >
               {section.title}
             </h1>
             <p
               className={`mt-2 text-sm sm:text-base md:text-lg lg:text-base ${section.descriptionTextColor}`}
+              style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}
             >
               {section.description}
             </p>
