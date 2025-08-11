@@ -25,7 +25,7 @@ const LanguageSwitcher = () => {
   const currentLang = languages.find((l) => l.code === i18n.language) || languages[0];
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="fixed bottom-4 right-4 z-[9999]">
       {/* Language Switcher Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
