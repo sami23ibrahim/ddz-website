@@ -86,18 +86,11 @@ const Team = () => {
         { code: "en", flag: "/Assets/en.png", name: "English" }
       ],
       baseSpecialties: [
-        { name: t('team.specialties.anxiety_patients'), color: "#422f4099" },
-        { name: t('team.specialties.endodontics'), color: "#422f4099" },
-        { name: t('team.specialties.implantology'), color: "#422f4099" },
-        { name: t('team.specialties.pediatric_dentistry'), color: "#422f4099" },
-        { name: t('team.specialties.veneers'), color: "#422f4099" },
-        { name: t('team.specialties.dentures'), color: "#422f4099" },
-        { name: t('team.specialties.gingivitis'), color: "#422f4099" },
-        { name: t('team.specialties.dental_fractures'), color: "#422f4099" },
-        { name: t('team.specialties.dental_restoration'), color: "#422f4099" },
-        { name: t('team.specialties.aesthetic_dentistry'), color: "#422f4099" }
+        { name: t('team.specialties.majd_preview'), color: "#422f4099", isPreview: true }
       ],
-      expandedSpecialties: []
+      expandedSpecialties: [
+        { name: t('team.specialties.majd'), color: "#422f4099", isDescription: true }
+      ]
     }
   ];
 
@@ -110,7 +103,7 @@ const Team = () => {
   <div className={`flex mb-2 md:mb-4 ${i18n.language === 'ar' ? 'justify-end' : 'justify-start'} mr-8 md:mr-16 lg:mr-16`}>
   <div className={i18n.language === 'ar' ? 'inline-block ml-auto' : 'inline-block'}>
   {isMobile ? (
-    <h1 className="text-4xl font-bold text-[#422f40] uppercase ml-12 md:ml-16 lg:ml-16 tracking-tighter">
+    <h1 className="text-4xl font-bold text-[#422f40] uppercase ml-8 md:ml-16 lg:ml-16 tracking-tighter">
       {t('team.title').toUpperCase()}
     </h1>
   ) : (
