@@ -5,14 +5,20 @@ import FuzzyText from './FuzzyText';
 import { useFontLoader } from '../hooks/useFontLoader';
 
 const images = [
-  "/Assets/b1.jpg",
-  "/Assets/b2.jpg",
-  "/Assets/b3.jpg",
-  "/Assets/b4.jpg",
-  "/Assets/b5.jpg",
-  "/Assets/b6.jpg",
-  "/Assets/b7.jpg",
-  "/Assets/b8.jpg",
+  "/Assets/g8.png",
+  "/Assets/g9.png",
+  "/Assets/g7.png",
+  "/Assets/g4.png",
+
+  "/Assets/g10.png",
+  "/Assets/g11.png",
+  "/Assets/g8.png",
+  "/Assets/g9.png",
+  "/Assets/g7.png",
+  "/Assets/g4.png",
+
+  "/Assets/g10.png",
+  "/Assets/g11.png",
   
  
 ];

@@ -195,7 +195,7 @@
         "img": "/Assets/IMPLANTOLOGY.jpg"
       },
       "root_canal_therapy": {
-        "title": "Mikroskopische Wurzelkanalbehandlung",
+        "title": "MIKROSKOP-WURZELBEHANDLUNG",
         "subtitle": "Endodontie",
         "img": "/Assets/ROOT CANAL THERAPY.jpg"
       },
@@ -220,7 +220,7 @@
         "img": "/Assets/Paediatric Dentistry.jpg"
       },
       "professional_cleaning": {
-        "title": "Professionelle Zahnreinigung (GBT)",
+        "title": "Professionelle Zahnreinigung",
         "subtitle": "Prophylaxe und Gelenkte Biofilm-Therapie",
         "img": "/Assets/Professional Cleaning.jpg"
       },
@@ -290,7 +290,7 @@
     "mon_thu": "Mo-Do",
     "wed": "Mi",
     "fri": "Fr",
-    "clinic_name": "DENTAL21 BERLIN KUDAMM",
+    "clinic_name": "Die Drei Zahnärzte",
     "phone_number": "TELEFONNUMMER",
     "book_appointment": "Termin buchen",
     "homepage": "Startseite",
