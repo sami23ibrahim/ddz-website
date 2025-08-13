@@ -79,17 +79,10 @@ const NewServicesMobile = () => {
     return (
         <div className="bg-[#e8e2d4] py-16 px-4 font-sans">
             <div className="container mx-auto">
-                <div className="flex justify-center mb-12">
-                    <FuzzyText 
-                        baseIntensity={0.0} 
-                        hoverIntensity={0.2} 
-                        enableHover={true}
-                        color="#422f40"
-                        fontSize="clamp(2rem, 4vw, 4rem)"
-                        fontWeight={700}
-                    >
+                <div className="mb-12">
+                    <h1 className="text-4xl font-bold text-[#422f40] uppercase text-left">
                         {t('new_services.title')}
-                    </FuzzyText>
+                    </h1>
                 </div>
                 <div className="mb-12 max-w-5xl mx-auto">
                     <p className="text-md text-gray-600 leading-relaxed text-center">
@@ -111,7 +104,7 @@ const NewServicesMobile = () => {
                             </div>
                         </div>
                         <div className="w-2/3">
-                            <h2 className="text-3xl md:text-5xl font-bold text-[#422f40] uppercase leading-none tracking-tight">{service.title}</h2>
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#422f40] uppercase leading-none tracking-tight">{service.title}</h2>
                             <p className="text-l text-[#422f40] uppercase mt-2 tracking-wider">{service.subtitle}</p>
                         </div>
                     </Link>

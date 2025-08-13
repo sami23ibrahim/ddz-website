@@ -130,6 +130,16 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
                 }}
                 className="responsive-subtitle text-white"
               >{t("new_full_screen_video.heading.subtitle")}</p>
+              <p
+                style={{
+                  fontWeight: 'normal',
+                  lineHeight: '1.2',
+                  marginLeft: '6px',
+                  marginTop: '8px',
+                  opacity: '0.9'
+                }}
+                className="text-white text-lg"
+              >{t("new_full_screen_video.heading.tagline")}</p>
             </div>
             <div className="mt-10">
             <a href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral" target="_blank" rel="noopener noreferrer">

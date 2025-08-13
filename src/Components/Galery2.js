@@ -59,35 +59,6 @@ const Galery2 = () => {
   return (
     <div className="relative w-full flex flex-col bg-[#e8e2d4] min-h-[600px] py-8 overflow-hidden">
 
-    {/* <div className="relative w-full flex flex-col items-center bg-[#e8e2d4] min-h-[600px] py-8 overflow-hidden"> */}
-      {/* Title and Description */}
-      {/* <div className="justify-start mb-4 -ml-32">
-        <div className="uppercase flex justify-start mb-4 -ml-20">
-          <FuzzyText 
-              baseIntensity={0.0} 
-              hoverIntensity={0.2} 
-              enableHover={true}
-              color="#422f40"
-              fontSize="clamp(3rem, 7vw, 8rem)"
-              fontWeight={900}
-          >
-              {t('galery2.title').toUpperCase()}
-          </FuzzyText>
-        </div>
-        <p className=" text-lg md:text-xl text-[#422f40] leading-relaxed mb-4 text-left ml-0">
-          {t('galery2.description1')}
-        </p>
-        <p className="max-w-6xl text-base md:text-lg text-[#422f40] leading-relaxed text-left ml-0">
-          {t('galery2.description2')}
-        </p>
-        <p className="max-w-6xl text-base md:text-lg text-[#422f40] leading-relaxed mt-4 text-left ml-0">
-          {t('galery2.description3')}
-        </p>
-      </div> */}
-      
-
-
-
       <div className="mb-4 md:mb-8 mt-4 md:mt-8" style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
   <div className={`mb-4 md:mb-4 w-full ${isArabic ? 'text-right' : 'text-left'}`}>
   <div className={isArabic ? 'inline-block ml-auto' : 'inline-block'}>

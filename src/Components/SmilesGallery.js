@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FuzzyText from './FuzzyText';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,9 +115,18 @@ const SmilesGallery = () => {
       
       {/* Title (Only Visible for Mobile Screens) */}
       {isMobile && (
-        <h1 className="block text-center text-6xl font-bold text-[#422f40] mb-04 mt-1">
-          {t("smile_gallery.title")}
-        </h1>
+        <div className="block text-center mb-04 mt-1">
+          <FuzzyText
+            fontSize="clamp(1rem, 8vw, 8rem)"
+            fontWeight={900}
+            color="#422f40"
+            baseIntensity={0.0}
+            hoverIntensity={0.2}
+            enableHover={true}
+          >
+            {t("smile_gallery.title").toUpperCase()}
+          </FuzzyText>
+        </div>
       )}
 
       <div className="w-full max-w-screen-xl space-y-6 py-4">
