@@ -80,7 +80,7 @@ const NewServicesMobile = () => {
         <div className="bg-[#e8e2d4] py-16 px-4 font-sans">
             <div className="container mx-auto">
                 <div className="mb-12">
-                    <h1 className="text-4xl font-bold text-[#422f40] uppercase text-left">
+                    <h1 className="text-4xl font-bold text-[#422f40] uppercase text-left tracking-tighter">
                         {t('new_services.title')}
                     </h1>
                 </div>

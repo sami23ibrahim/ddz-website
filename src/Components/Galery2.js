@@ -63,7 +63,7 @@ const Galery2 = () => {
   <div className={`mb-4 md:mb-4 w-full ${isArabic ? 'text-right' : 'text-left'}`}>
   <div className={isArabic ? 'inline-block ml-auto' : 'inline-block'}>
   {isMobile ? (
-    <h1 className="text-4xl font-bold text-[#422f40] uppercase ml-8 md:ml-16 lg:ml-16">
+    <h1 className="text-4xl font-bold text-[#422f40] uppercase ml-8 md:ml-16 lg:ml-16 tracking-tighter">
       {t('galery2.title').toUpperCase()}
     </h1>
   ) : (
