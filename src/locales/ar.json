@@ -182,7 +182,7 @@
   "book_appointment": "احجز موعدا",
   "services": {
     "dental_anxiety": {
-      "title": "قلق الأسنان",
+      "title":"فوبيا طبيب الاسنان",
       "subtitle": "الرعاية والتخدير",
       "img": "/Assets/DENTAL ANXIETY.jpg"
     },
@@ -212,7 +212,7 @@
       "img": "/Assets/oral.jpg"
     },
     "orthodontics": {
-      "title": "تقويم الأسنان",
+      "title": "تقويم الأسنان الشفاف",
       "subtitle": "Invisalign® Clear Aligners",
       "img": "/Assets/Orthodontics Invisalign.jpg"
     },
@@ -222,7 +222,7 @@
       "img": "/Assets/Paediatric Dentistry.jpg"
     },
     "professional_cleaning": {
-      "title": "التنظيف الاحترافي (GBT)",
+      "title": "تنظيف الأسنان و اللثة",
       "subtitle": "الوقاية والعلاج الموجه للبيوفيلم",
       "img": "/Assets/Professional Cleaning.jpg"
     },
