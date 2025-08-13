@@ -62,16 +62,22 @@ const Galery2 = () => {
       <div className="mb-4 md:mb-8 mt-4 md:mt-8" style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
   <div className={`mb-4 md:mb-4 w-full ${isArabic ? 'text-right' : 'text-left'}`}>
   <div className={isArabic ? 'inline-block ml-auto' : 'inline-block'}>
-  <FuzzyText
-  baseIntensity={0.0}
-  hoverIntensity={0.2}
-  enableHover={true}
-  color="#422f40"
-  fontWeight={900}
-  fontFamily={isArabic ? 'RH-Zak, sans-serif' : 'inherit'}
->
-  {t('galery2.title').toUpperCase()}
-</FuzzyText>
+  {isMobile ? (
+    <h1 className="text-4xl font-bold text-[#422f40] uppercase ml-8 md:ml-16 lg:ml-16">
+      {t('galery2.title').toUpperCase()}
+    </h1>
+  ) : (
+    <FuzzyText
+      baseIntensity={0.0}
+      hoverIntensity={0.2}
+      enableHover={true}
+      color="#422f40"
+      fontWeight={900}
+      fontFamily={isArabic ? 'RH-Zak, sans-serif' : 'inherit'}
+    >
+      {t('galery2.title').toUpperCase()}
+    </FuzzyText>
+  )}
   </div>
   </div>
   <p

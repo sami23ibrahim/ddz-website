@@ -115,17 +115,10 @@ const SmilesGallery = () => {
       
       {/* Title (Only Visible for Mobile Screens) */}
       {isMobile && (
-        <div className="block text-center mb-04 mt-1">
-          <FuzzyText
-            fontSize="clamp(1rem, 8vw, 8rem)"
-            fontWeight={900}
-            color="#422f40"
-            baseIntensity={0.0}
-            hoverIntensity={0.2}
-            enableHover={true}
-          >
+        <div className="w-full mb-04 mt-1 px-8 md:px-16 lg:px-16">
+          <h1 className="text-4xl font-bold text-[#422f40] uppercase text-left tracking-tighter">
             {t("smile_gallery.title").toUpperCase()}
-          </FuzzyText>
+          </h1>
         </div>
       )}
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import FuzzyText from './FuzzyText';
@@ -6,6 +6,15 @@ import FuzzyText from './FuzzyText';
 const Team = () => {
   const { t, i18n } = useTranslation();
   const [hoveredCard, setHoveredCard] = useState(null);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const teamMembers = [
     {
@@ -100,16 +109,22 @@ const Team = () => {
 <div className="mb-4 md:mb-8">
   <div className={`flex mb-2 md:mb-4 ${i18n.language === 'ar' ? 'justify-end' : 'justify-start'} mr-8 md:mr-16 lg:mr-16`}>
   <div className={i18n.language === 'ar' ? 'inline-block ml-auto' : 'inline-block'}>
-  <FuzzyText
-  baseIntensity={0.0}
-  hoverIntensity={0.2}
-  enableHover={true}
-  color="#422f40"
-  fontWeight={900}
-  fontFamily={i18n.language === 'ar' ? 'RH-Zak, sans-serif' : 'inherit'}
->
-  {t('team.title').toUpperCase()}
-</FuzzyText>
+  {isMobile ? (
+    <h1 className="text-4xl font-bold text-[#422f40] uppercase ml-12 md:ml-16 lg:ml-16">
+      {t('team.title').toUpperCase()}
+    </h1>
+  ) : (
+    <FuzzyText
+      baseIntensity={0.0}
+      hoverIntensity={0.2}
+      enableHover={true}
+      color="#422f40"
+      fontWeight={900}
+      fontFamily={i18n.language === 'ar' ? 'RH-Zak, sans-serif' : 'inherit'}
+    >
+      {t('team.title').toUpperCase()}
+    </FuzzyText>
+  )}
   </div>
   </div>
   <p

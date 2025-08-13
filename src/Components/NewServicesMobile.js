@@ -85,7 +85,7 @@ const NewServicesMobile = () => {
                     </h1>
                 </div>
                 <div className="mb-12 max-w-5xl mx-auto">
-                    <p className="text-md text-gray-600 leading-relaxed text-center">
+                    <p className="text-md text-gray-600 leading-relaxed text-start">
                         {t('new_services.description')}
                     </p>
                 </div>
