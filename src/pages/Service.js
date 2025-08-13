@@ -175,7 +175,7 @@ const Service = () => {
 
                         <div className="max-w-3xl">
                             <div className="mb-12">
-                                <h1 className="text-6xl md:text-8xl font-bold text-[#422f40] uppercase tracking-tighter leading-none"
+                                <h1 className="text-4xl md:text-5xl font-bold text-[#422f40] uppercase tracking-tighter leading-none"
                                     style={isArabic ? { direction: 'rtl', textAlign: 'right', maxWidth: '100%', wordWrap: 'break-word' } : { maxWidth: '100%', wordWrap: 'break-word' }}>{service.title}</h1>
                                 <p className="text-sm text-gray-500 uppercase mt-4 tracking-widest"
                                    style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>{service.subtitle}</p>

@@ -188,17 +188,17 @@
       "aesthetic_dentistry": {
         "title": "ÄSTHETISCHE ZAHNMEDIZIN",
         "subtitle": "Digitales Lächeln-Design",
-        "img": "/Assets/AESTHETIC DENTISTRY.jpg"
+        "img": "/Assets/DENTISTRY.jpg"
       },
       "implantology": {
         "title": "IMPLANTOLOGIE",
         "subtitle": "Titan- & Keramikimplantate",
-        "img": "/Assets/IMPLANTOLOGY.jpg"
+        "img": "/Assets/implantology.jpg"
       },
       "root_canal_therapy": {
         "title": "MIKROSKOP-WURZELBEHANDLUNG",
         "subtitle": "Endodontie",
-        "img": "/Assets/ROOT CANAL THERAPY.jpg"
+        "img": "/Assets/digital2.png"
       },
       "dental_prosthetics": {
         "title": "ZAHNPROTHETIK",

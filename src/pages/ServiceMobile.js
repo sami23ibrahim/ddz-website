@@ -103,7 +103,7 @@ const ServiceMobile = () => {
                         {/* Title & Image Section */}
                         <div className="mb-12 flex items-start justify-between">
                             <div className="flex-1 pr-6">
-                                <h1 className="text-3xl md:text-6xl font-bold text-[#422f40] uppercase tracking-tighter leading-none break-words">{service.title}</h1>
+                                <h1 className="text-2xl md:text-4xl font-bold text-[#422f40] uppercase tracking-tighter leading-none break-words">{service.title}</h1>
                                 <p className="text-sm text-gray-500 uppercase mt-4 tracking-widest">{service.subtitle}</p>
                             </div>
                             <div className="w-32 md:w-40 aspect-[3/4] flex-shrink-0">
