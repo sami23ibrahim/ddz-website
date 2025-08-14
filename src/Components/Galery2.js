@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import useWindowWidth from "../hooks/useWindowWidth";
 import FuzzyText from './FuzzyText';
@@ -26,16 +26,21 @@ const images = [
 const Galery2 = () => {
   const { t, i18n } = useTranslation();
   const windowWidth = useWindowWidth();
-  const [position, setPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [startY, setStartY] = useState(0);
+  const [dragOffset, setDragOffset] = useState(0);
+  const containerRef = useRef(null);
   const isArabic = i18n.language === 'ar';
   const fontLoaded = useFontLoader('RH-Zak', isArabic);
 
   const prevSlide = () => {
-    setPosition(prev => prev - 1);
+    setScrollPosition(prev => prev - slideWidth);
   };
 
   const nextSlide = () => {
-    setPosition(prev => prev + 1);
+    setScrollPosition(prev => prev + slideWidth);
   };
 
   // Create enough copies to ensure smooth infinite scrolling
@@ -44,10 +49,6 @@ const Galery2 = () => {
     repeatedImages.push(...images);
   }
 
-  // Start from the middle set of images, but at the first image of that set
-  const startingPosition = Math.floor(repeatedImages.length / 2) - Math.floor(images.length / 2);
-  const currentPosition = startingPosition + position;
-
   const isMobile = windowWidth < 768;
   const scale = isMobile ? 0.6 : 1.0;
 
@@ -55,6 +56,101 @@ const Galery2 = () => {
   const containerWidth = 540 * scale;
   const containerHeight = 540 * scale;
   const imageHeight = 420 * scale;
+
+  // Calculate center position
+  const centerOffset = (windowWidth - slideWidth) / 2;
+
+  // Touch/Mouse event handlers
+  const handleStart = (clientX, clientY) => {
+    setIsDragging(true);
+    setStartX(clientX);
+    setStartY(clientY);
+    setDragOffset(0);
+  };
+
+  const handleMove = (clientX, clientY) => {
+    if (!isDragging) return;
+    
+    const deltaX = clientX - startX;
+    const deltaY = clientY - startY;
+    
+    // Only handle horizontal scrolling if the horizontal movement is greater than vertical
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      setDragOffset(deltaX);
+    }
+  };
+
+  const handleEnd = () => {
+    if (!isDragging) return;
+    
+    // Apply the drag offset to the scroll position
+    setScrollPosition(prev => prev - dragOffset);
+    
+    setIsDragging(false);
+    setDragOffset(0);
+  };
+
+  // Mouse events
+  const handleMouseDown = (e) => {
+    e.preventDefault();
+    handleStart(e.clientX, e.clientY);
+  };
+
+  const handleMouseMove = (e) => {
+    e.preventDefault();
+    handleMove(e.clientX, e.clientY);
+  };
+
+  const handleMouseUp = () => {
+    handleEnd();
+  };
+
+  // Touch events
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    handleStart(touch.clientX, touch.clientY);
+  };
+
+  const handleTouchMove = (e) => {
+    const touch = e.touches[0];
+    handleMove(touch.clientX, touch.clientY);
+  };
+
+  const handleTouchEnd = () => {
+    handleEnd();
+  };
+
+  // Wheel event for horizontal scrolling
+  const handleWheel = (e) => {
+    e.preventDefault();
+    const scrollAmount = e.deltaY * 0.5; // Adjust sensitivity
+    setScrollPosition(prev => prev + scrollAmount);
+  };
+
+  // Clean up event listeners
+  useEffect(() => {
+    const handleGlobalMouseUp = () => {
+      if (isDragging) {
+        handleEnd();
+      }
+    };
+
+    const handleGlobalMouseMove = (e) => {
+      if (isDragging) {
+        handleMove(e.clientX, e.clientY);
+      }
+    };
+
+    if (isDragging) {
+      document.addEventListener('mouseup', handleGlobalMouseUp);
+      document.addEventListener('mousemove', handleGlobalMouseMove);
+    }
+
+    return () => {
+      document.removeEventListener('mouseup', handleGlobalMouseUp);
+      document.removeEventListener('mousemove', handleGlobalMouseMove);
+    };
+  }, [isDragging, startX, startY, dragOffset]);
 
   return (
     <div className="relative w-full flex flex-col bg-[#e8e2d4] min-h-[600px] py-8 overflow-hidden">
@@ -116,11 +212,29 @@ const Galery2 = () => {
 </div>
 
 
-      <div className="w-full flex justify-center items-center overflow-hidden">
+      <div 
+        ref={containerRef}
+        className="w-full flex justify-center items-center overflow-hidden cursor-grab active:cursor-grabbing select-none"
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        onWheel={handleWheel}
+        style={{ 
+          userSelect: 'none',
+          WebkitUserSelect: 'none',
+          MozUserSelect: 'none',
+          msUserSelect: 'none',
+          WebkitTouchCallout: 'none',
+          WebkitTapHighlightColor: 'transparent'
+        }}
+      >
         <div
-          className="flex transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-300 ease-out"
           style={{
-            transform: `translateX(calc(-${currentPosition * slideWidth}px + 50% - ${slideWidth / 2}px))`,
+            transform: `translateX(calc(-${scrollPosition}px + ${centerOffset}px + ${dragOffset}px))`,
             width: `${repeatedImages.length * slideWidth}px`,
           }}
         >
@@ -133,8 +247,9 @@ const Galery2 = () => {
               <img
                 src={img}
                 alt=""
-                className="rounded-xl object-cover w-full"
+                className="rounded-xl object-cover w-full pointer-events-none"
                 style={{ height: `${imageHeight}px` }}
+                draggable={false}
               />
             </div>
           ))}

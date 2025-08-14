@@ -38,12 +38,12 @@
         "sticky_services": {
           "sections": {
             "elite_smile": {
-              "title": "Elite Smile Design",
+              "title": "Digital Smile Design",
               "description": "Gleichmäßige, strahlend weiße Zähne. Mit fortschrittlichen Techniken wie Veneers, Kronen und Zahnaufhellung wird ein makelloses, natürlich aussehendes Lächeln geschaffen, das Selbstvertrauen und Charme ausstrahlt – genau wie deine Lieblingsstars!"
             },
             "next_gen": {
               "title": "Zahnmedizin der nächsten Generation",
-              "description": "Wir bieten modernste Dienstleistungen wie 3D-Scannen, Laserzahnmedizin und digitale Bildgebung an, um eine präzise, schmerzfreie und effiziente Zahnversorgung zu gewährleisten."
+              "description": "Wir bieten modernste Dienstleistungen wie 3D-Scannen, Scannen und digitale Bildgebung an, um eine präzise, schmerzfreie und effiziente Zahnversorgung zu gewährleisten."
             },
             "smile_sparkle": {
               "title": "Smile Sparkle",
@@ -207,7 +207,7 @@
       },
       "oral_surgery": {
         "title": "ORALCHIRURGIE",
-        "subtitle": "Extraktionen, Apikoektomien & Weichgewebspflege",
+        "subtitle": "Extraktionen & Weichgewebspflege",
         "img": "/Assets/oral.jpg"
       },
       "orthodontics": {

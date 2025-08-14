@@ -5,7 +5,7 @@ import FuzzyText from './FuzzyText';
 
 const Team = () => {
   const { t, i18n } = useTranslation();
-  const [hoveredCard, setHoveredCard] = useState(null);
+  const [expandedCard, setExpandedCard] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -15,6 +15,16 @@ const Team = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const handleCardClick = (memberId) => {
+    if (expandedCard === memberId) {
+      // If clicking the same card, collapse it
+      setExpandedCard(null);
+    } else {
+      // If clicking a different card, expand it and collapse the previous one
+      setExpandedCard(memberId);
+    }
+  };
 
   const teamMembers = [
     {
@@ -123,7 +133,7 @@ const Team = () => {
   <p
     className={`
        text-sm md:text-lg lg:text-xl 
-      text-[#422f40] leading-relaxed ml-12 md:ml-16 lg:ml-16
+      text-[#422f40] leading-relaxed ml-8 md:ml-16 lg:ml-16
    mb-2 md:mb-4 lg:mb-8
       ${i18n.language === 'ar' ? 'text-right mr-8 md:mr-16 lg:mr-16' : 'text-left'}
     `}
@@ -142,8 +152,7 @@ const Team = () => {
             <div
               key={member.id}
               className="relative w-full h-96 sm:h-[28rem] rounded-2xl overflow-hidden border-2 border-[#422f4020] transition-colors duration-300 cursor-pointer"
-              onMouseEnter={() => setHoveredCard(member.id)}
-              onMouseLeave={() => setHoveredCard(null)}
+              onClick={() => handleCardClick(member.id)}
             >
               {/* Profile Image */}
               <div className="h-64 sm:h-80">
@@ -179,8 +188,8 @@ const Team = () => {
                                 {/* Specialties */}
                 <div className="mb-2 sm:mb-3">
                   <div className="flex flex-wrap gap-1 sm:gap-1.5">
-                    {!hoveredCard || hoveredCard !== member.id ? (
-                      // Show preview text when not hovering
+                    {expandedCard !== member.id ? (
+                      // Show preview text when not expanded
                       member.baseSpecialties.slice(0, 2).map((specialty, index) => (
                         <span
                           key={`base-${index}`}
@@ -192,7 +201,7 @@ const Team = () => {
                         </span>
                       ))
                     ) : (
-                      // Show full description when hovering
+                      // Show full description when expanded
                       member.expandedSpecialties.map((specialty, index) => (
                         <span
                           key={`expanded-${index}`}
@@ -207,6 +216,14 @@ const Team = () => {
                   </div>
                 </div>
 
+                {/* Click indicator for mobile */}
+                {isMobile && (
+                  <div className="text-center mt-2">
+                    <span className="text-xs text-gray-500">
+                      {expandedCard === member.id ? 'Tap to collapse' : 'Tap to expand'}
+                    </span>
+                  </div>
+                )}
 
               </div>
             </div>

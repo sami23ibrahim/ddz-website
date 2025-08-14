@@ -58,12 +58,12 @@
     },
     "sections": {
       "elite_smile": {
-        "title": "Elite Smile Design",
+        "title": "Digital Smile Design",
         "description": "Every smile we design starts with you. Using Digital Smile Design™, precise intra-oral scans, and aesthetic principles, we create smiles that look beautifully natural and not artificial. Whether it's subtle adjustments with veneers or a complete smile makeover, each treatment plan reflects your face, personality, and personal goals."
       },
       "next_gen": {
         "title": "Next-Gen Dental Technology",
-        "description": "From high-resolution 3D imaging and microscopic root canal treatments, to laser dentistry and Guided Biofilm Therapy, technology at die drei zahnärzte means fewer visits, quicker recovery, and exceptional results that last. "
+        "description": "From high-resolution 3D imaging and microscopic root canal treatments, to Guided Biofilm Therapy, technology at die drei zahnärzte means fewer visits, quicker recovery, and exceptional results that last. "
       },
       "smile_sparkle": {
         "title": "Dental Jewerly by professionals",
@@ -240,7 +240,7 @@
       },
       "oral_surgery": {
         "title": "ORAL SURGERY",
-        "subtitle": "Extractions, Apicoectomies & Soft-Tissue Care",
+        "subtitle": "Extractions & Soft-Tissue Care",
         "img": "/Assets/oral.jpg"
       },
       "orthodontics": {
