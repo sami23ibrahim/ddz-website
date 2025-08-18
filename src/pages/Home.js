@@ -1,4 +1,6 @@
 import React, { Suspense } from "react";
+import { Helmet } from 'react-helmet-async';
+import { useTranslation } from "react-i18next";
 import HomeVideo from "../Components/HomeVideo";
 import ServicesGrid from "../Components/ServicesGrid";
 import OptimizedStickyServices from "../Components/OptimizedStickyServices";
@@ -20,6 +22,7 @@ import LazyLoader from "../Components/LazyLoader";
 const LazySmilesGallery = React.lazy(() => import("../Components/SmilesGallery"));
 
 const Home = () => {
+  const { t, i18n } = useTranslation();
   const windowWidth = useWindowWidth();
 
   // Placeholder components for lazy loading
@@ -30,8 +33,28 @@ const Home = () => {
   );
 
   return (
-    <div className="bg-[#e8e2d4]">
-      <Navbar />
+    <>
+      <Helmet>
+        <title>{t('meta.home.title')} - Die Drei Zahnärzte</title>
+        <meta name="description" content={t('meta.home.description')} />
+        <meta name="keywords" content={t('meta.home.keywords')} />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content={t('meta.home.title')} />
+        <meta property="og:description" content={t('meta.home.description')} />
+        <meta property="og:image" content="/Assets/logo2.png" />
+        <meta property="og:url" content="https://diedreizahnaerzte.de" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content={i18n.language} />
+        
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={t('meta.home.title')} />
+        <meta name="twitter:description" content={t('meta.home.description')} />
+        <meta name="twitter:image" content="/Assets/logo2.png" />
+      </Helmet>
+      <div className="bg-[#e8e2d4]">
+        <Navbar />
       <div id="landing-page">
         <HomeVideo 
           videoSrc="/docs4.mp4"
@@ -65,7 +88,8 @@ const Home = () => {
         />
       </div> */}
       <Footer />
-    </div>
+      </div>
+    </>
   );
 };
 

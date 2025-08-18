@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, useLocation, Link } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async';
 import Home from "./pages/Home";
 import Service from "./pages/Service";
 import ServiceMobile from "./pages/ServiceMobile";
@@ -13,7 +14,7 @@ function App() {
   const background = location.state && location.state.background;
 
   return (
-    <>
+    <HelmetProvider>
       <LanguageSwitcher />
       {/* <div style={{ position: 'fixed', top: 250, right: 20, zIndex: 1000 }}>
         <Link to="/beforePage">
@@ -37,7 +38,7 @@ function App() {
           <Route path="/service-mobile/:title" element={<ServiceMobile />} />
         </Routes>
       )}
-    </>
+    </HelmetProvider>
   );
 }
 

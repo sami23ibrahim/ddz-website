@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet-async';
 
 const ServiceMobile = () => {
     const { title: serviceKey } = useParams();
@@ -82,10 +83,29 @@ const ServiceMobile = () => {
     };
 
     return (
-        <div 
-            onClick={handleClose}
-            className="fixed inset-0 z-50 overflow-hidden bg-[#e8e2d4]"
-        >
+        <>
+            <Helmet>
+                <title>{service?.title ? `${service.title} - Die Drei Zahnärzte` : 'Dental Service - Die Drei Zahnärzte'}</title>
+                <meta name="description" content={service?.subtitle || t('meta.service.default_description')} />
+                <meta name="keywords" content={`${service?.title}, ${service?.subtitle}, dental treatment, berlin, ${t('meta.service.keywords')}`} />
+                
+                {/* Open Graph */}
+                <meta property="og:title" content={service?.title || 'Dental Service'} />
+                <meta property="og:description" content={service?.subtitle || t('meta.service.default_description')} />
+                <meta property="og:image" content={service?.img || '/Assets/logo2.png'} />
+                <meta property="og:url" content={`https://diedreizahnaerzte.de/service-mobile/${serviceKey}`} />
+                <meta property="og:type" content="website" />
+                
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={service?.title || 'Dental Service'} />
+                <meta name="twitter:description" content={service?.subtitle || t('meta.service.default_description')} />
+                <meta name="twitter:image" content={service?.img || '/Assets/logo2.png'} />
+            </Helmet>
+            <div 
+                onClick={handleClose}
+                className="fixed inset-0 z-50 overflow-hidden bg-[#e8e2d4]"
+            >
             <div 
                 onClick={(e) => e.stopPropagation()}
                 className="w-full h-full"
@@ -194,6 +214,7 @@ const ServiceMobile = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 
