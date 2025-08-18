@@ -212,7 +212,7 @@ const Navbar = () => {
 								href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?bookingFunnelSource=profile"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="bg-[#422f4095] text-[#e8dcc6] px-8 py-4 rounded-lg font-semibold text-2xl hover:bg-[#5a3d54] transition-colors duration-200 inline-block"
+								className="bg-[#422f40] text-white px-8 py-4 rounded-lg font-semibold text-2xl hover:bg-[#5a3d54] transition-colors duration-200 inline-block"
 							>
 								{t("navbar.appointment")}
 							</a>

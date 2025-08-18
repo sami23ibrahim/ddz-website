@@ -35,7 +35,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>{t('meta.home.title')} - Die Drei Zahnärzte</title>
+        <title>{t('meta.home.title')}</title>
         <meta name="description" content={t('meta.home.description')} />
         <meta name="keywords" content={t('meta.home.keywords')} />
         
