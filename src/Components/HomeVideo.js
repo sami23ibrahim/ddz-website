@@ -17,6 +17,11 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
     }
   }, [currentVideoSrc]);
 
+  // Force re-render when language changes
+  useEffect(() => {
+    // This effect will trigger when i18n.language changes
+  }, [i18n.language]);
+
   useEffect(() => {
     const handleResize = () => {
       const isMobileDevice = windowWidth <= 1288;
@@ -55,6 +60,7 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
   return (
     <div
       id="full-screen-video"
+      key={i18n.language} // Force re-render when language changes
       className="relative w-full overflow-hidden transition-colors"
       style={{
         backgroundColor: "#e8e2d4",
@@ -138,7 +144,7 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
                   marginTop: '8px',
                   opacity: '0.9'
                 }}
-                className="text-white text-lg"
+                className="text-white text-lg responsive-tagline"
               >{t("new_full_screen_video.heading.tagline")}</p>
             </div>
             <div className="mt-10">
@@ -161,6 +167,9 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
           .responsive-subtitle {
             font-size: 32px;
           }
+          .responsive-tagline {
+            font-size: 18px;
+          }
           @media (max-width: 640px) {
             .responsive-heading {
               font-size: 70px;
@@ -171,6 +180,13 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
             }
             .responsive-subtitle {
               font-size: 36px;
+              max-width: 98%;
+              margin-left: 0%;
+              margin-right: 0%;
+              line-height: 1.1;
+            }
+            .responsive-tagline {
+              font-size: 20px;
               max-width: 98%;
               margin-left: 0%;
               margin-right: 0%;
@@ -187,6 +203,10 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
               font-size: 28px;
               line-height: 1.1;
             }
+            .responsive-tagline {
+              font-size: 16px;
+              line-height: 1.1;
+            }
           }
           @media (min-width: 1024px) {
             .responsive-heading {
@@ -195,6 +215,10 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
             }
             .responsive-subtitle {
               font-size: 42px;
+              line-height: 1.1;
+            }
+            .responsive-tagline {
+              font-size: 22px;
               line-height: 1.1;
             }
           }
@@ -208,6 +232,10 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
               font-size: 26px;
               line-height: 1.1;
             }
+            .responsive-tagline {
+              font-size: 18px;
+              line-height: 1.1;
+            }
           }
           @media (min-width: 665px) and (max-height: 500px) {
             .responsive-heading {
@@ -218,6 +246,11 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
             }
             .responsive-subtitle {
               font-size: 18px;
+              line-height: 1.1;
+              max-width: 98%;
+            }
+            .responsive-tagline {
+              font-size: 14px;
               line-height: 1.1;
               max-width: 98%;
             }

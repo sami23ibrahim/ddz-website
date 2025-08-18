@@ -8,11 +8,12 @@ import FuzzyText from './FuzzyText';
 gsap.registerPlugin(ScrollTrigger);
 
 const SmilesGallery = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const rowsRef = useRef([]);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 500);
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
+  const isRTL = i18n.language === 'ar';
 
   // Effect to update state on window resize
   useEffect(() => {
@@ -116,7 +117,7 @@ const SmilesGallery = () => {
       {/* Title (Only Visible for Mobile Screens) */}
       {isMobile && (
         <div className="w-full mb-04 mt-1 px-8 md:px-16 lg:px-16">
-          <h1 className="text-4xl font-bold text-[#422f40] uppercase text-left tracking-tighter">
+          <h1 className={`text-4xl font-bold text-[#422f40] uppercase tracking-tighter ${isRTL ? 'text-right' : 'text-left'}`}>
             {t("smile_gallery.title").toUpperCase()}
           </h1>
         </div>

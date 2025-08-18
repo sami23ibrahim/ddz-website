@@ -4,8 +4,9 @@ import { useTranslation } from 'react-i18next';
 import FuzzyText from './FuzzyText';
 
 const NewServicesMobile = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const location = useLocation();
+    const isRTL = i18n.language === 'ar';
 
     const services = [
         {
@@ -30,7 +31,7 @@ const NewServicesMobile = () => {
             key: 'root_canal_therapy',
             title: t('new_services.services.root_canal_therapy.title'),
             subtitle: t('new_services.services.root_canal_therapy.subtitle'),
-            img: '/Assets/digital2.png',
+            img: '/Assets/digital3.png',
         },
         {
             key: 'dental_prosthetics',
@@ -77,15 +78,15 @@ const NewServicesMobile = () => {
     ];
 
     return (
-        <div className="bg-[#e8e2d4] py-16 px-4 font-sans">
+        <div className="bg-[#e8e2d4] py-16 px-4 font-sans" dir={isRTL ? 'rtl' : 'ltr'}>
             <div className="container mx-auto">
                 <div className="mb-12">
-                    <h1 className="text-4xl font-bold text-[#422f40] uppercase text-left tracking-tighter">
+                    <h1 className={`text-4xl font-bold text-[#422f40] uppercase tracking-tighter ${isRTL ? 'text-right' : 'text-left'}`}>
                         {t('new_services.title')}
                     </h1>
                 </div>
                 <div className="mb-12 max-w-5xl mx-auto">
-                    <p className="text-md text-gray-600 leading-relaxed text-start">
+                    <p className={`text-md text-gray-600 leading-relaxed ${isRTL ? 'text-right' : 'text-start'}`}>
                         {t('new_services.description')}
                     </p>
                 </div>
@@ -95,17 +96,17 @@ const NewServicesMobile = () => {
                         key={service.key}
                         to={`/service-mobile/${service.key}`}
                         state={{ background: location }}
-                        className="flex items-start mb-12 no-underline hover:no-underline focus:no-underline"
+                        className={`flex items-start mb-12 no-underline hover:no-underline focus:no-underline ${isRTL ? 'flex-row-reverse' : ''}`}
                         style={{ textDecoration: 'none' }}
                     >
-                        <div className="w-1/3 pr-4 md:pr-6">
+                        <div className={`w-1/3 ${isRTL ? 'pl-4 md:pl-6' : 'pr-4 md:pr-6'}`}>
                             <div className="aspect-[3/4]">
                                 <img src={service.img} alt={service.title} className="w-full h-full object-cover" />
                             </div>
                         </div>
                         <div className="w-2/3">
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#422f40] uppercase leading-none tracking-tight">{service.title}</h2>
-                            <p className="text-l text-[#422f40] uppercase mt-2 tracking-wider">{service.subtitle}</p>
+                            <h2 className={`text-2xl md:text-3xl font-bold text-[#422f40] uppercase leading-none tracking-tight ${isRTL ? 'text-right' : 'text-left'}`}>{service.title}</h2>
+                            <p className={`text-l text-[#422f40] uppercase mt-2 tracking-wider ${isRTL ? 'text-right' : 'text-left'}`}>{service.subtitle}</p>
                         </div>
                     </Link>
                 ))}

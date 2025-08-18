@@ -159,7 +159,7 @@ const Galery2 = () => {
   <div className={`mb-4 md:mb-4 w-full ${isArabic ? 'text-right' : 'text-left'}`}>
   <div className={isArabic ? 'inline-block ml-auto' : 'inline-block'}>
   {isMobile ? (
-    <h1 className="text-4xl font-bold text-[#422f40] uppercase ml-8 md:ml-16 lg:ml-16 tracking-tighter">
+    <h1 className={`text-4xl font-bold text-[#422f40] uppercase tracking-tighter ${isArabic ? 'mr-8 md:mr-16 lg:mr-16' : 'ml-8 md:ml-16 lg:ml-16'}`}>
       {t('galery2.title').toUpperCase()}
     </h1>
   ) : (
@@ -169,6 +169,7 @@ const Galery2 = () => {
       enableHover={true}
       color="#422f40"
       fontWeight={900}
+       fontSize="clamp(1rem, 6vw, 6rem)"
       fontFamily={isArabic ? 'RH-Zak, sans-serif' : 'inherit'}
     >
       {t('galery2.title').toUpperCase()}

@@ -38,7 +38,7 @@
       "sticky_services": {
         "sections": {
           "elite_smile": {
-            "title": "تصميم الابتسامة الفاخرة",
+            "title": "تصميم الابتسامة الرقمي  ",
             "description": "أسنان متناسقة وناصعة البياض. باستخدام تقنيات متقدمة مثل الفينير والتيجان وتبييض الأسنان، يتم إنشاء ابتسامة طبيعية خالية من العيوب تعكس الثقة والجاذبية – تمامًا مثل نجومك المفضلين!"
           },
           "next_gen": {
@@ -213,7 +213,7 @@
     },
     "orthodontics": {
       "title": "تقويم الأسنان الشفاف",
-      "subtitle": "Invisalign® Clear Aligners",
+      "subtitle": "تقويم الأسنان الشفاف Invisalign®",
       "img": "/Assets/Orthodontics Invisalign.jpg"
     },
     "paediatric_dentistry": {
@@ -279,13 +279,6 @@
 "home_video": {
   "video_unsupported": "متصفحك لا يدعم علامة الفيديو."
 },
-"new_full_screen_video": {
-  "heading": {
-    "title": "Die Drei Zahnärzte",
-    "subtitle": "ابتسامتك مهمتنا"
-  },
-  "book_button": "احجز موعدا"
-},
 "footer": {
   "opening_hours": "ساعات العمل",
   "mon_thu": "الاثنين-الخميس",
@@ -299,7 +292,7 @@
   "team": "الفريق",
   "jobs": "وظائف",
   "equipment": "المعدات",
-  "made_with": "صنع"
+      "made_with": "مصنوع بحب ❤️ بواسطة"
 },
 "service_page": {
   "the_service": "الخدمة",

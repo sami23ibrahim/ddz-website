@@ -48,7 +48,7 @@ const NewServices = () => {
             key: 'root_canal_therapy',
             title: t('new_services.services.root_canal_therapy.title'),
             subtitle: t('new_services.services.root_canal_therapy.subtitle'),
-            img: '/Assets/digital2.png',
+            img: '/Assets/digital3.png',
         },
         {
             key: 'dental_prosthetics',
@@ -98,46 +98,7 @@ const NewServices = () => {
         <div className="bg-[#e8e2d4] text-gray-400 min-h-screen flex items-center font-sans relative pb-32">
             <div className="w-full mx-auto px-12 relative">
         
-                {/* <div className="flex justify-center mb-12">
-                    <div style={{position: 'relative', width: '700px', height: '100px'}}>
-                        <TextPressure
-                            text="Our Treatments"
-                            flex={true}
-                            alpha={false}
-                            stroke={false}
-                            width={true}
-                            weight={true}
-                            italic={true}
-                            textColor="#422f40"
-                            minFontSize={26}
-                            minWeight={400}
-                        />
-                    </div>
-                </div> */}
-                
-                {/* <GlitchText
-                    speed={1.1}
-                    enableShadows={true}
-                    enableOnHover={true}
-                    className="text-9xl font-bold text-left mb-12 !text-[#422f40] uppercase !mx-0"
-                >
-                    Our Treatments
-                </GlitchText> */}
-
-
-                {/* <div className="text-[#422f40] flex justify-center mb-12" ref={proximityContainerRef} style={{position: 'relative'}}>
-                    <VariableProximity
-                        label={'Our Treatments'}
-                        className={''}
-                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
-                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                        containerRef={proximityContainerRef}
-                        radius={100}
-                        falloff='linear'
-                        style={{ fontSize: '4rem' }}
-                    />
-                </div> */}
-
+        
                 
                 <div className={`uppercase flex mb-2 ${i18n.language === 'ar' ? 'justify-end' : 'justify-start'}`}>
                     <div className={i18n.language === 'ar' ? 'inline-block ml-auto mr-8 md:mr-16 lg:mr-16' : 'inline-block'}>
@@ -147,8 +108,7 @@ const NewServices = () => {
                         hoverIntensity={0.2} 
                         enableHover={true}
                         color="#422f40"
-                        fontSize="clamp(3rem, 7vw, 8rem)"
-                        fontWeight={800}
+                        fontSize="clamp(1rem, 6vw, 6rem)"                        fontWeight={800}
                         fontFamily={i18n.language === 'ar' ? 'RH-Zak, sans-serif' : 'inherit'}
                     >
                         {t('new_services.title')}

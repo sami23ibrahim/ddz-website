@@ -168,7 +168,7 @@ const Footer = () => {
       <div className="bg-[#e8e2d4] text-gray-600 text-center py-3">
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-6 text-sm">
           <div className="flex items-center space-x-2">
-            <span>{t('footer.made_with')} ❤️ by</span>
+            <span>{t('footer.made_with')}</span>
             <span className="font-bold"></span>
             <a href="https://portfolio-eu.vercel.app/" target="_blank" rel="noopener noreferrer">
               <div className="bg-[#422f40] text-white px-2 py-1 rounded font-bold text-xs">sami</div>
