@@ -144,7 +144,7 @@ const Footer = () => {
               <FaInstagram style={{ color: hoveredButton === 'instagram' ? '#e8e2d4' : '#422f40' }} />
             </a>
             <a 
-              href="https://www.linkedin.com" 
+              href="https://www.linkedin.com/company/108311576/admin/dashboard/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer"
