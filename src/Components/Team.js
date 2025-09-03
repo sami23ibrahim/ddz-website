@@ -31,7 +31,7 @@ const Team = () => {
       id: 1,
       name: t('team.members.fabian.name'),
       title: t('team.members.fabian.title'),
-      image: "/Assets/fab.jpg", // Using placeholder image
+      image: "/Assets/doc-fab-2.png", // Using placeholder image
       rating: 4.9,
       reviews: 94,
       languages: [
@@ -50,7 +50,7 @@ const Team = () => {
       id: 2,
       name: t('team.members.hakam.name'),
       title: t('team.members.hakam.title'),
-      image: "/Assets/hak.jpg", // Using placeholder image
+      image: "/Assets/doc-hak-2.png", // Using placeholder image
       rating: 4.8,
       reviews: 552,
       languages: [
@@ -69,7 +69,7 @@ const Team = () => {
       id: 3,
       name: t('team.members.prabh.name'),
       title: t('team.members.prabh.title'),
-      image: "/Assets/prab.png", // Using placeholder image
+      image: "/Assets/doc-prab-2.png", // Using placeholder image
       rating: 4.9,
       reviews: 152,
       languages: [
@@ -87,7 +87,7 @@ const Team = () => {
       id: 4,
       name: t('team.members.majd.name'),
       title: t('team.members.majd.title'),
-      image: "/Assets/majd3.png", // Using placeholder image
+      image: "/Assets/doc-majd-2.png", // Using placeholder image
       rating: 4.9,
       reviews: 152,
       languages: [
