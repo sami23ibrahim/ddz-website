@@ -95,6 +95,7 @@ const HomeVideo = ({ videoSrc = "/docs.mp4", mobileVideoSrc = "/vertical-intro.m
             muted
             loop
             playsInline
+            preload="auto"
             onError={() => setVideoError(true)}
             onLoadStart={() => setVideoError(false)}
             style={{

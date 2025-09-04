@@ -87,7 +87,7 @@ const Team = () => {
       id: 4,
       name: t('team.members.majd.name'),
       title: t('team.members.majd.title'),
-      image: "/Assets/doc-majd-2.png", // Using placeholder image
+      image: "/Assets/doc-majd-3.png", // Using placeholder image
       rating: 4.9,
       reviews: 152,
       languages: [

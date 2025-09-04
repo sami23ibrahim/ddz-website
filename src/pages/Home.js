@@ -59,7 +59,7 @@ const Home = () => {
         <HomeVideo 
           videoSrc="/docs4.mp4"
           mobileVideoSrc="/docsmobile.mp4"
-          posterImage="/Assets/logo2.png"
+          posterImage="/Assets/vid-img-1.png"
           windowWidth={windowWidth}
         />
       </div>
