@@ -74,7 +74,8 @@ const Team = () => {
       reviews: 152,
       languages: [
         { code: "de", flag: "/Assets/de.png", name: "German" },
-        { code: "en", flag: "/Assets/en.png", name: "English" }
+        { code: "en", flag: "/Assets/en.png", name: "English" },
+        { code: "hi", flag: "/Assets/india.png", name: "Hindi" }
       ],
       baseSpecialties: [
         { name: t('team.specialties.prabh_preview'), color: "#422f4099", isPreview: true }
