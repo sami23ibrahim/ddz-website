@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
     { code: "en", label: "EN", flag: "/Assets/en.png" },
     { code: "de", label: "DE", flag: "/Assets/de.png" },
     { code: "ar", label: "AR", flag: "/Assets/pala.jpg" },
-    { code: "tr", label: "TR", flag: "/Assets/tr.png" },
+    // { code: "tr", label: "TR", flag: "/Assets/tr.png" }, // Turkish language commented out
   ];
 
   const changeLanguage = (lang) => {

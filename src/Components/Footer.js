@@ -116,7 +116,7 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="flex space-x-4 md:mr-28">
             <a 
-              href="https://www.facebook.com" 
+              href="https://facebook.com/diedreizahnaerzte" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 cursor-pointer"

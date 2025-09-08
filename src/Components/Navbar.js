@@ -206,7 +206,7 @@ const Navbar = () => {
 								href="tel:0301234567"
 								className="text-2xl font-semibold text-[#422f40] hover:text-[#5a3d54] transition-colors duration-200 no-underline"
 							>
-								(030) 123 45 67
+								(030) 69005528
 							</a>
 							<a
 								href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?bookingFunnelSource=profile"
