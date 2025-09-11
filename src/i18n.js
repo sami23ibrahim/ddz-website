@@ -14,15 +14,15 @@ const resources = {
   tr: { translation: tr }
 };
 
-// Get saved language from localStorage or default to 'en'
-const savedLanguage = localStorage.getItem('lang') || 'en';
+// Get saved language from localStorage or default to 'de'
+const savedLanguage = localStorage.getItem('lang') || 'de';
 
 i18n
   .use(initReactI18next)
   .init({
     resources,
     lng: savedLanguage, // use saved language
-    fallbackLng: 'en',
+    fallbackLng: 'de',
     interpolation: {
       escapeValue: false
     }

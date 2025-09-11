@@ -129,8 +129,8 @@ const SmilesGallery = () => {
         <div ref={(el) => (rowsRef.current[0] = el)} className="flex w-full justify-center items-center gap-x-6">
           {row1.map((img, idx) => (
             idx === 3 && !isMobile ? (
-              <h1 key={idx} className="text-[#422f40] text-8xl font-bold whitespace-nowrap tracking-tighter">
-                {t("smile_gallery.words.our")}
+              <h1 key={idx} className="text-[#422f40] text-7xl font-bold whitespace-nowrap tracking-tighter">
+                {t("smile_gallery.words.our").toUpperCase()}
               </h1>
             ) : (
               <div key={idx} 
@@ -146,8 +146,8 @@ const SmilesGallery = () => {
         <div ref={(el) => (rowsRef.current[1] = el)} className="flex w-full justify-center items-center gap-x-6">
           {row2.map((img, idx) => (
             idx === 5 && !isMobile  ? (
-              <h1 key={idx} className="text-[#422f40] text-8xl font-bold whitespace-nowrap tracking-tighter">
-                {t("smile_gallery.words.smile")}
+              <h1 key={idx} className="text-[#422f40] text-7xl font-bold whitespace-nowrap tracking-tighter">
+                {t("smile_gallery.words.smile").toUpperCase()}
               </h1>
             ) : (
               <div key={idx} 
@@ -163,8 +163,8 @@ const SmilesGallery = () => {
         <div ref={(el) => (rowsRef.current[2] = el)} className="flex w-full justify-center items-center gap-x-6">
           {row3.map((img, idx) => (
             idx === 3 && !isMobile ? (
-              <h1 key={idx} className="text-[#422f40] text-8xl font-bold whitespace-nowrap tracking-tighter">
-                {t("smile_gallery.words.gallery")}
+              <h1 key={idx} className="text-[#422f40] text-7xl font-bold whitespace-nowrap tracking-tighter">
+                {t("smile_gallery.words.gallery").toUpperCase()}
               </h1>
             ) : (
               <div key={idx} 

@@ -104,7 +104,7 @@
     "heading": {
       "title": "Die Drei Zahnärzte",
       "subtitle": "Your Smile, Our Mission",
-      "tagline": "Kreuzberg's Favourite Dental Clinic"
+      "tagline": "Berlin's Favourite Dental Clinic"
     },
     "book_button": "Book an Appointment",
     "services_title": "Our Services",
@@ -554,7 +554,7 @@
         {
           "type": "list",
           "items": [
-            "<a href='/service/oral_surgery' class='underline hover:opacity-75'>Fissure seal</a> permanent teeth to keep food and bacteria out of deep grooves.",
+            "Fissure seal permanent teeth to keep food and bacteria out of deep grooves.",
             "Catch and treat early caries in children with minimally invasive fillings and home-care coaching.",
             "Offer pediatric orthodontic checks to spot bite issues while the jaw is still flexible.",
             "Schedule gentle child prophylaxis appointments where kids learn brushing techniques, try plaque-disclosing dye and leave with a clean, polished smile.",

@@ -105,8 +105,8 @@ const NewServicesMobile = () => {
                             </div>
                         </div>
                         <div className="w-2/3">
-                            <h2 className={`text-2xl md:text-3xl font-bold text-[#422f40] uppercase leading-none tracking-tight ${isRTL ? 'text-right' : 'text-left'}`}>{service.title}</h2>
-                            <p className={`text-l text-[#422f40] uppercase mt-2 tracking-wider ${isRTL ? 'text-right' : 'text-left'}`}>{service.subtitle}</p>
+                            <h2 className={`text-lg sm:text-xl md:text-2xl font-bold text-[#422f40] uppercase leading-tight tracking-tight break-words ${isRTL ? 'text-right' : 'text-left'}`}>{service.title}</h2>
+                            <p className={`text-sm sm:text-base text-[#422f40] uppercase mt-2 tracking-wider leading-tight ${isRTL ? 'text-right' : 'text-left'}`}>{service.subtitle}</p>
                         </div>
                     </Link>
                 ))}

@@ -183,7 +183,7 @@ const NewServices = () => {
                                         </div>
                                         <div className="flex-grow">
                                             <h2
-                                                className={`uppercase text-5xl font-bold transition-all duration-300 cursor-pointer ${
+                                                className={`uppercase text-4xl lg:text-5xl font-bold transition-all duration-300 cursor-pointer break-words leading-tight ${
                                                     activeService?.key === service.key ? 'text-[#422f40] translate-x-10' : ''
                                                 }`}
                                             >

@@ -100,9 +100,9 @@
   },
   "new_full_screen_video": {
     "heading": {
-        "title": "Den Drei Zahnärzten",
+        "title": "Die Drei Zahnärzten",
         "subtitle": "Ihr Lächeln, Unsere Leidenschaft",
-        "tagline": "Kreuzbergs Liebste Zahnarztpraxis"
+        "tagline": "Berlins Liebste Zahnarztpraxis"
     },
     "book_button": "Termin buchen",
     "services_title": "Unsere Leistungen",
@@ -528,7 +528,7 @@
             {
                 "type": "list",
                 "items": [
-                    "Machen wir <a href='/service/oral_surgery' class='underline hover:opacity-75'>Fissuren Versiegelungen</a> an bleibende Zähne damit sich keine Bakterien und Essensreste in den tiefen Rillen festsetzen",
+                    "Machen wir Fissuren Versiegelungen an bleibende Zähne damit sich keine Bakterien und Essensreste in den tiefen Rillen festsetzen",
                     "Erkennen und behandeln wir beginnende Karies mit minimalinvasiven Füllungen und Tipps für die richtige Zahnpflege daheim",
                     "Führen wir bei Bedarf kieferorthopädische Kontrollen im Kindesalter durch um Fehlstellungen frühzeitig zu erkennen solange der Kiefer noch formbar ist",
                     "Bieten wir sanfte kindgerechte Prophylaxe an – die Kinder lernen wie richtiges Zähneputzen funktioniert, können Plaque-Färbetabletten ausprobieren und gehen mit einem sauberen glänzenden Lächeln nach Hause",
