@@ -72,9 +72,27 @@ const ServiceMobile = () => {
                     <div key={index} className="mt-8 p-6 bg-[#422f40] text-[#e8e2d4] rounded-lg">
                         <p className="text-lg leading-relaxed font-semibold" 
                            dangerouslySetInnerHTML={{ __html: mobileContent(section.content) }} />
-                        <button className="mt-6 bg-[#e8e2d4] hover:bg-opacity-80 text-[#422f40] font-bold text-lg py-3 px-8 rounded-full transition-colors duration-300">
+                        <a 
+                            href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-6 bg-[#e8e2d4] hover:bg-opacity-80 text-[#422f40] font-bold text-lg py-3 px-8 rounded-full transition-colors duration-300"
+                        >
                             {t('new_services.book_appointment')}
-                        </button>
+                        </a>
+                    </div>
+                );
+            case 'booking':
+                return (
+                    <div key={index} className="mt-8 text-center">
+                        <a 
+                            href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-[#422f40] hover:bg-opacity-80 text-[#e8e2d4] font-bold text-lg py-3 px-8 rounded-full transition-colors duration-300"
+                        >
+                            {section.content}
+                        </a>
                     </div>
                 );
             default:

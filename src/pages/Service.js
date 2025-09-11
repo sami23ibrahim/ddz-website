@@ -110,9 +110,14 @@ const Service = () => {
                         <p className="text-lg leading-relaxed font-semibold" 
                            style={rtlStyle}
                            dangerouslySetInnerHTML={{ __html: section.content }} />
-                        <button className="mt-6 bg-[#e8e2d4] hover:bg-opacity-80 text-[#422f40] font-bold text-lg py-3 px-8 rounded-full transition-colors duration-300">
+                        <a 
+                            href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block mt-6 bg-[#e8e2d4] hover:bg-opacity-80 text-[#422f40] font-bold text-lg py-3 px-8 rounded-full transition-colors duration-300"
+                        >
                             {t('new_services.book_appointment')}
-                        </button>
+                        </a>
                     </div>
                 );
             case 'booking':
