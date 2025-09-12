@@ -6,6 +6,7 @@ import Service from "./pages/Service";
 import ServiceMobile from "./pages/ServiceMobile";
 import Blog from "./pages/Blog";
 import Jobs from "./pages/Jobs";
+import JobDetail from "./pages/JobDetail";
 import BeforePage from "./pages/beforePage";
 import LanguageSwitcher from './Components/LanguageSwitcher';
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/service-mobile/:title" element={<ServiceMobile />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/jobs" element={<Jobs />} />
+        <Route path="/jobs/:jobId" element={<JobDetail />} />
         <Route path="/beforePage" element={<BeforePage />} />
       </Routes>
       {/* Show the modal when a background page is set */}

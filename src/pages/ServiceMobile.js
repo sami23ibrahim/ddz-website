@@ -7,7 +7,7 @@ const ServiceMobile = () => {
     const { title: serviceKey } = useParams();
     const navigate = useNavigate();
     const location = useLocation();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const services = t('new_services.services', { returnObjects: true });
     const service = services[serviceKey];
@@ -43,34 +43,44 @@ const ServiceMobile = () => {
 
     const content = t(`service_content.${serviceKey}`, { returnObjects: true });
 
+    // Check if current language is Arabic for RTL styling
+    const isArabic = i18n.language === 'ar';
+
     const renderContentSection = (section, index) => {
         const mobileContent = (contentString) => contentString.replace(/href='\/service\//g, "href='/service-mobile/");
+        const rtlStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : {};
 
         switch (section.type) {
             case 'paragraph':
                 return (
                     <p key={index} className="text-lg text-[#422f40] leading-relaxed mb-6" 
+                       style={rtlStyle}
                        dangerouslySetInnerHTML={{ __html: mobileContent(section.content) }} />
                 );
             case 'heading':
                 return (
-                    <h3 key={index} className="text-xl font-bold text-[#422f40] mb-4 mt-8">
+                    <h3 key={index} className="text-xl font-bold text-[#422f40] mb-4 mt-8"
+                        style={rtlStyle}>
                         {section.content}
                     </h3>
                 );
             case 'list':
                 return (
-                    <ul key={index} className="text-lg text-[#422f40] leading-relaxed mb-6 ml-6 space-y-2">
+                    <ul key={index} className="text-lg text-[#422f40] leading-relaxed mb-6 ml-6 space-y-2"
+                        style={isArabic ? { direction: 'rtl', textAlign: 'right', marginRight: '1.5rem', marginLeft: '0' } : {}}>
                         {section.items.map((item, itemIndex) => (
                             <li key={itemIndex} className="list-disc" 
+                                style={rtlStyle}
                                 dangerouslySetInnerHTML={{ __html: mobileContent(item) }} />
                         ))}
                     </ul>
                 );
             case 'cta':
                 return (
-                    <div key={index} className="mt-8 p-6 bg-[#422f40] text-[#e8e2d4] rounded-lg">
+                    <div key={index} className="mt-8 p-6 bg-[#422f40] text-[#e8e2d4] rounded-lg"
+                         style={rtlStyle}>
                         <p className="text-lg leading-relaxed font-semibold" 
+                           style={rtlStyle}
                            dangerouslySetInnerHTML={{ __html: mobileContent(section.content) }} />
                         <a 
                             href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral"
@@ -84,7 +94,8 @@ const ServiceMobile = () => {
                 );
             case 'booking':
                 return (
-                    <div key={index} className="mt-8 text-center">
+                    <div key={index} className="mt-8 text-center"
+                         style={rtlStyle}>
                         <a 
                             href="https://www.doctolib.de/zahnarztpraxis/berlin/die-drei-zahnaerzte/booking/specialities?profile_skipped=true&utm_source=die-drei-zahnaerzte-website-button&utm_medium=referral&utm_campaign=website-button&utm_content=option-8&bookingFunnelSource=external_referral"
                             target="_blank"
@@ -129,7 +140,8 @@ const ServiceMobile = () => {
                 className="w-full h-full"
             >
                 {/* Single Column - Content with image beside title */}
-                <div className="h-full overflow-y-auto p-6 md:p-8 service-content-mobile">
+                <div className="h-full overflow-y-auto p-6 md:p-8 service-content-mobile"
+                     style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
                     <button 
                         onClick={handleClose}
                         className="absolute top-6 right-6 text-5xl font-light text-white z-10"
@@ -151,20 +163,23 @@ const ServiceMobile = () => {
 
                         {/* Service Content */}
                         <div className="mb-12">
-                            <h3 className="text-xs text-gray-400 uppercase tracking-widest mb-4">{t('service_page.the_service')}</h3>
+                            <h3 className="text-xs text-gray-400 uppercase tracking-widest mb-4"
+                                style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>{t('service_page.the_service')}</h3>
                             {content && content.sections ? (
                                 <div>
                                     {content.sections.map((section, index) => renderContentSection(section, index))}
                                 </div>
                             ) : (
-                                <p className="text-lg text-[#422f40] leading-relaxed">
+                                <p className="text-lg text-[#422f40] leading-relaxed"
+                                   style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
                                     {t('service_page.default_description')}
                                 </p>
                             )}
                         </div>
                         
                         {!content && (
-                            <div className="space-y-6 text-lg text-[#422f40] leading-relaxed">
+                            <div className="space-y-6 text-lg text-[#422f40] leading-relaxed"
+                                 style={isArabic ? { direction: 'rtl', textAlign: 'right' } : {}}>
                                 <p>
                                     {t('service_page.extra_description1')}
                                 </p>
