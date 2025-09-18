@@ -40,7 +40,14 @@ const Footer = () => {
               <FaMapMarkerAlt className="text-[#e8e2d4] text-xl mt-1" />
               <div>
                 <h3 className="font-bold text-xl">{t('footer.clinic_name')}</h3>
-                <p className="text-base font-medium">Skalitzer Straße 137, 10999 Berlin</p>
+                <a 
+                  href="https://maps.google.com/?q=Skalitzer+Str.+137,+10999+Berlin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base font-medium hover:text-[#d4c4a8] transition-colors duration-200 no-underline"
+                >
+                  Skalitzer Straße 137, 10999 Berlin
+                </a>
               </div>
             </div>
             
@@ -48,7 +55,12 @@ const Footer = () => {
               <FaPhone className="text-[#e8e2d4] text-xl" />
               <div>
                 <h3 className="font-bold text-xl">{t('footer.phone_number')}</h3>
-                <p className="text-base font-medium">030 69005528</p>
+                <a 
+                  href="tel:030 69005528" 
+                  className="text-base font-medium hover:text-[#d4c4a8] transition-colors duration-200 no-underline"
+                >
+                  030 69005528
+                </a>
               </div>
             </div>
           </div>
