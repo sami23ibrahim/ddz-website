@@ -5,14 +5,12 @@ import FuzzyText from './FuzzyText';
 import { useFontLoader } from '../hooks/useFontLoader';
 
 const images = [
-  "/Assets/g8.png",
   "/Assets/g9.png",
   "/Assets/g7.png",
   "/Assets/g4.png",
 
   "/Assets/g10.png",
   "/Assets/g11.png",
-  "/Assets/g8.png",
   "/Assets/g9.png",
   "/Assets/g7.png",
   "/Assets/g4.png",

@@ -635,6 +635,43 @@
       "default_description": "Professionelle Zahnbehandlung in Berlin-Kreuzberg. Vereinbaren Sie einen Termin mit unserem erfahrenen mehrsprachigen Team.",
       "keywords": "zahnbehandlung, berlin, zahnarzt, zahnpflege"
     }
+  },
+  "impressum": {
+    "title": "Impressum",
+    "company_name": "Dentists & Friends GmbH",
+    "address": "Bendastraße 11a<br />12051 Berlin",
+    "represented_by": "Vertreten durch:",
+    "representatives": {
+      "fabian": "Badour, Fabian",
+      "hakam": "El Daghma, Hakam",
+      "prabh": "Mahal, Prabjit Singh"
+    },
+    "contact": "Kontakt:",
+    "phone": "Telefon: 030 / 69005528",
+    "email": "E-Mail: team@diedreizahnaerzte.berlin",
+    "registration": "Registereintrag:",
+    "court": "Registergericht: Amtsgericht Berlin (Charlottenburg)",
+    "registration_number": "Registernummer: HRB 253202 B",
+    "vat_id": "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:",
+    "vat_number": "DE363380171",
+    "business_purpose": "Gegenstand des Unternehmens:",
+    "business_description": "Die Erbringung ärztlicher und nicht ärztlicher Tätigkeiten auf dem Gebiet der ambulanten privatzahnärztlichen und vertragszahnärztlichen Versorgung im gesetzlich zulässigen Umfang, insbesondere im Rahmen der Zulassung als zahnmedizinisches Versorgungszentrum im Sinne des § 95 Abs. 1 SGB V, sowie im gesetzlich zulässigen Umfang die Bildung von Kooperationen mit ambulanten und stationären Leistungserbringern im Bereich des Gesundheitswesens. Gegenstand ist ferner die Verwaltung und Verwertung des eigenen Vermögens.",
+    "copyright": "Urheberrecht:",
+    "copyright_text": "Copyright © [2023] [Dentists & Friends GmbH]",
+    "responsible": "Verantwortlich für den Inhalt:",
+    "responsible_company": "Dentists & Friends GmbH",
+    "disclaimer": "Haftungsausschluss:",
+    "disclaimer_text": "Die Informationen auf dieser Website dienen ausschließlich allgemeinen Informationszwecken. Obwohl wir alle Anstrengungen unternehmen, um sicherzustellen, dass die bereitgestellten Informationen aktuell, vollständig und korrekt sind, übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Informationen. Die Nutzung der Informationen auf dieser Website erfolgt auf eigenes Risiko.",
+    "disclaimer_liability": "Wir haften nicht für Schäden oder Verluste, die sich aus der Nutzung der auf dieser Website bereitgestellten Informationen ergeben. Dies gilt auch für Verlinkungen zu anderen Websites, auf die wir keinen Einfluss haben und für deren Inhalt wir keine Verantwortung übernehmen.",
+    "disclaimer_advice": "Die auf dieser Website bereitgestellten Informationen stellen keine rechtliche, medizinische, finanzielle oder professionelle Beratung dar. Konsultieren Sie immer qualifizierte Fachleute, wenn Sie spezifische Fragen oder Bedenken haben.",
+    "disclaimer_changes": "Wir behalten uns das Recht vor, den Inhalt dieser Website ohne vorherige Ankündigung zu ändern, zu ergänzen oder zu löschen. Es wird keine Gewähr für die ununterbrochene Verfügbarkeit dieser Website übernommen.",
+    "disclaimer_copyright": "Urheberrechte: Der Inhalt dieser Website ist urheberrechtlich geschützt. Die Vervielfältigung, Bearbeitung, Verbreitung oder jede andere Art der Verwendung des Inhalts, insbesondere Texten, Bildern oder Grafiken, bedarf unserer schriftlichen Zustimmung.",
+    "disclaimer_agreement": "Durch die Nutzung dieser Website stimmen Sie diesem Haftungsausschluss zu.",
+    "additional_address": "Adresse:",
+    "additional_address_text": "Skalitzer Straße 137, 10999 Berlin",
+    "opening_hours": "Sprechzeiten:",
+    "opening_hours_text": "Montag, Dienstag, Donnerstag: 08:30-20:00 Uhr<br />Mittwoch: 08:30-18:30 Uhr<br />Freitag: 09:00-15:00 Uhr",
+    "contact_info": "Kontakt:<br />030 69005528 team@diedreizahnaerzte.berlin"
   }
 }
   

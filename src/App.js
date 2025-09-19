@@ -8,6 +8,7 @@ import Blog from "./pages/Blog";
 import Jobs from "./pages/Jobs";
 import JobDetail from "./pages/JobDetail";
 import BeforePage from "./pages/beforePage";
+import Impressum from "./pages/Impressum";
 import LanguageSwitcher from './Components/LanguageSwitcher';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/jobs" element={<Jobs />} />
         <Route path="/jobs/:jobId" element={<JobDetail />} />
         <Route path="/beforePage" element={<BeforePage />} />
+        <Route path="/impressum" element={<Impressum />} />
       </Routes>
       {/* Show the modal when a background page is set */}
       {background && (

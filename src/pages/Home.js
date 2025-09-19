@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from "react-i18next";
 import HomeVideo from "../Components/HomeVideo";
@@ -24,6 +24,30 @@ const LazySmilesGallery = React.lazy(() => import("../Components/SmilesGallery")
 const Home = () => {
   const { t, i18n } = useTranslation();
   const windowWidth = useWindowWidth();
+
+  // Handle hash navigation when coming from other pages
+  useEffect(() => {
+    const handleHashNavigation = () => {
+      const hash = window.location.hash.substring(1);
+      if (hash) {
+        setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            let offset = element.offsetTop;
+            if (hash === "landing-page") {
+              offset = 0;
+            }
+            window.scrollTo({
+              top: offset,
+              behavior: "smooth",
+            });
+          }
+        }, 100); // Small delay to ensure page is loaded
+      }
+    };
+
+    handleHashNavigation();
+  }, []);
 
   // Placeholder components for lazy loading
   const SmilesGalleryPlaceholder = () => (

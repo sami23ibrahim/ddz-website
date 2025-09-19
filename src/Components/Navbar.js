@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "./Logo";
 
 const Navbar = () => {
 	const { t } = useTranslation();
+	const location = useLocation();
 	const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -48,6 +49,17 @@ const Navbar = () => {
 		}
 	};
 
+	const handleNavigation = (sectionId) => {
+		// If we're on the home page, scroll to section
+		if (location.pathname === '/') {
+			scrollToSection(sectionId);
+		} else {
+			// If we're on another page, navigate to home with hash
+			window.location.href = `/#${sectionId}`;
+		}
+		setMenuOpen(false);
+	};
+
 	return (
 		<nav
 			className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out ${
@@ -87,7 +99,7 @@ const Navbar = () => {
 							</div>
 							<div className="flex items-center space-x-8">
 								<button
-									onClick={() => scrollToSection("landing-page")}
+									onClick={() => handleNavigation("landing-page")}
 									className={`${
 										isScrolled
 											? "text-gray-600 hover:text-gray-800"
@@ -97,7 +109,7 @@ const Navbar = () => {
 									{t("navbar.home")}
 								</button>
 								<button
-									onClick={() => scrollToSection("services")}
+									onClick={() => handleNavigation("services")}
 									className={`${
 										isScrolled
 											? "text-gray-600 hover:text-gray-800"
@@ -107,7 +119,7 @@ const Navbar = () => {
 									{t("navbar.services")}
 								</button>
 								<button
-									onClick={() => scrollToSection("team")}
+									onClick={() => handleNavigation("team")}
 									className={`${
 										isScrolled
 											? "text-gray-600 hover:text-gray-800"
@@ -171,19 +183,19 @@ const Navbar = () => {
 
 					<div className="flex flex-col space-y-8 text-center">
 						<button
-							onClick={() => scrollToSection("landing-page")}
+							onClick={() => handleNavigation("landing-page")}
 							className="text-4xl font-bold text-[#422f40] hover:text-[#5a3d54] transition-colors duration-200"
 						>
 							{t("navbar.home")}
 						</button>
 						<button
-							onClick={() => scrollToSection("services")}
+							onClick={() => handleNavigation("services")}
 							className="text-4xl font-bold text-[#422f40] hover:text-[#5a3d54] transition-colors duration-200"
 						>
 							{t("navbar.services")}
 						</button>
 						<button
-							onClick={() => scrollToSection("team")}
+							onClick={() => handleNavigation("team")}
 							className="text-4xl font-bold text-[#422f40] hover:text-[#5a3d54] transition-colors duration-200"
 						>
 							{t("navbar.team")}

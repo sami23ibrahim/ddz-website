@@ -189,6 +189,9 @@ const Footer = () => {
           <div className="text-xs">
             © diedreizahnaerzte 2025
           </div>
+          <div className="text-xs">
+            <a href="/impressum" className="hover:underline">Impressum</a>
+          </div>
         </div>
         
       </div>

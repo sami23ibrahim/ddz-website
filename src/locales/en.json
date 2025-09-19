@@ -658,5 +658,42 @@
       "default_description": "Professional dental treatment in Berlin-Kreuzberg. Book your appointment with our experienced multilingual team.",
       "keywords": "dental treatment, berlin, zahnarzt, dental care"
     }
+  },
+  "impressum": {
+    "title": "Impressum",
+    "company_name": "Dentists & Friends GmbH",
+    "address": "Bendastraße 11a<br />12051 Berlin",
+    "represented_by": "Represented by:",
+    "representatives": {
+      "fabian": "Badour, Fabian",
+      "hakam": "El Daghma, Hakam",
+      "prabh": "Mahal, Prabjit Singh"
+    },
+    "contact": "Contact:",
+    "phone": "Phone: 030 / 69005528",
+    "email": "E-Mail: team@diedreizahnaerzte.berlin",
+    "registration": "Registration:",
+    "court": "Register Court: Amtsgericht Berlin (Charlottenburg)",
+    "registration_number": "Registration Number: HRB 253202 B",
+    "vat_id": "VAT ID according to § 27 a VAT Act:",
+    "vat_number": "DE363380171",
+    "business_purpose": "Business Purpose:",
+    "business_description": "The provision of medical and non-medical services in the field of outpatient private and contract dental care within the legally permissible scope, in particular within the framework of approval as a dental care center within the meaning of § 95 para. 1 SGB V, as well as within the legally permissible scope the formation of cooperations with outpatient and inpatient service providers in the health care sector. The object is also the administration and exploitation of own assets.",
+    "copyright": "Copyright:",
+    "copyright_text": "Copyright © [2023] [Dentists & Friends GmbH]",
+    "responsible": "Responsible for content:",
+    "responsible_company": "Dentists & Friends GmbH",
+    "disclaimer": "Disclaimer:",
+    "disclaimer_text": "The information on this website is for general information purposes only. Although we make every effort to ensure that the information provided is current, complete and correct, we assume no guarantee for the accuracy, completeness or timeliness of the information provided. The use of the information on this website is at your own risk.",
+    "disclaimer_liability": "We are not liable for damages or losses that arise from the use of the information provided on this website. This also applies to links to other websites over which we have no influence and for whose content we assume no responsibility.",
+    "disclaimer_advice": "The information provided on this website does not constitute legal, medical, financial or professional advice. Always consult qualified professionals if you have specific questions or concerns.",
+    "disclaimer_changes": "We reserve the right to change, supplement or delete the content of this website without prior notice. No guarantee is given for the uninterrupted availability of this website.",
+    "disclaimer_copyright": "Copyright: The content of this website is protected by copyright. The reproduction, editing, distribution or any other use of the content, in particular texts, images or graphics, requires our written consent.",
+    "disclaimer_agreement": "By using this website, you agree to this disclaimer.",
+    "additional_address": "Address:",
+    "additional_address_text": "Skalitzer Straße 137, 10999 Berlin",
+    "opening_hours": "Opening Hours:",
+    "opening_hours_text": "Monday, Tuesday, Thursday: 08:30-20:00<br />Wednesday: 08:30-18:30<br />Friday: 09:00-15:00",
+    "contact_info": "Contact:<br />030 69005528 team@diedreizahnaerzte.berlin"
   }
 }
