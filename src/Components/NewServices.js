@@ -108,10 +108,10 @@ const NewServices = () => {
                         hoverIntensity={0.2} 
                         enableHover={true}
                         color="#422f40"
-                        fontSize="clamp(1rem, 6vw, 6rem)"                        fontWeight={800}
+                        fontSize="clamp(1rem, 5vw, 5rem)"                        fontWeight={800}
                         fontFamily={i18n.language === 'ar' ? 'RH-Zak, sans-serif' : 'inherit'}
                     >
-                        {t('new_services.title')}
+                        {t('new_services.title').toUpperCase()}
                     </FuzzyText>
                     </div>
                 </div>
