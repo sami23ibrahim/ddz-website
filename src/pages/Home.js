@@ -67,7 +67,7 @@ const Home = () => {
         <meta property="og:title" content={t('meta.home.title')} />
         <meta property="og:description" content={t('meta.home.description')} />
         <meta property="og:image" content="/Assets/logo2.png" />
-        <meta property="og:url" content="https://diedreizahnaerzte.de" />
+        <meta property="og:url" content="https://diedreizahnaerzte.berlin" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content={i18n.language} />
         
@@ -76,6 +76,81 @@ const Home = () => {
         <meta name="twitter:title" content={t('meta.home.title')} />
         <meta name="twitter:description" content={t('meta.home.description')} />
         <meta name="twitter:image" content="/Assets/logo2.png" />
+        
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "DentalClinic",
+            "name": "Die Drei Zahnärzte",
+            "description": "Professional dental care in Berlin-Kreuzberg. Multilingual team offering comprehensive dental treatments, implants, Invisalign, and anxiety-free dentistry.",
+            "url": "https://diedreizahnaerzte.berlin",
+            "logo": "https://diedreizahnaerzte.berlin/Assets/logo2.png",
+            "image": "https://diedreizahnaerzte.berlin/Assets/logo2.png",
+            "telephone": "+49 30 69005528",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Skalitzer Straße 137",
+              "addressLocality": "Berlin",
+              "postalCode": "10999",
+              "addressCountry": "DE"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "52.5200",
+              "longitude": "13.4050"
+            },
+            "openingHours": [
+              "Mo-Th 09:00-18:00",
+              "We 09:00-18:00", 
+              "Fr 09:00-18:00"
+            ],
+            "sameAs": [
+              "https://diedreizahnaerzte.berlin"
+            ],
+            "medicalSpecialty": [
+              "Dentistry",
+              "Implantology", 
+              "Orthodontics",
+              "Aesthetic Dentistry",
+              "Paediatric Dentistry"
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Dental Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "MedicalProcedure",
+                    "name": "Dental Anxiety Care & Sedation"
+                  }
+                },
+                {
+                  "@type": "Offer", 
+                  "itemOffered": {
+                    "@type": "MedicalProcedure",
+                    "name": "Aesthetic Dentistry & Smile Design"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "MedicalProcedure", 
+                    "name": "Implantology"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "MedicalProcedure",
+                    "name": "Invisalign Orthodontics"
+                  }
+                }
+              ]
+            }
+          })}
+        </script>
       </Helmet>
       <div className="bg-[#e8e2d4]">
         <Navbar />

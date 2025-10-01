@@ -70,7 +70,7 @@ There are subtle references to Arabic and Indian aesthetics, a living olive tree
                   >
                     <img
                       src={img}
-                      alt=""
+                      alt={`Dental treatment gallery image ${idx + 1}`}
                       className=" object-cover w-[380px] h-[420px]"
                     />
                   </div>

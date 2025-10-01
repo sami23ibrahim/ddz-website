@@ -122,7 +122,7 @@ const ServiceMobile = () => {
                 <meta property="og:title" content={service?.title || 'Dental Service'} />
                 <meta property="og:description" content={service?.subtitle || t('meta.service.default_description')} />
                 <meta property="og:image" content={service?.img || '/Assets/logo2.png'} />
-                <meta property="og:url" content={`https://diedreizahnaerzte.de/service-mobile/${serviceKey}`} />
+                <meta property="og:url" content={`https://diedreizahnaerzte.berlin/service-mobile/${serviceKey}`} />
                 <meta property="og:type" content="website" />
                 
                 {/* Twitter Card */}

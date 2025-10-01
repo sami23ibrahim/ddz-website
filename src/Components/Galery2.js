@@ -245,7 +245,7 @@ const Galery2 = () => {
               >
               <img
                 src={img}
-                alt=""
+                alt={`Dental treatment result ${idx + 1}`}
                 className="rounded-xl object-cover w-full pointer-events-none"
                 style={{ height: `${imageHeight}px` }}
                 draggable={false}

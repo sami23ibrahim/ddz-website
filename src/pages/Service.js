@@ -163,7 +163,7 @@ const Service = () => {
                 <meta property="og:title" content={service?.title || 'Dental Service'} />
                 <meta property="og:description" content={service?.subtitle || t('meta.service.default_description')} />
                 <meta property="og:image" content={service?.img || '/Assets/logo2.png'} />
-                <meta property="og:url" content={`https://diedreizahnaerzte.de/service/${serviceKey}`} />
+                <meta property="og:url" content={`https://diedreizahnaerzte.berlin/service/${serviceKey}`} />
                 <meta property="og:type" content="website" />
                 <meta property="og:locale" content={i18n.language} />
                 
