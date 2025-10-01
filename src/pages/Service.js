@@ -53,7 +53,7 @@ const Service = () => {
         return () => {
             delete window.handleInternalLink;
         };
-    }, [navigate, location.state?.background]);
+    }, [navigate, location.state?.background, handleInternalLink]);
 
     if (!service) {
         return (
