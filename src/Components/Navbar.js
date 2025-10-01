@@ -82,7 +82,7 @@ const Navbar = () => {
 				>
 					{isMobile ? (
 						<div className="flex items-center justify-between px-4 py-2">
-							<Logo logoSrc="/Assets/logo2.png" className="w-20" />
+							<Logo logoSrc="/Assets/logo2.png" altText="Die Drei Zahnärzte Logo" className="w-20" />
 							<button
 								onClick={() => setMenuOpen(!menuOpen)}
 								className={`text-5xl ${
@@ -95,7 +95,7 @@ const Navbar = () => {
 					) : (
 						<div className="flex items-center justify-between h-16 px-4">
 							<div className="flex-shrink-0">
-								<Logo logoSrc="/Assets/logo2.png" className="w-16" />
+								<Logo logoSrc="/Assets/logo2.png" altText="Die Drei Zahnärzte Logo" className="w-16" />
 							</div>
 							<div className="flex items-center space-x-8">
 								<button

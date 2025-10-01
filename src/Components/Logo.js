@@ -1,6 +1,6 @@
 import React from "react";
 
-const Logo = ({ logoSrc, altText, className }) => {
+const Logo = ({ logoSrc, altText = "Die Drei Zahnärzte Logo", className }) => {
   return (
     <img
       src={logoSrc}
