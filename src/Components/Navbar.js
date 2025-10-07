@@ -215,7 +215,7 @@ const Navbar = () => {
 
 						<div className="mt-8 flex flex-col items-center space-y-4">
 							<a
-								href="tel:0301234567"
+								href="tel:03069005528"
 								className="text-2xl font-semibold text-[#422f40] hover:text-[#5a3d54] transition-colors duration-200 no-underline"
 							>
 								(030) 69005528
