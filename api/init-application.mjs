@@ -1,0 +1,57 @@
+// /api/init-application.mjs
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY // server-only
+);
+
+const BUCKET = process.env.SUPABASE_BUCKET || 'cvs';
+
+export default async function handler(req, res) {
+  if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' });
+
+  try {
+    const { jobCode, cvFilename, coverFilename } = req.body || {};
+    if (!jobCode || !cvFilename) return res.status(400).json({ error: 'jobCode and cvFilename are required' });
+
+    const applicationId = cryptoRandomUUID();
+
+    const getExt = (n) => (n && n.includes('.') ? n.split('.').pop().toLowerCase() : 'pdf');
+    const cvPath = `applications/${jobCode}/${applicationId}/cv.${getExt(cvFilename)}`;
+    const coverPath = coverFilename
+      ? `applications/${jobCode}/${applicationId}/cover.${getExt(coverFilename)}`
+      : null;
+
+    const { data: cvSigned, error: cvErr } =
+      await supabase.storage.from(BUCKET).createSignedUploadUrl(cvPath, 300);
+    if (cvErr) throw cvErr;
+
+    let coverSigned = null;
+    if (coverPath) {
+      const { data, error } =
+        await supabase.storage.from(BUCKET).createSignedUploadUrl(coverPath, 300);
+      if (error) throw error;
+      coverSigned = data;
+    }
+
+    return res.json({
+      applicationId,
+      cv: { path: cvPath, url: cvSigned.signedUrl },
+      cover: coverSigned ? { path: coverPath, url: coverSigned.signedUrl } : null
+    });
+  } catch (e) {
+    console.error(e);
+    return res.status(500).json({ error: 'init failed' });
+  }
+}
+
+// Small polyfill for Node <19 environments on Vercel
+function cryptoRandomUUID() {
+  if (globalThis.crypto?.randomUUID) return globalThis.crypto.randomUUID();
+  // fallback
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    const r = (Math.random() * 16) | 0, v = c === 'x' ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
