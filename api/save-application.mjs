@@ -38,7 +38,8 @@ export default async function handler(req, res) {
         cover_path: coverPath || null,
         status: 'submitted'
       }
-    ]);
+    ])
+    .select('*'); // ← add this
 
     if (error) throw error;
 
