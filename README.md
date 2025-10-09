@@ -8,6 +8,6 @@
 
 #### Remember to change the version in the package.json
 
-### Use the template dd
+### Use the template ddo
 
 ```npx create-react-app my-app --template basic```
