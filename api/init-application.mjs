@@ -24,13 +24,13 @@ export default async function handler(req, res) {
       : null;
 
     const { data: cvSigned, error: cvErr } =
-      await supabase.storage.from(BUCKET).createSignedUploadUrl(cvPath, 300);
+      await supabase.storage.from(BUCKET).createSignedUploadUrl(cvPath, 3600); // 1 hour for testing
     if (cvErr) throw cvErr;
 
     let coverSigned = null;
     if (coverPath) {
       const { data, error } =
-        await supabase.storage.from(BUCKET).createSignedUploadUrl(coverPath, 300);
+        await supabase.storage.from(BUCKET).createSignedUploadUrl(coverPath, 3600); // 1 hour for testing
       if (error) throw error;
       coverSigned = data;
     }

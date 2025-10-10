@@ -24,12 +24,20 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
     const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const maxSize = 10 * 1024 * 1024; // 10MB
 
+    if (!file || !file.type) {
+      return 'Invalid file selected';
+    }
+
     if (!allowedTypes.includes(file.type)) {
       return 'File must be a PDF, DOC, or DOCX';
     }
 
     if (file.size > maxSize) {
-      return 'File size must be 10MB or less';
+      return `File size must be 10MB or less (current: ${Math.round(file.size / 1024 / 1024)}MB)`;
+    }
+
+    if (file.size === 0) {
+      return 'File appears to be empty';
     }
 
     return null;
@@ -65,21 +73,37 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
     return r.json();
   }
   async function uploadToSignedUrl(url, file) {
-    const fd = new FormData();
-    fd.append('file', file);
+    try {
+      const fd = new FormData();
+      fd.append('file', file);
 
-    // Extract token from signed URL for authorization header
-    const urlObj = new URL(url);
-    const token = urlObj.searchParams.get('token');
+      // Extract token from signed URL for authorization header
+      const urlObj = new URL(url);
+      const token = urlObj.searchParams.get('token');
 
-    const r = await fetch(url, {
-      method: 'POST',
-      body: fd,
-      headers: {
-        'authorization': `Bearer ${token}`
+      console.log('Uploading file:', file.name, 'Size:', file.size, 'Type:', file.type);
+
+      const r = await fetch(url, {
+        method: 'POST',
+        body: fd,
+        headers: {
+          'authorization': `Bearer ${token}`
+        }
+      });
+
+      if (!r.ok) {
+        const errorText = await r.text();
+        console.error('Upload failed:', r.status, errorText);
+        throw new Error(`Upload failed: ${r.status} - ${errorText}`);
       }
-    });
-    if (!r.ok) throw new Error('Upload failed');
+
+      console.log('Upload response:', await r.text());
+
+      console.log('Upload successful');
+    } catch (error) {
+      console.error('Upload error:', error);
+      throw error;
+    }
   }
 
   const onSubmit = async (e) => {
