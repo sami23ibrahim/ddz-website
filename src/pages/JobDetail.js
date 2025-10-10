@@ -1,26 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import { jobContent } from "../data/jobContent";
+import ApplyForm from "../Components/ApplyForm";
 
 const JobDetail = () => {
-  const { jobId } = useParams();
+  const { slug } = useParams();
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
-  
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
-    phone: '',
-    coverLetter: '',
-    experience: '',
-    availability: ''
-  });
 
-  const job = jobContent[jobId];
+  const job = jobContent[slug];
 
   if (!job) {
     return (
@@ -37,33 +28,6 @@ const JobDetail = () => {
     );
   }
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you would typically send the form data to your backend
-    const subject = `Application for ${job.title} - ${formData.firstName} ${formData.lastName}`;
-    const body = `
-Name: ${formData.firstName} ${formData.lastName}
-Email: ${formData.email}
-Phone: ${formData.phone}
-Position: ${job.title}
-Experience: ${formData.experience}
-Availability: ${formData.availability}
-
-Cover Letter:
-${formData.coverLetter}
-    `;
-    
-    const mailtoLink = `mailto:jobs@diedreizahnaerzte.berlin?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    window.open(mailtoLink);
-  };
 
   return (
     <>
@@ -163,11 +127,6 @@ ${formData.coverLetter}
                   </ul>
                 </div>
 
-                {/* Application Instructions */}
-                <div>
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">How to Apply</h2>
-                  <p className="text-gray-700 leading-relaxed">{job.applicationInstructions}</p>
-                </div>
               </div>
             </div>
 
@@ -175,125 +134,7 @@ ${formData.coverLetter}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-lg shadow-lg p-8 sticky top-8">
                 <h2 className="text-2xl font-bold text-[#422f40] mb-6">Apply Now</h2>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                      First Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      name="firstName"
-                      required
-                      value={formData.firstName}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Last Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      name="lastName"
-                      required
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      required
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="experience" className="block text-sm font-medium text-gray-700 mb-1">
-                      Years of Experience
-                    </label>
-                    <input
-                      type="text"
-                      id="experience"
-                      name="experience"
-                      value={formData.experience}
-                      onChange={handleInputChange}
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="availability" className="block text-sm font-medium text-gray-700 mb-1">
-                      Availability
-                    </label>
-                    <input
-                      type="text"
-                      id="availability"
-                      name="availability"
-                      value={formData.availability}
-                      onChange={handleInputChange}
-                      placeholder="e.g., Immediate, 2 weeks notice"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="coverLetter" className="block text-sm font-medium text-gray-700 mb-1">
-                      Cover Letter *
-                    </label>
-                    <textarea
-                      id="coverLetter"
-                      name="coverLetter"
-                      required
-                      rows="6"
-                      value={formData.coverLetter}
-                      onChange={handleInputChange}
-                      placeholder="Tell us why you're interested in this position..."
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    className="w-full bg-[#422f40] hover:bg-[#5a3d54] text-white font-bold py-3 px-6 rounded-full transition-colors duration-300"
-                  >
-                    Submit Application
-                  </button>
-                </form>
-
-                <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                  <p className="text-sm text-gray-600">
-                    <strong>Note:</strong> This will open your email client with a pre-filled application. 
-                    Please attach your CV and any relevant documents before sending.
-                  </p>
-                </div>
+                <ApplyForm initialJobCode={job.code} />
               </div>
             </div>
           </div>

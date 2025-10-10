@@ -1,55 +1,16 @@
 // src/components/ApplyForm.jsx
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
-  const [jobCode, setJobCode] = useState(initialJobCode);
+export default function ApplyForm() {
+  const [jobCode, setJobCode] = useState('DA-2025-01');
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [keep, setKeep] = useState(false);
   const [cv, setCv] = useState(null);
   const [cover, setCover] = useState(null);
-  const [cvError, setCvError] = useState('');
-  const [coverError, setCoverError] = useState('');
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState('');
-
-  // Update jobCode when initialJobCode prop changes
-  useEffect(() => {
-    setJobCode(initialJobCode);
-  }, [initialJobCode]);
-
-  // File validation helpers
-  const validateFile = (file) => {
-    const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-    const maxSize = 10 * 1024 * 1024; // 10MB
-
-    if (!allowedTypes.includes(file.type)) {
-      return 'File must be a PDF, DOC, or DOCX';
-    }
-
-    if (file.size > maxSize) {
-      return 'File size must be 10MB or less';
-    }
-
-    return null;
-  };
-
-  const handleFileChange = (file, setter, errorSetter) => {
-    if (file) {
-      const error = validateFile(file);
-      if (error) {
-        errorSetter(error);
-        setter(null);
-      } else {
-        errorSetter(null);
-        setter(file);
-      }
-    } else {
-      setter(null);
-      errorSetter(null);
-    }
-  };
 
   async function initApplication(jobCode, cvFile, coverFile) {
     const r = await fetch('/api/init-application', {
@@ -73,10 +34,7 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-
     if (!cv) return setMsg('Please attach your CV.');
-    if (cvError || coverError) return setMsg('Please fix file errors before submitting.');
-
     setLoading(true); setMsg('');
     try {
       // 1) get signed URLs
@@ -123,16 +81,14 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
              value={jobCode} onChange={e=>setJobCode(e.target.value)} required />
 
       <div>
-        <label className="block mb-1">CV (PDF/DOC) *</label>
+        <label className="block mb-1">CV (PDF/DOC)</label>
         <input type="file" accept=".pdf,.doc,.docx"
-               onChange={e => handleFileChange(e.target.files?.[0] || null, setCv, setCvError)} required />
-        {cvError && <p className="text-red-500 text-sm mt-1">{cvError}</p>}
+               onChange={e=>setCv(e.target.files?.[0] || null)} required />
       </div>
       <div>
         <label className="block mb-1">Cover letter (optional)</label>
         <input type="file" accept=".pdf,.doc,.docx"
-               onChange={e => handleFileChange(e.target.files?.[0] || null, setCover, setCoverError)} />
-        {coverError && <p className="text-red-500 text-sm mt-1">{coverError}</p>}
+               onChange={e=>setCover(e.target.files?.[0] || null)} />
       </div>
 
       <label className="flex items-center gap-2">

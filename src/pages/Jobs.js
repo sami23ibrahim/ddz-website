@@ -102,23 +102,6 @@ const Jobs = () => {
             </div>
           )}
 
-          {/* Contact Information */}
-          <div className="mt-16 text-center">
-            <div className="bg-white rounded-lg shadow-lg p-8 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold text-[#422f40] mb-4">
-                {t('jobs.contact_title', 'Interested in joining our team?')}
-              </h3>
-              <p className="text-gray-600 mb-6">
-                {t('jobs.contact_description', 'Even if you don\'t see a position that matches your skills, we\'d love to hear from you. Send us your CV and we\'ll keep it on file for future opportunities.')}
-              </p>
-              <a
-                href="mailto:jobs@diedreizahnaerzte.berlin"
-                className="inline-block bg-[#422f40] hover:bg-[#5a3d54] text-white font-bold py-3 px-8 rounded-full transition-colors duration-300"
-              >
-                {t('jobs.contact_button', 'Send us your CV')}
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </>

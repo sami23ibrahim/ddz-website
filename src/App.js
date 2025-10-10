@@ -31,7 +31,7 @@ function App() {
         <Route path="/service-mobile/:title" element={<ServiceMobile />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/jobs" element={<Jobs />} />
-        <Route path="/jobs/:jobId" element={<JobDetail />} />
+        <Route path="/jobs/:slug" element={<JobDetail />} />
         <Route path="/beforePage" element={<BeforePage />} />
         <Route path="/impressum" element={<Impressum />} />
       </Routes>

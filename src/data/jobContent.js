@@ -1,5 +1,6 @@
 export const jobContent = {
     'dental_assistant': {
+        code: 'DA-2025-01',
         title: 'Dental Assistant',
         location: 'Berlin-Kreuzberg',
         type: 'Full-time',
@@ -34,6 +35,7 @@ export const jobContent = {
         applicationInstructions: 'Please send your CV and cover letter to jobs@diedreizahnaerzte.berlin with the subject line "Dental Assistant Application".'
     },
     'dental_hygienist': {
+        code: 'DH-2025-02',
         title: 'Dental Hygienist',
         location: 'Berlin-Kreuzberg',
         type: 'Full-time',
@@ -68,6 +70,7 @@ export const jobContent = {
         applicationInstructions: 'Submit your application including CV, cover letter, and copies of certifications to jobs@diedreizahnaerzte.berlin with "Dental Hygienist Application" in the subject line.'
     },
     'receptionist': {
+        code: 'REC-2025-03',
         title: 'Receptionist & Patient Coordinator',
         location: 'Berlin-Kreuzberg',
         type: 'Full-time',
@@ -102,6 +105,7 @@ export const jobContent = {
         applicationInstructions: 'Please email your resume and a brief cover letter to jobs@diedreizahnaerzte.berlin with "Receptionist Application" as the subject.'
     },
     'dental_technician': {
+        code: 'DT-2025-04',
         title: 'Dental Technician',
         location: 'Berlin-Kreuzberg',
         type: 'Full-time',
