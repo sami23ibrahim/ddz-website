@@ -41,8 +41,8 @@ export default async function handler(req, res) {
       cover: coverSigned ? { path: coverPath, url: coverSigned.signedUrl } : null
     });
   } catch (e) {
-    console.error(e);
-    return res.status(500).json({ error: 'init failed' });
+    console.error('[init-application] error:', e);
+    return res.status(500).json({ error: e?.message || String(e) || 'init failed' });
   }
 }
 
