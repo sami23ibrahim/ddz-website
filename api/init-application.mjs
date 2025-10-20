@@ -25,6 +25,13 @@ export default async function handler(req, res) {
       ? `applications/${jobCode}/${applicationId}/cover.${getExt(coverFilename)}`
       : null;
 
+    // Diagnostic: Check if storage bucket is accessible
+    const probe = await supabase.storage.from(BUCKET).list('', { limit: 1 });
+    if (probe.error) {
+      console.error('[storage probe] ', probe.error);
+      return res.status(500).json({ error: 'storage list failed: ' + (probe.error.message || String(probe.error)) });
+    }
+
     const { data: cvSigned, error: cvErr } =
       await supabase.storage.from(BUCKET).createSignedUploadUrl(cvPath, 3600); // 1 hour for testing
     if (cvErr) throw cvErr;
@@ -44,8 +51,9 @@ export default async function handler(req, res) {
     });
   } catch (e) {
     console.error('[init-application] error:', e);
-    return res.status(500).json({ error: e?.message || String(e) });
+    return res.status(500).json({ error: e?.message || String(e) || 'init failed' });
   }
+  
 }
 
 // Small polyfill for Node <19 environments on Vercel
