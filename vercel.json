@@ -2,5 +2,10 @@
   "buildCommand": "npm run build",
   "outputDirectory": "build",
   "framework": "create-react-app",
-  "installCommand": "npm install --legacy-peer-deps"
-} 
+  "installCommand": "npm install --legacy-peer-deps",
+  "functions": {
+    "api/*.mjs": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
