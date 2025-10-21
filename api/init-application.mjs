@@ -1,10 +1,10 @@
 // /api/init-application.mjs
+// /api/init-application.mjs
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.SUPABASE_SERVICE_ROLE_KEY,
-  { auth: { persistSession: false } }
+  process.env.SUPABASE_URL,               // use server-side URL
+  process.env.SUPABASE_SERVICE_ROLE_KEY   // service role key
 );
 
 
