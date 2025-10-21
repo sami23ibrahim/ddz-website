@@ -108,49 +108,57 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-
     if (!cv) return setMsg('Please attach your CV.');
-    if (cvError || coverError) return setMsg('Please fix file errors before submitting.');
-
     setLoading(true); setMsg('');
+  
     try {
-      // 1) get signed URLs
+      // 1) init
       const init = await initApplication(jobCode, cv, cover);
-      // 2) upload files
-      await uploadToSignedUrl(init.cv.url, cv);
-      if (cover && init.cover?.url) await uploadToSignedUrl(init.cover.url, cover);
-      // 3) save application row
+  
+      // 2) upload (separate try so upload errors are clear)
       try {
-        const save = await fetch('/api/save-application', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            applicationId: init.applicationId,
-            jobCode,
-            fullName,
-            email,
-            phone,
-            keepOnFile: keep,
-            cvPath: init.cv.path,
-            coverPath: init.cover?.path || null
-          })
-        }).then(r => r.json());
-
-        if (!save?.ok) throw new Error(save?.error || 'Save failed');
-        setMsg('✅ Application submitted. Thank you!');
-        // optional: reset form
-        setFullName(''); setEmail(''); setPhone(''); setKeep(false);
-        setCv(null); setCover(null);
-      } catch (e) {
-        setMsg(`Save failed: ${e.message}`);
+        await uploadToSignedUrl(init.cv.url, cv);
+        if (cover && init.cover?.url) {
+          await uploadToSignedUrl(init.cover.url, cover);
+        }
+      } catch (uploadErr) {
+        setMsg(`Upload failed: ${uploadErr?.message || 'unknown error'}`);
+        setLoading(false);
         return;
       }
+  
+      // 3) save (separate so save errors are clear)
+      const save = await fetch('/api/save-application', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          applicationId: init.applicationId,
+          jobCode,
+          fullName,
+          email,
+          phone,
+          keepOnFile: keep,
+          cvPath: init.cv.path,
+          coverPath: init.cover?.path || null
+        })
+      }).then(r => r.json());
+  
+      if (!save?.ok) {
+        setMsg(`Save failed: ${save?.error || 'unknown error'}`);
+        setLoading(false);
+        return;
+      }
+  
+      setMsg('✅ Application submitted. Thank you!');
+      setFullName(''); setEmail(''); setPhone(''); setKeep(false);
+      setCv(null); setCover(null);
     } catch (err) {
-      setMsg(err.message || 'Something went wrong');
+      setMsg(err?.message || 'Something went wrong');
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <form onSubmit={onSubmit} className="max-w-md space-y-3">
