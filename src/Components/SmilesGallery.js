@@ -92,7 +92,7 @@ const SmilesGallery = () => {
     "./Assets/sm6.png",
     "./Assets/sm17.png",
     "./Assets/sm19.png",
-    "./Assets/sm18.png",
+    "./Assets/sm6.png",
     "./Assets/sm1.png",
     "./Assets/sm1.png",
     "./Assets/sm13.png",

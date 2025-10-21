@@ -120,25 +120,31 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
       await uploadToSignedUrl(init.cv.url, cv);
       if (cover && init.cover?.url) await uploadToSignedUrl(init.cover.url, cover);
       // 3) save application row
-      const save = await fetch('/api/save-application', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          applicationId: init.applicationId,
-          jobCode,
-          fullName,
-          email,
-          phone,
-          keepOnFile: keep,
-          cvPath: init.cv.path,
-          coverPath: init.cover?.path || null
-        })
-      }).then(r => r.json());
-      if (!save?.ok) throw new Error('Save failed');
-      setMsg('✅ Application submitted. Thank you!');
-      // optional: reset form
-      setFullName(''); setEmail(''); setPhone(''); setKeep(false);
-      setCv(null); setCover(null);
+      try {
+        const save = await fetch('/api/save-application', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            applicationId: init.applicationId,
+            jobCode,
+            fullName,
+            email,
+            phone,
+            keepOnFile: keep,
+            cvPath: init.cv.path,
+            coverPath: init.cover?.path || null
+          })
+        }).then(r => r.json());
+
+        if (!save?.ok) throw new Error(save?.error || 'Save failed');
+        setMsg('✅ Application submitted. Thank you!');
+        // optional: reset form
+        setFullName(''); setEmail(''); setPhone(''); setKeep(false);
+        setCv(null); setCover(null);
+      } catch (e) {
+        setMsg(`Save failed: ${e.message}`);
+        return;
+      }
     } catch (err) {
       setMsg(err.message || 'Something went wrong');
     } finally {
