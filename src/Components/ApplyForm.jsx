@@ -74,20 +74,13 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
   }
   async function uploadToSignedUrl(url, file) {
     try {
-      const fd = new FormData();
-      fd.append('file', file);
-
-      // Extract token from signed URL for authorization header
-      const urlObj = new URL(url);
-      const token = urlObj.searchParams.get('token');
-
       console.log('Uploading file:', file.name, 'Size:', file.size, 'Type:', file.type);
 
       const r = await fetch(url, {
-        method: 'POST',
-        body: fd,
+        method: 'PUT',
+        body: file,
         headers: {
-          'authorization': `Bearer ${token}`
+          'Content-Type': file.type
         }
       });
 
@@ -96,8 +89,6 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
         console.error('Upload failed:', r.status, errorText);
         throw new Error(`Upload failed: ${r.status} - ${errorText}`);
       }
-
-      console.log('Upload response:', await r.text());
 
       console.log('Upload successful');
     } catch (error) {
