@@ -47,7 +47,10 @@ export default async function handler(req, res) {
     ])
     .select('*'); // ← add this
 
-    if (error) throw error;
+    if (error) {
+      console.error('[save-application] Supabase error:', JSON.stringify(error, null, 2));
+      throw error;
+    }
 
     return res.status(200).json({ ok: true, data });
   } catch (e) {
