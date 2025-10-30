@@ -1,19 +1,107 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { jobContent } from "../data/jobContent";
 import ApplyForm from "../Components/ApplyForm";
 
 const JobDetail = () => {
-  const { slug } = useParams();
+  const { slug } = useParams(); // This is the job_code
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
+  
+  const [job, setJob] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
-  const job = jobContent[slug];
+  useEffect(() => {
+    fetchJob();
+  }, [slug]);
 
-  if (!job) {
+  const fetchJob = async () => {
+    try {
+      const response = await fetch('/api/get-jobs');
+      const result = await response.json();
+
+      if (!result.ok) {
+        setError(result.error);
+        return;
+      }
+
+      // Find the job with matching job_code
+      const foundJob = result.jobs.find(j => j.job_code === slug);
+      
+      if (!foundJob) {
+        setError('Job not found');
+        return;
+      }
+
+      // Map database job to display format
+      const mappedJob = {
+        code: foundJob.job_code,
+        title: getTitleByLanguage(foundJob, i18n.language),
+        description: getDescriptionByLanguage(foundJob, i18n.language),
+        location: foundJob.location || 'Berlin-Kreuzberg',
+        type: foundJob.type || 'Full-time',
+        department: 'Healthcare', // Default for now
+        experience: 'All levels', // Default for now
+        postedDate: foundJob.created_at,
+        // Add some default content for now
+        responsibilities: [
+          'Provide excellent patient care',
+          'Maintain professional standards',
+          'Work collaboratively with the team',
+          'Follow all safety protocols'
+        ],
+        requirements: [
+          'Relevant qualifications in the field',
+          'Strong communication skills',
+          'Attention to detail',
+          'Team player attitude'
+        ],
+        benefits: [
+          'Competitive salary',
+          'Professional development opportunities',
+          'Friendly work environment',
+          'Central Berlin location'
+        ]
+      };
+
+      setJob(mappedJob);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getTitleByLanguage = (job, lang) => {
+    switch (lang) {
+      case 'ar': return job.title_ar || job.title;
+      case 'de': return job.title_de || job.title;
+      case 'tr': return job.title_tr || job.title;
+      default: return job.title;
+    }
+  };
+
+  const getDescriptionByLanguage = (job, lang) => {
+    switch (lang) {
+      case 'ar': return job.description_ar || job.description;
+      case 'de': return job.description_de || job.description;
+      case 'tr': return job.description_tr || job.description;
+      default: return job.description;
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-[#e8e2d4]">
+        <p className="text-xl text-[#422f40]">Loading job details...</p>
+      </div>
+    );
+  }
+
+  if (error || !job) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-[#e8e2d4]">
         <h1 className="text-4xl font-bold text-[#422f40] mb-6">Job Not Found</h1>
