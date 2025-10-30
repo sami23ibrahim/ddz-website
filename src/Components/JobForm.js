@@ -135,34 +135,27 @@ export default function JobForm({ onJobCreated, onCancel }) {
           </div>
           <div>
             <label className="block mb-1 font-semibold">Experience Level</label>
-            <select
+            <input
+              type="text"
               name="experience_level"
               value={formData.experience_level}
               onChange={handleChange}
               className="border p-2 w-full rounded"
-            >
-              <option value="Entry level">Entry level</option>
-              <option value="Mid level">Mid level</option>
-              <option value="Senior level">Senior level</option>
-              <option value="All levels">All levels</option>
-            </select>
+              placeholder="e.g., Entry level, Mid level, Senior level, All levels"
+            />
           </div>
         </div>
 
         <div>
           <label className="block mb-1 font-semibold">Department</label>
-          <select
+          <input
+            type="text"
             name="department"
             value={formData.department}
             onChange={handleChange}
             className="border p-2 w-full rounded"
-          >
-            <option value="Healthcare">Healthcare</option>
-            <option value="Administration">Administration</option>
-            <option value="Reception">Reception</option>
-            <option value="Management">Management</option>
-            <option value="Technical">Technical</option>
-          </select>
+            placeholder="e.g., Healthcare, Administration, Reception, Management"
+          />
         </div>
 
         {/* English */}
