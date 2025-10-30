@@ -23,11 +23,10 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
 
   try {
-    // Get all active jobs
+    // Get all jobs (active and inactive) for HR Dashboard
     const { data: jobs, error: jobsError } = await supabase
       .from('jobs')
       .select('*')
-      .eq('status', 'active')
       .order('created_at', { ascending: false });
 
     if (jobsError) throw jobsError;

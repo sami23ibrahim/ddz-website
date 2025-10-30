@@ -159,8 +159,14 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
              value={email} onChange={e=>setEmail(e.target.value)} required />
       <input className="border p-2 w-full" placeholder="Phone"
              value={phone} onChange={e=>setPhone(e.target.value)} />
-      <input className="border p-2 w-full" placeholder="Job code"
-             value={jobCode} onChange={e=>setJobCode(e.target.value)} required />
+      {/* Hidden job code field - users should not edit this */}
+      <input type="hidden" value={jobCode} />
+      
+      {/* Show job code for reference only (read-only) */}
+      <div className="bg-gray-100 p-2 rounded border">
+        <label className="block text-sm text-gray-600 mb-1">Applying for position:</label>
+        <span className="font-medium">{jobCode}</span>
+      </div>
 
       <div>
         <label className="block mb-1">CV (PDF/DOC) *</label>

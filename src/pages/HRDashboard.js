@@ -36,8 +36,71 @@ export default function HRDashboard() {
     }
   };
 
+  const handleHideJob = async (jobId, jobCode) => {
+    if (!window.confirm(`Hide job "${jobCode}" from Career Opportunities page?\n\nThe job will remain in the database but won't be visible to applicants.`)) {
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/hide-job', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ job_id: jobId })
+      });
+
+      const result = await response.json();
+
+      if (!result.ok) {
+        alert(`Error: ${result.error}`);
+        return;
+      }
+
+      alert(`Job "${jobCode}" is now hidden from public view`);
+      fetchJobs();
+    } catch (err) {
+      alert(`Error: ${err.message}`);
+    }
+  };
+
+  const handleUnhideJob = async (jobId, jobCode) => {
+    if (!window.confirm(`Make job "${jobCode}" visible on Career Opportunities page again?`)) {
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/unhide-job', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ job_id: jobId })
+      });
+
+      const result = await response.json();
+
+      if (!result.ok) {
+        alert(`Error: ${result.error}`);
+        return;
+      }
+
+      alert(`Job "${jobCode}" is now visible to applicants`);
+      fetchJobs();
+    } catch (err) {
+      alert(`Error: ${err.message}`);
+    }
+  };
+
   const handleDeleteJob = async (jobId, jobCode) => {
-    if (!window.confirm(`Are you sure you want to delete job ${jobCode}?`)) {
+    const confirmMessage = `⚠️ PERMANENT DELETION WARNING ⚠️
+
+This will PERMANENTLY DELETE:
+• Job "${jobCode}" from the database
+• ALL applications for this job
+• ALL uploaded CVs and cover letters
+
+This action CANNOT be undone!
+
+Are you absolutely sure you want to proceed?`;
+
+    if (!window.confirm(confirmMessage)) {
       return;
     }
 
@@ -55,7 +118,15 @@ export default function HRDashboard() {
         return;
       }
 
-      alert('Job deleted successfully!');
+      // Show detailed deletion summary
+      const summary = result.deleted 
+        ? `✅ Successfully deleted:
+• Job: "${result.deleted.title}" (${result.deleted.job_code})
+• Applications: ${result.deleted.applications_count}
+• All related files`
+        : 'Job deleted successfully!';
+
+      alert(summary);
       fetchJobs();
     } catch (err) {
       alert(`Error: ${err.message}`);
@@ -145,20 +216,48 @@ export default function HRDashboard() {
                       <h3 className="font-bold text-lg">{job.title}</h3>
                       <p className="text-sm text-gray-600">{job.job_code}</p>
                     </div>
-                    <button
-                      onClick={() => handleDeleteJob(job.id, job.job_code)}
-                      className="text-red-600 hover:text-red-800 text-sm"
-                      title="Delete job"
-                    >
-                      🗑️
-                    </button>
+                    <div className="flex gap-2">
+                      {job.status === 'active' ? (
+                        <button
+                          onClick={() => handleHideJob(job.id, job.job_code)}
+                          className="text-orange-600 hover:text-orange-800 text-sm"
+                          title="Hide from public"
+                        >
+                          👁️‍🗨️
+                        </button>
+                      ) : (
+                        <button
+                          onClick={() => handleUnhideJob(job.id, job.job_code)}
+                          className="text-green-600 hover:text-green-800 text-sm"
+                          title="Make public again"
+                        >
+                          👁️
+                        </button>
+                      )}
+                      <button
+                        onClick={() => handleDeleteJob(job.id, job.job_code)}
+                        className="text-red-600 hover:text-red-800 text-sm"
+                        title="Permanently delete"
+                      >
+                        🗑️
+                      </button>
+                    </div>
                   </div>
 
                   <div className="text-sm text-gray-600 mb-3">
                     <p>{job.location || 'No location'} • {job.type || 'N/A'}</p>
-                    <p className="text-xs text-gray-500 mt-1">
-                      Posted: {new Date(job.created_at).toLocaleDateString()}
-                    </p>
+                    <div className="flex justify-between items-center mt-1">
+                      <p className="text-xs text-gray-500">
+                        Posted: {new Date(job.created_at).toLocaleDateString()}
+                      </p>
+                      <span className={`text-xs px-2 py-1 rounded-full ${
+                        job.status === 'active' 
+                          ? 'bg-green-100 text-green-800' 
+                          : 'bg-gray-100 text-gray-600'
+                      }`}>
+                        {job.status === 'active' ? '🟢 Public' : '🔒 Hidden'}
+                      </span>
+                    </div>
                   </div>
 
                   <div className="border-t pt-3">
