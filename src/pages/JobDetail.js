@@ -28,11 +28,15 @@ const JobDetail = () => {
         return;
       }
 
+      // Debug: Log what we're looking for and what we found
+      console.log('Looking for job_code:', slug);
+      console.log('Available jobs:', result.jobs.map(j => ({ job_code: j.job_code, title: j.title })));
+
       // Find the job with matching job_code
       const foundJob = result.jobs.find(j => j.job_code === slug);
       
       if (!foundJob) {
-        setError('Job not found');
+        setError(`Job not found. Looking for job_code: ${slug}`);
         return;
       }
 

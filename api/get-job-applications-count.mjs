@@ -45,6 +45,9 @@ export default async function handler(req, res) {
           return { ...job, application_count: 0 };
         }
 
+        // Debug: Log the count for each job
+        console.log(`Job ${job.job_code} (${job.title}): ${count || 0} applications`);
+
         return { ...job, application_count: count || 0 };
       })
     );
