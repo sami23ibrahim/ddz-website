@@ -16,7 +16,7 @@ const Jobs = () => {
 
   const fetchJobs = async () => {
     try {
-      const response = await fetch('/api/get-jobs');
+      const response = await fetch('/api/jobs?action=list');
       const result = await response.json();
 
       if (!result.ok) {

@@ -18,7 +18,7 @@ export default function ApplicationsList({ jobCode, jobTitle }) {
     setError('');
     
     try {
-      const response = await fetch(`/api/get-applications?job_code=${jobCode}`);
+      const response = await fetch(`/api/applications?action=get&job_code=${jobCode}`);
       const result = await response.json();
 
       if (!result.ok) {

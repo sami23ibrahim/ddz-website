@@ -61,7 +61,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
     setMsg('');
 
     try {
-      const response = await fetch('/api/create-job', {
+      const response = await fetch('/api/jobs?action=create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

@@ -20,7 +20,7 @@ export default function HRDashboard() {
     setError('');
     
     try {
-      const response = await fetch('/api/get-job-applications-count');
+      const response = await fetch('/api/jobs?action=list&include_inactive=true');
       const result = await response.json();
 
       if (!result.ok) {
@@ -42,7 +42,7 @@ export default function HRDashboard() {
     }
 
     try {
-      const response = await fetch('/api/hide-job', {
+      const response = await fetch('/api/jobs?action=hide', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ job_id: jobId })
@@ -68,7 +68,7 @@ export default function HRDashboard() {
     }
 
     try {
-      const response = await fetch('/api/unhide-job', {
+      const response = await fetch('/api/jobs?action=unhide', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ job_id: jobId })
@@ -105,7 +105,7 @@ Are you absolutely sure you want to proceed?`;
     }
 
     try {
-      const response = await fetch('/api/delete-job', {
+      const response = await fetch('/api/jobs?action=delete', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ job_id: jobId })

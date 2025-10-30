@@ -60,13 +60,13 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
   };
 
   async function initApplication(jobCode, cvFile, coverFile) {
-    const r = await fetch('/api/init-application', {
+    const r = await fetch('/api/applications?action=init', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         jobCode,
-        cvFilename: cvFile?.name,
-        coverFilename: coverFile?.name || null
+        cvFile: { name: cvFile.name, size: cvFile.size, type: cvFile.type },
+        coverFile: coverFile ? { name: coverFile.name, size: coverFile.size, type: coverFile.type } : null
       })
     });
     if (!r.ok) throw new Error('Init failed');
@@ -119,7 +119,7 @@ export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
       }
   
       // 3) save (separate so save errors are clear)
-      const save = await fetch('/api/save-application', {
+      const save = await fetch('/api/applications?action=save', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
