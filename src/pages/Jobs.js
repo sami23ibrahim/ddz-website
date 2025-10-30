@@ -1,17 +1,67 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
-import { jobContent } from "../data/jobContent";
 
 const Jobs = () => {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
+  const [jobs, setJobs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
-  const jobs = Object.entries(jobContent).map(([key, job]) => ({
-    key,
-    ...job
-  }));
+  useEffect(() => {
+    fetchJobs();
+  }, []);
+
+  const fetchJobs = async () => {
+    try {
+      const response = await fetch('/api/get-jobs');
+      const result = await response.json();
+
+      if (!result.ok) {
+        setError(result.error);
+        return;
+      }
+
+      // Map database jobs to display format
+      const mappedJobs = result.jobs.map(job => ({
+        key: job.job_code,
+        code: job.job_code,
+        title: getTitleByLanguage(job, i18n.language),
+        description: getDescriptionByLanguage(job, i18n.language),
+        location: job.location || 'Berlin-Kreuzberg',
+        type: job.type || 'Full-time',
+        department: 'Healthcare', // Default for now
+        experience: 'All levels', // Default for now
+        postedDate: job.created_at
+      }));
+
+      setJobs(mappedJobs);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getTitleByLanguage = (job, lang) => {
+    switch (lang) {
+      case 'ar': return job.title_ar || job.title;
+      case 'de': return job.title_de || job.title;
+      case 'tr': return job.title_tr || job.title;
+      default: return job.title;
+    }
+  };
+
+  const getDescriptionByLanguage = (job, lang) => {
+    switch (lang) {
+      case 'ar': return job.description_ar || job.description;
+      case 'de': return job.description_de || job.description;
+      case 'tr': return job.description_tr || job.description;
+      default: return job.description;
+    }
+  };
 
   return (
     <>
@@ -35,7 +85,22 @@ const Jobs = () => {
             </p>
           </div>
 
+          {/* Loading State */}
+          {loading && (
+            <div className="text-center py-16">
+              <p className="text-xl text-[#422f40]">Loading opportunities...</p>
+            </div>
+          )}
+
+          {/* Error State */}
+          {error && (
+            <div className="text-center py-16">
+              <p className="text-xl text-red-600">Error: {error}</p>
+            </div>
+          )}
+
           {/* Job Listings */}
+          {!loading && !error && (
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {jobs.map((job) => (
               <Link
@@ -89,9 +154,10 @@ const Jobs = () => {
               </Link>
             ))}
           </div>
+          )}
 
           {/* No Jobs Message */}
-          {jobs.length === 0 && (
+          {!loading && !error && jobs.length === 0 && (
             <div className="text-center py-16">
               <h3 className="text-2xl font-semibold text-[#422f40] mb-4">
                 {t('jobs.no_positions', 'No positions available at the moment')}
