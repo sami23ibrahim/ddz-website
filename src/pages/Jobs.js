@@ -32,8 +32,8 @@ const Jobs = () => {
         description: getDescriptionByLanguage(job, i18n.language),
         location: job.location || 'Berlin-Kreuzberg',
         type: job.type || 'Full-time',
-        department: 'Healthcare', // Default for now
-        experience: 'All levels', // Default for now
+        department: job.department || 'Healthcare',
+        experience: job.experience_level || 'All levels',
         postedDate: job.created_at
       }));
 

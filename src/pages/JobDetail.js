@@ -47,28 +47,18 @@ const JobDetail = () => {
         description: getDescriptionByLanguage(foundJob, i18n.language),
         location: foundJob.location || 'Berlin-Kreuzberg',
         type: foundJob.type || 'Full-time',
-        department: 'Healthcare', // Default for now
-        experience: 'All levels', // Default for now
+        department: foundJob.department || 'Healthcare',
+        experience: foundJob.experience_level || 'All levels',
         postedDate: foundJob.created_at,
-        // Add some default content for now
-        responsibilities: [
-          'Provide excellent patient care',
-          'Maintain professional standards',
-          'Work collaboratively with the team',
-          'Follow all safety protocols'
-        ],
-        requirements: [
-          'Relevant qualifications in the field',
-          'Strong communication skills',
-          'Attention to detail',
-          'Team player attitude'
-        ],
-        benefits: [
-          'Competitive salary',
-          'Professional development opportunities',
-          'Friendly work environment',
-          'Central Berlin location'
-        ]
+        responsibilities: foundJob.responsibilities && foundJob.responsibilities.length > 0 
+          ? foundJob.responsibilities.filter(r => r.trim() !== '')
+          : ['Provide excellent patient care', 'Maintain professional standards'],
+        requirements: foundJob.requirements && foundJob.requirements.length > 0 
+          ? foundJob.requirements.filter(r => r.trim() !== '')
+          : ['Relevant qualifications in the field', 'Strong communication skills'],
+        benefits: foundJob.benefits && foundJob.benefits.length > 0 
+          ? foundJob.benefits.filter(b => b.trim() !== '')
+          : ['Competitive salary', 'Professional development opportunities']
       };
 
       setJob(mappedJob);

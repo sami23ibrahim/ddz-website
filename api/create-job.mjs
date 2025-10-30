@@ -33,7 +33,12 @@ export default async function handler(req, res) {
       description_de,
       description_tr,
       location,
-      type
+      type,
+      experience_level,
+      department,
+      responsibilities,
+      requirements,
+      benefits
     } = req.body;
 
     // Validate required fields
@@ -59,6 +64,11 @@ export default async function handler(req, res) {
           description_tr: description_tr || null,
           location: location || null,
           type: type || null,
+          experience_level: experience_level || 'All levels',
+          department: department || 'Healthcare',
+          responsibilities: responsibilities || [],
+          requirements: requirements || [],
+          benefits: benefits || [],
           status: 'active'
         }
       ])

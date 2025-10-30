@@ -16,13 +16,42 @@ export default function JobForm({ onJobCreated, onCancel }) {
     description_de: '',
     description_tr: '',
     location: '',
-    type: 'Full-time'
+    type: 'Full-time',
+    experience_level: 'All levels',
+    department: 'Healthcare',
+    responsibilities: [''],
+    requirements: [''],
+    benefits: ['']
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
+    });
+  };
+
+  const handleArrayChange = (field, index, value) => {
+    const newArray = [...formData[field]];
+    newArray[index] = value;
+    setFormData({
+      ...formData,
+      [field]: newArray
+    });
+  };
+
+  const addArrayItem = (field) => {
+    setFormData({
+      ...formData,
+      [field]: [...formData[field], '']
+    });
+  };
+
+  const removeArrayItem = (field, index) => {
+    const newArray = formData[field].filter((_, i) => i !== index);
+    setFormData({
+      ...formData,
+      [field]: newArray.length > 0 ? newArray : ['']
     });
   };
 
@@ -89,18 +118,50 @@ export default function JobForm({ onJobCreated, onCancel }) {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label className="block mb-1 font-semibold">Job Type</label>
+            <select
+              name="type"
+              value={formData.type}
+              onChange={handleChange}
+              className="border p-2 w-full rounded"
+            >
+              <option value="Full-time">Full-time</option>
+              <option value="Part-time">Part-time</option>
+              <option value="Contract">Contract</option>
+              <option value="Internship">Internship</option>
+            </select>
+          </div>
+          <div>
+            <label className="block mb-1 font-semibold">Experience Level</label>
+            <select
+              name="experience_level"
+              value={formData.experience_level}
+              onChange={handleChange}
+              className="border p-2 w-full rounded"
+            >
+              <option value="Entry level">Entry level</option>
+              <option value="Mid level">Mid level</option>
+              <option value="Senior level">Senior level</option>
+              <option value="All levels">All levels</option>
+            </select>
+          </div>
+        </div>
+
         <div>
-          <label className="block mb-1 font-semibold">Job Type</label>
+          <label className="block mb-1 font-semibold">Department</label>
           <select
-            name="type"
-            value={formData.type}
+            name="department"
+            value={formData.department}
             onChange={handleChange}
             className="border p-2 w-full rounded"
           >
-            <option value="Full-time">Full-time</option>
-            <option value="Part-time">Part-time</option>
-            <option value="Contract">Contract</option>
-            <option value="Internship">Internship</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="Administration">Administration</option>
+            <option value="Reception">Reception</option>
+            <option value="Management">Management</option>
+            <option value="Technical">Technical</option>
           </select>
         </div>
 
@@ -221,6 +282,104 @@ export default function JobForm({ onJobCreated, onCancel }) {
                 placeholder="Türkçe iş açıklaması"
               />
             </div>
+          </div>
+        </div>
+
+        {/* Job Details Arrays */}
+        <div className="border-t pt-4">
+          <h3 className="text-lg font-semibold mb-3 text-purple-600">Job Details</h3>
+          
+          {/* Responsibilities */}
+          <div className="mb-4">
+            <label className="block mb-2 font-semibold">Responsibilities</label>
+            {formData.responsibilities.map((responsibility, index) => (
+              <div key={index} className="flex gap-2 mb-2">
+                <input
+                  type="text"
+                  value={responsibility}
+                  onChange={(e) => handleArrayChange('responsibilities', index, e.target.value)}
+                  className="border p-2 flex-1 rounded"
+                  placeholder={`Responsibility ${index + 1}`}
+                />
+                <button
+                  type="button"
+                  onClick={() => removeArrayItem('responsibilities', index)}
+                  className="px-3 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                  disabled={formData.responsibilities.length === 1}
+                >
+                  ✕
+                </button>
+              </div>
+            ))}
+            <button
+              type="button"
+              onClick={() => addArrayItem('responsibilities')}
+              className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm"
+            >
+              + Add Responsibility
+            </button>
+          </div>
+
+          {/* Requirements */}
+          <div className="mb-4">
+            <label className="block mb-2 font-semibold">Requirements</label>
+            {formData.requirements.map((requirement, index) => (
+              <div key={index} className="flex gap-2 mb-2">
+                <input
+                  type="text"
+                  value={requirement}
+                  onChange={(e) => handleArrayChange('requirements', index, e.target.value)}
+                  className="border p-2 flex-1 rounded"
+                  placeholder={`Requirement ${index + 1}`}
+                />
+                <button
+                  type="button"
+                  onClick={() => removeArrayItem('requirements', index)}
+                  className="px-3 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                  disabled={formData.requirements.length === 1}
+                >
+                  ✕
+                </button>
+              </div>
+            ))}
+            <button
+              type="button"
+              onClick={() => addArrayItem('requirements')}
+              className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm"
+            >
+              + Add Requirement
+            </button>
+          </div>
+
+          {/* Benefits */}
+          <div className="mb-4">
+            <label className="block mb-2 font-semibold">Benefits</label>
+            {formData.benefits.map((benefit, index) => (
+              <div key={index} className="flex gap-2 mb-2">
+                <input
+                  type="text"
+                  value={benefit}
+                  onChange={(e) => handleArrayChange('benefits', index, e.target.value)}
+                  className="border p-2 flex-1 rounded"
+                  placeholder={`Benefit ${index + 1}`}
+                />
+                <button
+                  type="button"
+                  onClick={() => removeArrayItem('benefits', index)}
+                  className="px-3 py-2 bg-red-500 text-white rounded hover:bg-red-600"
+                  disabled={formData.benefits.length === 1}
+                >
+                  ✕
+                </button>
+              </div>
+            ))}
+            <button
+              type="button"
+              onClick={() => addArrayItem('benefits')}
+              className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm"
+            >
+              + Add Benefit
+            </button>
           </div>
         </div>
 
