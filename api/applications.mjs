@@ -1,6 +1,7 @@
 // /api/applications.mjs
 // Combined application management API: init, save, get applications
 import { createClient } from '@supabase/supabase-js';
+import { randomUUID } from 'crypto';
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
@@ -46,16 +47,18 @@ async function initApplication(req, res) {
 
   const { jobCode, cvFile, coverFile } = req.body;
 
-  if (!jobCode || !cvFile) {
-    return res.status(400).json({ error: 'jobCode and cvFile are required' });
+  console.log('[init-application] Request body:', { jobCode, cvFile, coverFile });
+
+  if (!jobCode || !cvFile || !cvFile.name) {
+    return res.status(400).json({ error: 'jobCode and cvFile with name are required' });
   }
 
-  const applicationId = crypto.randomUUID();
+  const applicationId = randomUUID();
   const cvExt = cvFile.name.split('.').pop();
   const cvPath = `applications/${jobCode}/${applicationId}/cv.${cvExt}`;
 
   let coverPath = null;
-  if (coverFile) {
+  if (coverFile && coverFile.name) {
     const coverExt = coverFile.name.split('.').pop();
     coverPath = `applications/${jobCode}/${applicationId}/cover.${coverExt}`;
   }
