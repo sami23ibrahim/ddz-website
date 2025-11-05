@@ -65,7 +65,7 @@ async function initApplication(req, res) {
 
   // Create signed URLs
   const { data: cvSignedUrl, error: cvError } = await supabase.storage
-    .from('applications')
+    .from('cvs')
     .createSignedUploadUrl(cvPath);
 
   if (cvError) throw cvError;
@@ -73,7 +73,7 @@ async function initApplication(req, res) {
   let coverSignedUrl = null;
   if (coverPath) {
     const { data: coverSigned, error: coverError } = await supabase.storage
-      .from('applications')
+      .from('cvs')
       .createSignedUploadUrl(coverPath);
     
     if (coverError) throw coverError;
