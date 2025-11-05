@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import ApplyForm from "../Components/ApplyForm";
+import { supabase } from "../lib/supabaseClient";
 
 const JobDetail = () => {
   const { slug } = useParams(); // This is the job_code
@@ -15,59 +16,57 @@ const JobDetail = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
+    const fetchJob = async () => {
+      const { data, error } = await supabase
+        .from('jobs')
+        .select('*')
+        .eq('slug', slug)
+        .single();
+      
+      console.log('Fetched Job Data:', data); // <-- ADDING THIS LOG
+
+      if (error) {
+        setError('Job not found');
+        console.error('Error fetching job:', error);
+      } else {
+        // Debug: Log what we're looking for and what we found
+        console.log('Looking for job_code:', slug);
+        console.log('Available jobs:', result.jobs.map(j => ({ job_code: j.job_code, title: j.title })));
+
+        // Find the job with matching job_code
+        const foundJob = result.jobs.find(j => j.job_code === slug);
+        
+        if (!foundJob) {
+          setError(`Job not found. Looking for job_code: ${slug}`);
+          return;
+        }
+
+        // Map database job to display format
+        const mappedJob = {
+          code: foundJob.job_code,
+          title: getTitleByLanguage(foundJob, i18n.language),
+          description: getDescriptionByLanguage(foundJob, i18n.language),
+          location: foundJob.location || 'Berlin-Kreuzberg',
+          type: foundJob.type || 'Full-time',
+          department: foundJob.department || 'Healthcare',
+          experience: foundJob.experience_level || 'All levels',
+          postedDate: foundJob.created_at,
+          responsibilities: foundJob.responsibilities && foundJob.responsibilities.length > 0 
+            ? foundJob.responsibilities.filter(r => r.trim() !== '')
+            : ['Provide excellent patient care', 'Maintain professional standards'],
+          requirements: foundJob.requirements && foundJob.requirements.length > 0 
+            ? foundJob.requirements.filter(r => r.trim() !== '')
+            : ['Relevant qualifications in the field', 'Strong communication skills'],
+          benefits: foundJob.benefits && foundJob.benefits.length > 0 
+            ? foundJob.benefits.filter(b => b.trim() !== '')
+            : ['Competitive salary', 'Professional development opportunities']
+        };
+
+        setJob(mappedJob);
+      }
+    };
     fetchJob();
   }, [slug]);
-
-  const fetchJob = async () => {
-    try {
-      const response = await fetch('/api/jobs?action=list');
-      const result = await response.json();
-
-      if (!result.ok) {
-        setError(result.error);
-        return;
-      }
-
-      // Debug: Log what we're looking for and what we found
-      console.log('Looking for job_code:', slug);
-      console.log('Available jobs:', result.jobs.map(j => ({ job_code: j.job_code, title: j.title })));
-
-      // Find the job with matching job_code
-      const foundJob = result.jobs.find(j => j.job_code === slug);
-      
-      if (!foundJob) {
-        setError(`Job not found. Looking for job_code: ${slug}`);
-        return;
-      }
-
-      // Map database job to display format
-      const mappedJob = {
-        code: foundJob.job_code,
-        title: getTitleByLanguage(foundJob, i18n.language),
-        description: getDescriptionByLanguage(foundJob, i18n.language),
-        location: foundJob.location || 'Berlin-Kreuzberg',
-        type: foundJob.type || 'Full-time',
-        department: foundJob.department || 'Healthcare',
-        experience: foundJob.experience_level || 'All levels',
-        postedDate: foundJob.created_at,
-        responsibilities: foundJob.responsibilities && foundJob.responsibilities.length > 0 
-          ? foundJob.responsibilities.filter(r => r.trim() !== '')
-          : ['Provide excellent patient care', 'Maintain professional standards'],
-        requirements: foundJob.requirements && foundJob.requirements.length > 0 
-          ? foundJob.requirements.filter(r => r.trim() !== '')
-          : ['Relevant qualifications in the field', 'Strong communication skills'],
-        benefits: foundJob.benefits && foundJob.benefits.length > 0 
-          ? foundJob.benefits.filter(b => b.trim() !== '')
-          : ['Competitive salary', 'Professional development opportunities']
-      };
-
-      setJob(mappedJob);
-    } catch (err) {
-      setError(err.message);
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const getTitleByLanguage = (job, lang) => {
     switch (lang) {
