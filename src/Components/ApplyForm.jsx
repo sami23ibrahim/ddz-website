@@ -60,6 +60,7 @@ export default function ApplyForm({ jobCode: initialJobCode }) {
   };
 
   async function initApplication(jobCode, cvFile, coverFile) {
+    console.log('Calling init with jobCode:', jobCode);
     const r = await fetch('/api/applications?action=init', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -69,8 +70,15 @@ export default function ApplyForm({ jobCode: initialJobCode }) {
         coverFile: coverFile ? { name: coverFile.name, size: coverFile.size, type: coverFile.type } : null
       })
     });
-    if (!r.ok) throw new Error('Init failed');
-    return r.json();
+    console.log('Init response status:', r.status);
+    if (!r.ok) {
+      const errorText = await r.text();
+      console.error('Init failed:', errorText);
+      throw new Error('Init failed: ' + errorText);
+    }
+    const result = await r.json();
+    console.log('Init result:', result);
+    return result;
   }
   async function uploadToSignedUrl(url, file) {
     try {
