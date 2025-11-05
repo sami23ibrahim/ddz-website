@@ -113,7 +113,7 @@ async function saveApplication(req, res) {
       full_name: fullName,
       email: email,
       phone: phone || null,
-      cv_path: cvPath,
+      storage_path: cvPath,
       cover_path: coverPath || null,
       keep_on_file: keepOnFile || false,
       status: 'new'
