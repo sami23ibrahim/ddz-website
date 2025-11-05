@@ -20,21 +20,34 @@ const JobDetail = () => {
 
   const fetchJob = async () => {
     try {
+      console.log('Fetching jobs for slug:', slug);
       const response = await fetch('/api/jobs?action=list');
+      console.log('Response status:', response.status);
+      
       const result = await response.json();
+      console.log('API result:', result);
 
       if (!result.ok) {
+        console.error('API error:', result.error);
         setError(result.error);
+        setLoading(false);
         return;
       }
 
-      // Find the job with matching job_code
-      const foundJob = result.jobs.find(j => j.job_code === slug);
+      console.log('Available jobs:', result.jobs.map(j => j.job_code));
+      console.log('Looking for slug:', slug, 'Type:', typeof slug);
       
-      console.log('Found Job:', foundJob); // <-- ADDING THIS LOG
+      // Find the job with matching job_code
+      const foundJob = result.jobs.find(j => {
+        console.log('Comparing:', j.job_code, '===', slug, '?', j.job_code === slug);
+        return j.job_code === slug;
+      });
+      
+      console.log('Found Job:', foundJob);
 
       if (!foundJob) {
         setError(`Job not found. Looking for job_code: ${slug}`);
+        setLoading(false);
         return;
       }
 
@@ -60,9 +73,11 @@ const JobDetail = () => {
       };
 
       setJob(mappedJob);
+      setLoading(false);
     } catch (err) {
       setError('Failed to fetch job details');
       console.error('Error fetching job:', err);
+      setLoading(false);
     }
   };
 
