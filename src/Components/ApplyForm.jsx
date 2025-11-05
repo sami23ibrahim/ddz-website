@@ -99,6 +99,7 @@ export default function ApplyForm({ jobCode: initialJobCode }) {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    console.log('Form submitted! CV:', cv, 'JobCode:', jobCode);
     if (!cv) return setMsg('Please attach your CV.');
     setLoading(true); setMsg('');
   
