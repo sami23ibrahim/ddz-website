@@ -3,7 +3,6 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import ApplyForm from "../Components/ApplyForm";
-import { supabase } from "../lib/supabaseClient";
 
 const JobDetail = () => {
   const { slug } = useParams(); // This is the job_code
