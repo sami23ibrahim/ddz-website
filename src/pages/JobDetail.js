@@ -216,7 +216,7 @@ const JobDetail = () => {
             <div className="lg:col-span-1">
               <div className="bg-white rounded-lg shadow-lg p-8 sticky top-8">
                 <h2 className="text-2xl font-bold text-[#422f40] mb-6">Apply Now</h2>
-                <ApplyForm initialJobCode={job.code} />
+                <ApplyForm jobCode={job.code} />
               </div>
             </div>
           </div>

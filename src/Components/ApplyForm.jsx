@@ -1,7 +1,7 @@
 // src/components/ApplyForm.jsx
 import { useState, useEffect } from 'react';
 
-export default function ApplyForm({ initialJobCode = 'DA-2025-01' }) {
+export default function ApplyForm({ jobCode: initialJobCode }) {
   const [jobCode, setJobCode] = useState(initialJobCode);
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
