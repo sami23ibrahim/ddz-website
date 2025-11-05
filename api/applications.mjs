@@ -110,9 +110,9 @@ async function saveApplication(req, res) {
     .insert([{
       id: applicationId,
       job_code: jobCode,
-      applicant_name: fullName,
-      applicant_email: email,
-      applicant_phone: phone || null,
+      full_name: fullName,
+      email: email,
+      phone: phone || null,
       cv_path: cvPath,
       cover_path: coverPath || null,
       keep_on_file: keepOnFile || false,
