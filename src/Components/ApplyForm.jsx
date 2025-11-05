@@ -119,19 +119,23 @@ export default function ApplyForm({ jobCode: initialJobCode }) {
       }
   
       // 3) save (separate so save errors are clear)
+      const saveData = {
+        applicationId: init.applicationId,
+        jobCode,
+        fullName,
+        email,
+        phone,
+        keepOnFile: keep,
+        cvPath: init.cv.path,
+        coverPath: init.cover?.path || null
+      };
+      
+      console.log('Submitting application with data:', saveData);
+      
       const save = await fetch('/api/applications?action=save', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          applicationId: init.applicationId,
-          jobCode,
-          fullName,
-          email,
-          phone,
-          keepOnFile: keep,
-          cvPath: init.cv.path,
-          coverPath: init.cover?.path || null
-        })
+        body: JSON.stringify(saveData)
       }).then(r => r.json());
   
       if (!save?.ok) {
