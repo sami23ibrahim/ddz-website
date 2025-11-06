@@ -10,10 +10,51 @@ export default function HRDashboard() {
   const [showJobForm, setShowJobForm] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
   const [view, setView] = useState('jobs'); // 'jobs' or 'applications'
+  
+  // Authentication state
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [password, setPassword] = useState('');
+  const [loginError, setLoginError] = useState('');
+
+  // Check if already logged in on component mount
+  useEffect(() => {
+    const savedAuth = localStorage.getItem('hr_authenticated');
+    if (savedAuth === 'true') {
+      setIsAuthenticated(true);
+    }
+  }, []);
 
   useEffect(() => {
-    fetchJobs();
-  }, []);
+    if (isAuthenticated) {
+      fetchJobs();
+    }
+  }, [isAuthenticated]);
+
+  // Login function
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const correctPassword = 'Praxis@drei'; // Change this to your desired password
+    
+    if (password === correctPassword) {
+      setIsAuthenticated(true);
+      localStorage.setItem('hr_authenticated', 'true');
+      setLoginError('');
+      setPassword('');
+    } else {
+      setLoginError('Falsches Passwort. Bitte versuchen Sie es erneut.');
+      setPassword('');
+    }
+  };
+
+  // Logout function
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem('hr_authenticated');
+    setJobs([]);
+    setSelectedJob(null);
+    setView('jobs');
+    setShowJobForm(false);
+  };
 
   const fetchJobs = async () => {
     setLoading(true);
@@ -176,17 +217,74 @@ Are you absolutely sure you want to proceed?`;
     );
   }
 
+  // Show login form if not authenticated
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-[#e8e2d4] flex items-center justify-center px-4">
+        <div className="bg-white rounded-lg shadow-xl p-8 w-full max-w-md">
+          <div className="text-center mb-8">
+            <img src="/Assets/logo2.png" alt="Die Drei Zahnärzte" className="w-20 h-20 mx-auto mb-4" />
+            <h1 className="text-2xl font-bold text-[#422f40]">HR Dashboard</h1>
+            <p className="text-gray-600 mt-2">Bitte geben Sie das Passwort ein</p>
+          </div>
+          
+          <form onSubmit={handleLogin} className="space-y-6">
+            <div>
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+                Passwort
+              </label>
+              <input
+                type="password"
+                id="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#422f40] focus:border-transparent"
+                placeholder="Passwort eingeben..."
+                required
+              />
+            </div>
+            
+            {loginError && (
+              <div className="text-red-600 text-sm text-center bg-red-50 p-3 rounded-md">
+                {loginError}
+              </div>
+            )}
+            
+            <button
+              type="submit"
+              className="w-full bg-[#422f40] text-white py-2 px-4 rounded-md hover:bg-[#5a3d54] transition-colors duration-200 font-medium"
+            >
+              Anmelden
+            </button>
+          </form>
+          
+          <div className="mt-6 text-center text-xs text-gray-500">
+            Nur für autorisierte HR-Mitarbeiter
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow-lg p-6">
         <div className="flex justify-between items-center mb-6">
           <h1 className="text-3xl font-bold">HR Dashboard</h1>
-          <button
-            onClick={() => setShowJobForm(true)}
-            className="px-6 py-2 bg-black text-white rounded hover:bg-gray-800"
-          >
-            + Post New Job
-          </button>
+          <div className="flex space-x-3">
+            <button
+              onClick={() => setShowJobForm(true)}
+              className="px-6 py-2 bg-black text-white rounded hover:bg-gray-800"
+            >
+              + Post New Job
+            </button>
+            <button
+              onClick={handleLogout}
+              className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 text-sm"
+            >
+              Abmelden
+            </button>
+          </div>
         </div>
 
         {loading && (
