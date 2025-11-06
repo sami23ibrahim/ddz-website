@@ -679,6 +679,137 @@
     "opening_hours": "Sprechzeiten:",
     "opening_hours_text": "Montag, Dienstag, Donnerstag: 08:30-20:00 Uhr<br />Mittwoch: 08:30-18:30 Uhr<br />Freitag: 09:00-15:00 Uhr",
     "contact_info": "Kontakt:<br />030 69005528 team@diedreizahnaerzte.berlin"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "meta_description": "Datenschutzerklärung der Zahnarztpraxis Die Drei Zahnärzte in Berlin-Kreuzberg. Informationen zum Schutz Ihrer persönlichen Daten.",
+    "last_updated": "Letzte Aktualisierung",
+    "controller": {
+      "title": "1. Verantwortlicher"
+    },
+    "dpo": {
+      "title": "2. Datenschutzbeauftragter",
+      "content": "Für Fragen zum Datenschutz können Sie sich jederzeit an unseren Datenschutzbeauftragten wenden:"
+    },
+    "legal_basis": {
+      "title": "3. Rechtsgrundlagen der Datenverarbeitung",
+      "content": "Die Verarbeitung personenbezogener Daten erfolgt auf Grundlage der folgenden Rechtsgrundlagen der DSGVO:",
+      "consent": "Einwilligung der betroffenen Person",
+      "contract": "Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen",
+      "legitimate": "Berechtigte Interessen des Verantwortlichen",
+      "medical": "Gesundheitsvorsorge und Behandlung im Gesundheitswesen"
+    },
+    "website_data": {
+      "title": "4. Datenerfassung auf unserer Website",
+      "server_logs": {
+        "title": "Server-Log-Dateien",
+        "content": "Bei jedem Aufruf unserer Website werden automatisch Informationen erfasst:",
+        "ip": "IP-Adresse des zugreifenden Rechners",
+        "browser": "Browsertyp und -version",
+        "timestamp": "Datum und Uhrzeit des Zugriffs",
+        "pages": "Aufgerufene Seiten",
+        "referrer": "Verweis-URL",
+        "retention": "Speicherdauer"
+      }
+    },
+    "analytics": {
+      "title": "5. Google Analytics",
+      "content": "Diese Website nutzt Google Analytics zur Analyse des Nutzerverhaltens. Dabei werden pseudonymisierte Daten erfasst.",
+      "tracking_id": "Tracking-ID",
+      "provider": "Anbieter",
+      "retention": "Speicherdauer",
+      "opt_out": "Sie können der Erfassung durch Google Analytics widersprechen, indem Sie das Browser-Add-on zur Deaktivierung von Google Analytics installieren."
+    },
+    "job_applications": {
+      "title": "6. Bewerbungsverfahren",
+      "content": "Wenn Sie sich über unsere Website bewerben, verarbeiten wir die von Ihnen übermittelten Daten:",
+      "data_collected": {
+        "title": "Erfasste Daten",
+        "personal": "Name, Adresse, Telefonnummer, E-Mail-Adresse",
+        "cv": "Lebenslauf (PDF)",
+        "cover_letter": "Anschreiben (PDF)",
+        "contact": "Weitere Kontaktdaten"
+      },
+      "purpose": "Zweck",
+      "purpose_text": "Durchführung des Bewerbungsverfahrens und Personalauswahl",
+      "retention": "Speicherdauer",
+      "retention_text": "6 Monate nach Abschluss des Bewerbungsverfahrens, bei Einstellung gemäß gesetzlichen Aufbewahrungsfristen",
+      "storage": "Speicherort"
+    },
+    "contact_forms": {
+      "title": "7. Kontaktformulare",
+      "content": "Bei der Nutzung unserer Kontaktformulare verarbeiten wir folgende Daten:",
+      "name": "Name",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer (optional)",
+      "message": "Nachrichteninhalt"
+    },
+    "medical_data": {
+      "title": "8. Medizinische Daten (Patientendaten)",
+      "notice": "Besondere Kategorie personenbezogener Daten",
+      "content": "Als Zahnarztpraxis verarbeiten wir besondere Kategorien personenbezogener Daten (Gesundheitsdaten) zur Behandlung unserer Patienten:",
+      "patient_records": "Patientenakten und Behandlungsverläufe",
+      "treatment_history": "Anamnese und Diagnosen",
+      "xrays": "Röntgenbilder und bildgebende Verfahren",
+      "insurance": "Abrechnungsdaten mit Krankenkassen",
+      "retention": "Aufbewahrungsfristen",
+      "retention_text": "10 Jahre nach Abschluss der Behandlung (gemäß § 630f BGB und Berufsordnung)"
+    },
+    "third_party": {
+      "title": "9. Drittanbieter und externe Dienste",
+      "supabase": "Sichere Datenspeicherung für Bewerbungen und Website-Funktionen",
+      "doctolib": "Online-Terminbuchungssystem für Patiententermine",
+      "google": "Website-Analyse und Nutzungsstatistiken (anonymisiert)",
+      "social": "Social Media Verlinkungen (keine automatische Datenübertragung)"
+    },
+    "rights": {
+      "title": "10. Ihre Rechte als betroffene Person",
+      "intro": "Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:",
+      "access": {
+        "title": "Auskunftsrecht",
+        "desc": "Recht auf Auskunft über verarbeitete Daten"
+      },
+      "rectification": {
+        "title": "Berichtigungsrecht",
+        "desc": "Recht auf Korrektur unrichtiger Daten"
+      },
+      "erasure": {
+        "title": "Löschungsrecht",
+        "desc": "Recht auf Löschung Ihrer Daten"
+      },
+      "portability": {
+        "title": "Datenübertragbarkeit",
+        "desc": "Recht auf Übertragung Ihrer Daten"
+      },
+      "objection": {
+        "title": "Widerspruchsrecht",
+        "desc": "Recht auf Widerspruch gegen Verarbeitung"
+      },
+      "complaint": {
+        "title": "Beschwerderecht",
+        "desc": "Recht auf Beschwerde bei Aufsichtsbehörde"
+      },
+      "contact": {
+        "title": "Kontakt für Datenschutz-Anfragen"
+      }
+    },
+    "security": {
+      "title": "11. Datensicherheit",
+      "content": "Wir setzen technische und organisatorische Maßnahmen zum Schutz Ihrer Daten ein:",
+      "ssl": "SSL/TLS-Verschlüsselung für alle Datenübertragungen",
+      "encryption": "Verschlüsselte Datenspeicherung",
+      "access_control": "Strenge Zugangskontrollen und Berechtigungskonzepte",
+      "backups": "Regelmäßige, sichere Datensicherungen",
+      "staff_training": "Regelmäßige Schulungen unserer Mitarbeiter"
+    },
+    "updates": {
+      "title": "12. Änderungen dieser Datenschutzerklärung",
+      "content": "Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Die aktuelle Version finden Sie stets auf unserer Website."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "content": "Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte kontaktieren Sie uns gerne:"
+    }
   }
 }
   

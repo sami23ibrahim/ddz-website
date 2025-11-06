@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaClock, FaMapMarkerAlt, FaPhone, FaStar, FaGoogle } from "react-icons/fa";
-import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -189,8 +189,10 @@ const Footer = () => {
           <div className="text-xs">
             © diedreizahnaerzte 2025
           </div>
-          <div className="text-xs">
+          <div className="text-xs flex items-center space-x-2">
             <a href="/impressum" className="hover:underline">Impressum</a>
+            <span className="text-gray-400">|</span>
+            <a href="/datenschutz" className="hover:underline">Datenschutz</a>
           </div>
         </div>
         
