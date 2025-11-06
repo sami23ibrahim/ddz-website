@@ -138,7 +138,7 @@ async function getApplications(req, res) {
 
   const { data: applications, error } = await supabase
     .from('applications')
-    .select('*')
+    .select('*, cv_downloaded_at, cover_downloaded_at, starred, notes, last_updated')
     .eq('job_code', job_code)
     .order('created_at', { ascending: false });
 
