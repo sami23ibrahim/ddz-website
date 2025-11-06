@@ -128,9 +128,9 @@ const Jobs = () => {
 
                   {/* Posted Date */}
                   <div className="flex items-center justify-between text-sm text-gray-500">
-                    <span>Posted: {new Date(job.postedDate).toLocaleDateString()}</span>
+                    <span>Veröffentlicht: {new Date(job.postedDate).toLocaleDateString()}</span>
                     <span className="text-[#422f40] font-semibold group-hover:text-[#5a3d54] transition-colors">
-                      View Details →
+                      Details ansehen →
                     </span>
                   </div>
                 </div>

@@ -163,20 +163,20 @@ const JobDetail = () => {
                       {job.department}
                     </span>
                     <span className="px-3 py-1 bg-gray-200 text-gray-700 text-sm rounded-full">
-                      Posted: {new Date(job.postedDate).toLocaleDateString()}
+                      Veröffentlicht: {new Date(job.postedDate).toLocaleDateString()}
                     </span>
                   </div>
                 </div>
 
                 {/* Job Description */}
                 <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Job Description</h2>
+                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Stellenbeschreibung</h2>
                   <p className="text-gray-700 leading-relaxed">{job.description}</p>
                 </div>
 
                 {/* Responsibilities */}
                 <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Responsibilities</h2>
+                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Aufgaben</h2>
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
                     {job.responsibilities.map((responsibility, index) => (
                       <li key={index}>{responsibility}</li>
@@ -186,7 +186,7 @@ const JobDetail = () => {
 
                 {/* Requirements */}
                 <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Requirements</h2>
+                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Anforderungen</h2>
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
                     {job.requirements.map((requirement, index) => (
                       <li key={index}>{requirement}</li>
@@ -196,7 +196,7 @@ const JobDetail = () => {
 
                 {/* Benefits */}
                 <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Benefits</h2>
+                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Vorteile</h2>
                   <ul className="list-disc list-inside space-y-2 text-gray-700">
                     {job.benefits.map((benefit, index) => (
                       <li key={index}>{benefit}</li>
@@ -210,7 +210,7 @@ const JobDetail = () => {
             {/* Application Form */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-lg shadow-lg p-8 sticky top-8">
-                <h2 className="text-2xl font-bold text-[#422f40] mb-6">Apply Now</h2>
+                <h2 className="text-2xl font-bold text-[#422f40] mb-6">Jetzt bewerben</h2>
                 <ApplyForm jobCode={job.code} />
               </div>
             </div>
