@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
+import Navbar from "../Components/Navbar";
 
 const Jobs = () => {
   const { t, i18n } = useTranslation();
@@ -56,7 +57,8 @@ const Jobs = () => {
         <meta property="og:image" content="/Assets/logo2.png" />
       </Helmet>
       
-      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4" dir={isRTL ? 'rtl' : 'ltr'}>
+      <Navbar />
+      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4 pt-24" dir={isRTL ? 'rtl' : 'ltr'}>
         <div className="container mx-auto max-w-6xl">
           {/* Header */}
           <div className="text-center mb-16">

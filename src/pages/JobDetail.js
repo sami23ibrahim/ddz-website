@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet-async";
 import ApplyForm from "../Components/ApplyForm";
+import Navbar from "../Components/Navbar";
 
 const JobDetail = () => {
   const { slug } = useParams(); // This is the job_code
@@ -116,7 +117,8 @@ const JobDetail = () => {
         <meta property="og:image" content="/Assets/logo2.png" />
       </Helmet>
 
-      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4" dir={isRTL ? 'rtl' : 'ltr'}>
+      <Navbar />
+      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4 pt-24" dir={isRTL ? 'rtl' : 'ltr'}>
         <div className="container mx-auto max-w-4xl">
           {/* Back Button */}
           <div className="mb-8">
