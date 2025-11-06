@@ -54,22 +54,22 @@ const JobDetail = () => {
       // Map database job to display format
       const mappedJob = {
         code: foundJob.job_code,
-        title: getTitleByLanguage(foundJob, i18n.language),
-        description: getDescriptionByLanguage(foundJob, i18n.language),
+        title: foundJob.title,
+        description: foundJob.description,
         location: foundJob.location || 'Berlin-Kreuzberg',
-        type: foundJob.type || 'Full-time',
-        department: foundJob.department || 'Healthcare',
-        experience: foundJob.experience_level || 'All levels',
+        type: foundJob.type || 'Vollzeit',
+        department: foundJob.department || 'Gesundheitswesen',
+        experience: foundJob.experience_level || 'Alle Level',
         postedDate: foundJob.created_at,
         responsibilities: foundJob.responsibilities && foundJob.responsibilities.length > 0 
           ? foundJob.responsibilities.filter(r => r.trim() !== '')
-          : ['Provide excellent patient care', 'Maintain professional standards'],
+          : ['Exzellente Patientenbetreuung', 'Professionelle Standards einhalten'],
         requirements: foundJob.requirements && foundJob.requirements.length > 0 
           ? foundJob.requirements.filter(r => r.trim() !== '')
-          : ['Relevant qualifications in the field', 'Strong communication skills'],
+          : ['Relevante Qualifikationen im Bereich', 'Starke Kommunikationsfähigkeiten'],
         benefits: foundJob.benefits && foundJob.benefits.length > 0 
           ? foundJob.benefits.filter(b => b.trim() !== '')
-          : ['Competitive salary', 'Professional development opportunities']
+          : ['Wettbewerbsfähiges Gehalt', 'Berufliche Entwicklungsmöglichkeiten']
       };
 
       setJob(mappedJob);
@@ -81,23 +81,6 @@ const JobDetail = () => {
     }
   };
 
-  const getTitleByLanguage = (job, lang) => {
-    switch (lang) {
-      case 'ar': return job.title_ar || job.title;
-      case 'de': return job.title_de || job.title;
-      case 'tr': return job.title_tr || job.title;
-      default: return job.title;
-    }
-  };
-
-  const getDescriptionByLanguage = (job, lang) => {
-    switch (lang) {
-      case 'ar': return job.description_ar || job.description;
-      case 'de': return job.description_de || job.description;
-      case 'tr': return job.description_tr || job.description;
-      default: return job.description;
-    }
-  };
 
   if (loading) {
     return (

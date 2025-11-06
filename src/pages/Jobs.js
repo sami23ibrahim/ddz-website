@@ -28,12 +28,12 @@ const Jobs = () => {
       const mappedJobs = result.jobs.map(job => ({
         key: job.job_code,
         code: job.job_code,
-        title: getTitleByLanguage(job, i18n.language),
-        description: getDescriptionByLanguage(job, i18n.language),
+        title: job.title,
+        description: job.description,
         location: job.location || 'Berlin-Kreuzberg',
-        type: job.type || 'Full-time',
-        department: job.department || 'Healthcare',
-        experience: job.experience_level || 'All levels',
+        type: job.type || 'Vollzeit',
+        department: job.department || 'Gesundheitswesen',
+        experience: job.experience_level || 'Alle Level',
         postedDate: job.created_at
       }));
 
@@ -45,23 +45,6 @@ const Jobs = () => {
     }
   };
 
-  const getTitleByLanguage = (job, lang) => {
-    switch (lang) {
-      case 'ar': return job.title_ar || job.title;
-      case 'de': return job.title_de || job.title;
-      case 'tr': return job.title_tr || job.title;
-      default: return job.title;
-    }
-  };
-
-  const getDescriptionByLanguage = (job, lang) => {
-    switch (lang) {
-      case 'ar': return job.description_ar || job.description;
-      case 'de': return job.description_de || job.description;
-      case 'tr': return job.description_tr || job.description;
-      default: return job.description;
-    }
-  };
 
   return (
     <>

@@ -49,10 +49,9 @@ async function createJob(req, res) {
   }
 
   const {
-    job_code, title, title_ar, title_de, title_tr,
-    description, description_ar, description_de, description_tr,
-    location, type, experience_level, department,
-    responsibilities, requirements, benefits
+    job_code, title, description, location, type, 
+    experience_level, department, responsibilities, 
+    requirements, benefits
   } = req.body;
 
   if (!job_code || !title || !description) {
@@ -64,11 +63,13 @@ async function createJob(req, res) {
   const { data, error } = await supabase
     .from('jobs')
     .insert([{
-      job_code, title, title_ar: title_ar || null, title_de: title_de || null, title_tr: title_tr || null,
-      description, description_ar: description_ar || null, description_de: description_de || null, description_tr: description_tr || null,
+      job_code, title, description,
       location: location || null, type: type || null,
-      experience_level: experience_level || 'All levels', department: department || 'Healthcare',
-      responsibilities: responsibilities || [], requirements: requirements || [], benefits: benefits || [],
+      experience_level: experience_level || 'Alle Level', 
+      department: department || 'Gesundheitswesen',
+      responsibilities: responsibilities || [], 
+      requirements: requirements || [], 
+      benefits: benefits || [],
       status: 'active'
     }])
     .select('*');

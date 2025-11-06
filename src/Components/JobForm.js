@@ -8,13 +8,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
   const [formData, setFormData] = useState({
     job_code: '',
     title: '',
-    title_ar: '',
-    title_de: '',
-    title_tr: '',
     description: '',
-    description_ar: '',
-    description_de: '',
-    description_tr: '',
     location: '',
     type: 'Full-time',
     experience_level: 'All levels',
@@ -88,191 +82,102 @@ export default function JobForm({ onJobCreated, onCancel }) {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6">Post New Job</h2>
+      <h2 className="text-2xl font-bold mb-6">Neue Stelle erstellen</h2>
       
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Job Code and Basic Info */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-1 font-semibold">Job Code *</label>
+            <label className="block mb-1 font-semibold">Stellencode *</label>
             <input
               type="text"
               name="job_code"
               value={formData.job_code}
               onChange={handleChange}
               className="border p-2 w-full rounded"
-              placeholder="e.g., DA-2025-01"
+              placeholder="z.B. DA-2025-01"
               required
             />
           </div>
           <div>
-            <label className="block mb-1 font-semibold">Location</label>
+            <label className="block mb-1 font-semibold">Standort</label>
             <input
               type="text"
               name="location"
               value={formData.location}
               onChange={handleChange}
               className="border p-2 w-full rounded"
-              placeholder="e.g., Berlin"
+              placeholder="z.B. Berlin"
             />
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <label className="block mb-1 font-semibold">Job Type</label>
+            <label className="block mb-1 font-semibold">Beschäftigungsart</label>
             <select
               name="type"
               value={formData.type}
               onChange={handleChange}
               className="border p-2 w-full rounded"
             >
-              <option value="Full-time">Full-time</option>
-              <option value="Part-time">Part-time</option>
-              <option value="Contract">Contract</option>
-              <option value="Internship">Internship</option>
+              <option value="Vollzeit">Vollzeit</option>
+              <option value="Teilzeit">Teilzeit</option>
+              <option value="Befristet">Befristet</option>
+              <option value="Praktikum">Praktikum</option>
             </select>
           </div>
           <div>
-            <label className="block mb-1 font-semibold">Experience Level</label>
+            <label className="block mb-1 font-semibold">Erfahrungslevel</label>
             <input
               type="text"
               name="experience_level"
               value={formData.experience_level}
               onChange={handleChange}
               className="border p-2 w-full rounded"
-              placeholder="e.g., Entry level, Mid level, Senior level, All levels"
+              placeholder="z.B. Berufseinsteiger, Erfahren, Senior, Alle Level"
             />
           </div>
         </div>
 
         <div>
-          <label className="block mb-1 font-semibold">Department</label>
+          <label className="block mb-1 font-semibold">Abteilung</label>
           <input
             type="text"
             name="department"
             value={formData.department}
             onChange={handleChange}
             className="border p-2 w-full rounded"
-            placeholder="e.g., Healthcare, Administration, Reception, Management"
+            placeholder="z.B. Gesundheitswesen, Verwaltung, Rezeption, Management"
           />
         </div>
 
-        {/* English */}
+        {/* Title and Description */}
         <div className="border-t pt-4">
-          <h3 className="text-lg font-semibold mb-3 text-blue-600">English *</h3>
+          <h3 className="text-lg font-semibold mb-3 text-blue-600">Stellendetails</h3>
           <div className="space-y-3">
             <div>
-              <label className="block mb-1">Title</label>
+              <label className="block mb-1 font-semibold">Stellentitel *</label>
               <input
                 type="text"
                 name="title"
                 value={formData.title}
                 onChange={handleChange}
                 className="border p-2 w-full rounded"
-                placeholder="Job title in English"
+                placeholder="Stellentitel (in beliebiger Sprache)"
                 required
               />
             </div>
             <div>
-              <label className="block mb-1">Description</label>
+              <label className="block mb-1 font-semibold">Stellenbeschreibung *</label>
               <textarea
                 name="description"
                 value={formData.description}
                 onChange={handleChange}
                 className="border p-2 w-full rounded"
-                rows="4"
-                placeholder="Job description in English"
+                rows="6"
+                placeholder="Detaillierte Stellenbeschreibung (in beliebiger Sprache)"
                 required
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Arabic */}
-        <div className="border-t pt-4">
-          <h3 className="text-lg font-semibold mb-3 text-green-600">Arabic (العربية)</h3>
-          <div className="space-y-3">
-            <div>
-              <label className="block mb-1">العنوان</label>
-              <input
-                type="text"
-                name="title_ar"
-                value={formData.title_ar}
-                onChange={handleChange}
-                className="border p-2 w-full rounded text-right"
-                placeholder="عنوان الوظيفة بالعربية"
-                dir="rtl"
-              />
-            </div>
-            <div>
-              <label className="block mb-1">الوصف</label>
-              <textarea
-                name="description_ar"
-                value={formData.description_ar}
-                onChange={handleChange}
-                className="border p-2 w-full rounded text-right"
-                rows="4"
-                placeholder="وصف الوظيفة بالعربية"
-                dir="rtl"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* German */}
-        <div className="border-t pt-4">
-          <h3 className="text-lg font-semibold mb-3 text-yellow-600">German (Deutsch)</h3>
-          <div className="space-y-3">
-            <div>
-              <label className="block mb-1">Titel</label>
-              <input
-                type="text"
-                name="title_de"
-                value={formData.title_de}
-                onChange={handleChange}
-                className="border p-2 w-full rounded"
-                placeholder="Berufsbezeichnung auf Deutsch"
-              />
-            </div>
-            <div>
-              <label className="block mb-1">Beschreibung</label>
-              <textarea
-                name="description_de"
-                value={formData.description_de}
-                onChange={handleChange}
-                className="border p-2 w-full rounded"
-                rows="4"
-                placeholder="Stellenbeschreibung auf Deutsch"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Turkish */}
-        <div className="border-t pt-4">
-          <h3 className="text-lg font-semibold mb-3 text-red-600">Turkish (Türkçe)</h3>
-          <div className="space-y-3">
-            <div>
-              <label className="block mb-1">Başlık</label>
-              <input
-                type="text"
-                name="title_tr"
-                value={formData.title_tr}
-                onChange={handleChange}
-                className="border p-2 w-full rounded"
-                placeholder="Türkçe iş unvanı"
-              />
-            </div>
-            <div>
-              <label className="block mb-1">Açıklama</label>
-              <textarea
-                name="description_tr"
-                value={formData.description_tr}
-                onChange={handleChange}
-                className="border p-2 w-full rounded"
-                rows="4"
-                placeholder="Türkçe iş açıklaması"
               />
             </div>
           </div>
@@ -280,11 +185,11 @@ export default function JobForm({ onJobCreated, onCancel }) {
 
         {/* Job Details Arrays */}
         <div className="border-t pt-4">
-          <h3 className="text-lg font-semibold mb-3 text-purple-600">Job Details</h3>
+          <h3 className="text-lg font-semibold mb-3 text-purple-600">Weitere Details</h3>
           
           {/* Responsibilities */}
           <div className="mb-4">
-            <label className="block mb-2 font-semibold">Responsibilities</label>
+            <label className="block mb-2 font-semibold">Aufgaben</label>
             {formData.responsibilities.map((responsibility, index) => (
               <div key={index} className="flex gap-2 mb-2">
                 <input
@@ -292,7 +197,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
                   value={responsibility}
                   onChange={(e) => handleArrayChange('responsibilities', index, e.target.value)}
                   className="border p-2 flex-1 rounded"
-                  placeholder={`Responsibility ${index + 1}`}
+                  placeholder={`Aufgabe ${index + 1}`}
                 />
                 <button
                   type="button"
@@ -309,13 +214,13 @@ export default function JobForm({ onJobCreated, onCancel }) {
               onClick={() => addArrayItem('responsibilities')}
               className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm"
             >
-              + Add Responsibility
+              + Aufgabe hinzufügen
             </button>
           </div>
 
           {/* Requirements */}
           <div className="mb-4">
-            <label className="block mb-2 font-semibold">Requirements</label>
+            <label className="block mb-2 font-semibold">Anforderungen</label>
             {formData.requirements.map((requirement, index) => (
               <div key={index} className="flex gap-2 mb-2">
                 <input
@@ -323,7 +228,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
                   value={requirement}
                   onChange={(e) => handleArrayChange('requirements', index, e.target.value)}
                   className="border p-2 flex-1 rounded"
-                  placeholder={`Requirement ${index + 1}`}
+                  placeholder={`Anforderung ${index + 1}`}
                 />
                 <button
                   type="button"
@@ -340,13 +245,13 @@ export default function JobForm({ onJobCreated, onCancel }) {
               onClick={() => addArrayItem('requirements')}
               className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm"
             >
-              + Add Requirement
+              + Anforderung hinzufügen
             </button>
           </div>
 
           {/* Benefits */}
           <div className="mb-4">
-            <label className="block mb-2 font-semibold">Benefits</label>
+            <label className="block mb-2 font-semibold">Vorteile</label>
             {formData.benefits.map((benefit, index) => (
               <div key={index} className="flex gap-2 mb-2">
                 <input
@@ -354,7 +259,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
                   value={benefit}
                   onChange={(e) => handleArrayChange('benefits', index, e.target.value)}
                   className="border p-2 flex-1 rounded"
-                  placeholder={`Benefit ${index + 1}`}
+                  placeholder={`Vorteil ${index + 1}`}
                 />
                 <button
                   type="button"
@@ -371,7 +276,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
               onClick={() => addArrayItem('benefits')}
               className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-sm"
             >
-              + Add Benefit
+              + Vorteil hinzufügen
             </button>
           </div>
         </div>
@@ -383,7 +288,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
             disabled={loading}
             className="px-6 py-2 rounded bg-black text-white hover:bg-gray-800 disabled:bg-gray-400"
           >
-            {loading ? 'Posting...' : 'Post Job'}
+            {loading ? 'Wird erstellt...' : 'Stelle erstellen'}
           </button>
           {onCancel && (
             <button
@@ -391,7 +296,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
               onClick={onCancel}
               className="px-6 py-2 rounded bg-gray-200 text-black hover:bg-gray-300"
             >
-              Cancel
+              Abbrechen
             </button>
           )}
         </div>
