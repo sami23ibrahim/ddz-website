@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaClock, FaMapMarkerAlt, FaPhone, FaStar, FaGoogle } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaClock, FaMapMarkerAlt, FaPhone, FaEnvelope, FaStar, FaGoogle } from "react-icons/fa";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -60,6 +60,19 @@ const Footer = () => {
                   className="text-base font-medium hover:text-[#d4c4a8] transition-colors duration-200 no-underline"
                 >
                   030 69005528
+                </a>
+              </div>
+            </div>
+            
+            <div className="flex items-center space-x-2">
+              <FaEnvelope className="text-[#e8e2d4] text-xl" />
+              <div>
+                <h3 className="font-bold text-xl">{t('footer.email')}</h3>
+                <a 
+                  href="mailto:team@diedreizahnaerzte.berlin" 
+                  className="text-base font-medium hover:text-[#d4c4a8] transition-colors duration-200 no-underline"
+                >
+                  team@diedreizahnaerzte.berlin
                 </a>
               </div>
             </div>
