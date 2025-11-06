@@ -5,6 +5,7 @@
     "home": "Ana Sayfa",
     "services": "Hizmetler",
     "team": "Takım",
+    "jobs": "Kariyer",
     "appointment": "Randevu"
   },
   "services": {
@@ -388,6 +389,12 @@
             }
         ]
     }
+  },
+  "jobs": {
+    "title": "Kariyer Fırsatları",
+    "subtitle": "Die Drei Zahnärzte ekibimize katılın ve Berlin-Kreuzberg'de olağanüstü diş bakımı sağlamanın bir parçası olun.",
+    "no_positions": "Şu anda mevcut pozisyon bulunmamaktadır",
+    "check_back": "Yeni fırsatlar için lütfen daha sonra tekrar kontrol edin."
   }
 }
   

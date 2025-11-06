@@ -72,16 +72,6 @@ const Impressum = () => {
             <p><span dangerouslySetInnerHTML={{ __html: t('impressum.contact_info') }} /></p>
 
 
-            <p className="mt-10 text-center">
-            <Link
-              to="/jobs"
-              className="inline-block bg-[#422f40] text-white px-4 py-2 rounded hover:bg-[#5a3a55] transition"
-            >
-              Apply for a Job
-            </Link>
-          </p>
-
-
           </div>
         </div>
       </main>

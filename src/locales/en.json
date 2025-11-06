@@ -659,6 +659,12 @@
       "keywords": "dental treatment, berlin, zahnarzt, dental care"
     }
   },
+  "jobs": {
+    "title": "Career Opportunities",
+    "subtitle": "Join our team at Die Drei Zahnärzte and be part of providing exceptional dental care in Berlin-Kreuzberg.",
+    "no_positions": "No positions available at the moment",
+    "check_back": "Please check back later for new opportunities."
+  },
   "impressum": {
     "title": "Impressum",
     "company_name": "Dentists & Friends GmbH",

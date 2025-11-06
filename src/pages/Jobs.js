@@ -60,10 +60,10 @@ const Jobs = () => {
         <div className="container mx-auto max-w-6xl">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className={`text-5xl font-bold text-[#422f40] mb-6 ${isRTL ? 'text-right' : 'text-left'}`}>
+            <h1 className="text-6xl font-bold text-[#422f40] mb-6 text-center">
               {t('jobs.title', 'Career Opportunities')}
             </h1>
-            <p className={`text-xl text-[#422f40] max-w-3xl mx-auto leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
+            <p className={`text-xl text-[#422f40] max-w-3xl mx-auto leading-relaxed text-center ${isRTL ? 'text-right' : 'text-left'}`}>
               {t('jobs.subtitle', 'Join our team at Die Drei Zahnärzte and be part of providing exceptional dental care in Berlin-Kreuzberg.')}
             </p>
           </div>

@@ -138,7 +138,7 @@ const Navbar = () => {
 								>
 									{t("navbar.blog")}
 								</Link> */}
-								{/* <Link
+								<Link
 									to="/jobs"
 									className={`${
 										isScrolled
@@ -147,7 +147,7 @@ const Navbar = () => {
 									} text-base transition-colors duration-200 focus:outline-none no-underline`}
 								>
 									{t("navbar.jobs")}
-								</Link> */}
+								</Link>
 								<a
 									href="tel:030 69005528"
 									className={`${
@@ -206,12 +206,13 @@ const Navbar = () => {
 						>
 							{t("navbar.blog")}
 						</Link> */}
-						{/* <Link
+						<Link
 							to="/jobs"
 							className="text-4xl font-bold text-[#422f40] hover:text-[#5a3d54] transition-colors duration-200 no-underline"
+							onClick={() => setMenuOpen(false)}
 						>
 							{t("navbar.jobs")}
-						</Link> */}
+						</Link>
 
 						<div className="mt-8 flex flex-col items-center space-y-4">
 							<a

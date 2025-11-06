@@ -5,6 +5,7 @@
         "home": "Startseite",
         "services": "Leistungen",
         "team": "Team",
+        "jobs": "Karriere",
         "appointment": "Termin"
       },
       "services": {
@@ -635,6 +636,12 @@
       "default_description": "Professionelle Zahnbehandlung in Berlin-Kreuzberg. Vereinbaren Sie einen Termin mit unserem erfahrenen mehrsprachigen Team.",
       "keywords": "zahnbehandlung, berlin, zahnarzt, zahnpflege"
     }
+  },
+  "jobs": {
+    "title": "Karrieremöglichkeiten",
+    "subtitle": "Werden Sie Teil unseres Teams bei Die Drei Zahnärzte und helfen Sie uns dabei, außergewöhnliche Zahnpflege in Berlin-Kreuzberg zu bieten.",
+    "no_positions": "Derzeit sind keine Stellen verfügbar",
+    "check_back": "Schauen Sie bitte später nach neuen Möglichkeiten."
   },
   "impressum": {
     "title": "Impressum",
