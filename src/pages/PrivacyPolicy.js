@@ -60,7 +60,7 @@ const PrivacyPolicy = () => {
                 </h2>
                 <p>{t('privacy.dpo.content')}</p>
                 <div className="bg-blue-50 p-4 rounded-lg">
-                  <p><strong>E-Mail:</strong> datenschutz@diedreizahnaerzte.berlin</p>
+                  <p><strong>E-Mail:</strong> team@diedreizahnaerzte.berlin</p>
                 </div>
               </section>
 
@@ -98,19 +98,6 @@ const PrivacyPolicy = () => {
                 <p><strong>{t('privacy.website_data.server_logs.retention')}:</strong> 7 Tage</p>
               </section>
 
-              {/* 5. Google Analytics */}
-              <section>
-                <h2 className="text-2xl font-semibold text-[#422f40] mb-4">
-                  {t('privacy.analytics.title')}
-                </h2>
-                <p>{t('privacy.analytics.content')}</p>
-                <div className="bg-yellow-50 p-4 rounded-lg">
-                  <p><strong>{t('privacy.analytics.tracking_id')}:</strong> G-1RB5PXNBW0</p>
-                  <p><strong>{t('privacy.analytics.provider')}:</strong> Google Ireland Limited</p>
-                  <p><strong>{t('privacy.analytics.retention')}:</strong> 26 Monate</p>
-                </div>
-                <p>{t('privacy.analytics.opt_out')}</p>
-              </section>
 
               {/* 6. Job Applications */}
               <section>

@@ -713,16 +713,8 @@
         "retention": "Speicherdauer"
       }
     },
-    "analytics": {
-      "title": "5. Google Analytics",
-      "content": "Diese Website nutzt Google Analytics zur Analyse des Nutzerverhaltens. Dabei werden pseudonymisierte Daten erfasst.",
-      "tracking_id": "Tracking-ID",
-      "provider": "Anbieter",
-      "retention": "Speicherdauer",
-      "opt_out": "Sie können der Erfassung durch Google Analytics widersprechen, indem Sie das Browser-Add-on zur Deaktivierung von Google Analytics installieren."
-    },
     "job_applications": {
-      "title": "6. Bewerbungsverfahren",
+      "title": "5. Bewerbungsverfahren",
       "content": "Wenn Sie sich über unsere Website bewerben, verarbeiten wir die von Ihnen übermittelten Daten:",
       "data_collected": {
         "title": "Erfasste Daten",
@@ -738,7 +730,7 @@
       "storage": "Speicherort"
     },
     "contact_forms": {
-      "title": "7. Kontaktformulare",
+      "title": "6. Kontaktformulare",
       "content": "Bei der Nutzung unserer Kontaktformulare verarbeiten wir folgende Daten:",
       "name": "Name",
       "email": "E-Mail-Adresse",
@@ -746,7 +738,7 @@
       "message": "Nachrichteninhalt"
     },
     "medical_data": {
-      "title": "8. Medizinische Daten (Patientendaten)",
+      "title": "7. Medizinische Daten (Patientendaten)",
       "notice": "Besondere Kategorie personenbezogener Daten",
       "content": "Als Zahnarztpraxis verarbeiten wir besondere Kategorien personenbezogener Daten (Gesundheitsdaten) zur Behandlung unserer Patienten:",
       "patient_records": "Patientenakten und Behandlungsverläufe",
@@ -757,14 +749,14 @@
       "retention_text": "10 Jahre nach Abschluss der Behandlung (gemäß § 630f BGB und Berufsordnung)"
     },
     "third_party": {
-      "title": "9. Drittanbieter und externe Dienste",
+      "title": "8. Drittanbieter und externe Dienste",
       "supabase": "Sichere Datenspeicherung für Bewerbungen und Website-Funktionen",
       "doctolib": "Online-Terminbuchungssystem für Patiententermine",
       "google": "Website-Analyse und Nutzungsstatistiken (anonymisiert)",
       "social": "Social Media Verlinkungen (keine automatische Datenübertragung)"
     },
     "rights": {
-      "title": "10. Ihre Rechte als betroffene Person",
+      "title": "9. Ihre Rechte als betroffene Person",
       "intro": "Sie haben folgende Rechte bezüglich Ihrer personenbezogenen Daten:",
       "access": {
         "title": "Auskunftsrecht",
@@ -795,7 +787,7 @@
       }
     },
     "security": {
-      "title": "11. Datensicherheit",
+      "title": "10. Datensicherheit",
       "content": "Wir setzen technische und organisatorische Maßnahmen zum Schutz Ihrer Daten ein:",
       "ssl": "SSL/TLS-Verschlüsselung für alle Datenübertragungen",
       "encryption": "Verschlüsselte Datenspeicherung",
@@ -804,7 +796,7 @@
       "staff_training": "Regelmäßige Schulungen unserer Mitarbeiter"
     },
     "updates": {
-      "title": "12. Änderungen dieser Datenschutzerklärung",
+      "title": "11. Änderungen dieser Datenschutzerklärung",
       "content": "Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf zu aktualisieren. Die aktuelle Version finden Sie stets auf unserer Website."
     },
     "contact": {

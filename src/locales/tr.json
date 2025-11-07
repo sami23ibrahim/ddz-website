@@ -429,16 +429,8 @@
         "retention": "Saklama süresi"
       }
     },
-    "analytics": {
-      "title": "5. Google Analytics",
-      "content": "Bu web sitesi kullanıcı davranışını analiz etmek için Google Analytics kullanır. Takma adlı veriler toplanır.",
-      "tracking_id": "İzleme Kimliği",
-      "provider": "Sağlayıcı",
-      "retention": "Saklama süresi",
-      "opt_out": "Google Analytics izleme devre dışı bırakma tarayıcı eklentisini yükleyerek Google Analytics takibini devre dışı bırakabilirsiniz."
-    },
     "job_applications": {
-      "title": "6. İş Başvuru Süreci",
+      "title": "5. İş Başvuru Süreci",
       "content": "Web sitemiz üzerinden başvuru yaptığınızda, gönderdiğiniz verileri işliyoruz:",
       "data_collected": {
         "title": "Toplanan Veriler",
@@ -454,7 +446,7 @@
       "storage": "Depolama yeri"
     },
     "contact_forms": {
-      "title": "7. İletişim Formları",
+      "title": "6. İletişim Formları",
       "content": "İletişim formlarımızı kullandığınızda aşağıdaki verileri işliyoruz:",
       "name": "Ad",
       "email": "E-posta adresi",
@@ -462,7 +454,7 @@
       "message": "Mesaj içeriği"
     },
     "medical_data": {
-      "title": "8. Tıbbi Veriler (Hasta Verileri)",
+      "title": "7. Tıbbi Veriler (Hasta Verileri)",
       "notice": "Özel kategori kişisel veriler",
       "content": "Diş kliniği olarak hastalarımızın tedavisi için özel kategorilerde kişisel veriler (sağlık verileri) işliyoruz:",
       "patient_records": "Hasta kayıtları ve tedavi geçmişi",
@@ -473,14 +465,14 @@
       "retention_text": "Tedavi tamamlandıktan sonra 10 yıl (§ 630f BGB ve mesleki düzenlemelere göre)"
     },
     "third_party": {
-      "title": "9. Üçüncü Taraf Sağlayıcılar ve Dış Hizmetler",
+      "title": "8. Üçüncü Taraf Sağlayıcılar ve Dış Hizmetler",
       "supabase": "Başvurular ve web sitesi işlevleri için güvenli veri depolama",
       "doctolib": "Hasta randevuları için çevrimiçi randevu rezervasyon sistemi",
       "google": "Web sitesi analizi ve kullanım istatistikleri (anonim)",
       "social": "Sosyal medya bağlantıları (otomatik veri aktarımı yok)"
     },
     "rights": {
-      "title": "10. Veri Sahibi Olarak Haklarınız",
+      "title": "9. Veri Sahibi Olarak Haklarınız",
       "intro": "Kişisel verilerinizle ilgili aşağıdaki haklara sahipsiniz:",
       "access": {
         "title": "Erişim Hakkı",
@@ -511,7 +503,7 @@
       }
     },
     "security": {
-      "title": "11. Veri Güvenliği",
+      "title": "10. Veri Güvenliği",
       "content": "Verilerinizi korumak için teknik ve organizasyonel önlemler uyguluyoruz:",
       "ssl": "Tüm veri aktarımları için SSL/TLS şifreleme",
       "encryption": "Şifrelenmiş veri depolama",
@@ -520,7 +512,7 @@
       "staff_training": "Personelimizin düzenli eğitimi"
     },
     "updates": {
-      "title": "12. Bu Gizlilik Politikasındaki Değişiklikler",
+      "title": "11. Bu Gizlilik Politikasındaki Değişiklikler",
       "content": "Bu gizlilik politikasını gerektiğinde güncelleme hakkını saklı tutuyoruz. Güncel sürüm her zaman web sitemizde bulunabilir."
     },
     "contact": {

@@ -735,16 +735,8 @@
         "retention": "Retention period"
       }
     },
-    "analytics": {
-      "title": "5. Google Analytics",
-      "content": "This website uses Google Analytics to analyze user behavior. Pseudonymized data is collected.",
-      "tracking_id": "Tracking ID",
-      "provider": "Provider",
-      "retention": "Retention period",
-      "opt_out": "You can opt out of Google Analytics tracking by installing the Google Analytics opt-out browser add-on."
-    },
     "job_applications": {
-      "title": "6. Job Application Process",
+      "title": "5. Job Application Process",
       "content": "When you apply through our website, we process the data you submit:",
       "data_collected": {
         "title": "Data Collected",
@@ -760,7 +752,7 @@
       "storage": "Storage location"
     },
     "contact_forms": {
-      "title": "7. Contact Forms",
+      "title": "6. Contact Forms",
       "content": "When using our contact forms, we process the following data:",
       "name": "Name",
       "email": "Email address",
@@ -768,7 +760,7 @@
       "message": "Message content"
     },
     "medical_data": {
-      "title": "8. Medical Data (Patient Data)",
+      "title": "7. Medical Data (Patient Data)",
       "notice": "Special category of personal data",
       "content": "As a dental practice, we process special categories of personal data (health data) for the treatment of our patients:",
       "patient_records": "Patient records and treatment history",
@@ -779,14 +771,14 @@
       "retention_text": "10 years after completion of treatment (according to § 630f BGB and professional regulations)"
     },
     "third_party": {
-      "title": "9. Third-Party Providers and External Services",
+      "title": "8. Third-Party Providers and External Services",
       "supabase": "Secure data storage for applications and website functions",
       "doctolib": "Online appointment booking system for patient appointments",
       "google": "Website analysis and usage statistics (anonymized)",
       "social": "Social media links (no automatic data transfer)"
     },
     "rights": {
-      "title": "10. Your Rights as a Data Subject",
+      "title": "9. Your Rights as a Data Subject",
       "intro": "You have the following rights regarding your personal data:",
       "access": {
         "title": "Right of Access",
@@ -817,7 +809,7 @@
       }
     },
     "security": {
-      "title": "11. Data Security",
+      "title": "10. Data Security",
       "content": "We implement technical and organizational measures to protect your data:",
       "ssl": "SSL/TLS encryption for all data transmissions",
       "encryption": "Encrypted data storage",
@@ -826,7 +818,7 @@
       "staff_training": "Regular training of our staff"
     },
     "updates": {
-      "title": "12. Changes to this Privacy Policy",
+      "title": "11. Changes to this Privacy Policy",
       "content": "We reserve the right to update this privacy policy as needed. The current version can always be found on our website."
     },
     "contact": {
