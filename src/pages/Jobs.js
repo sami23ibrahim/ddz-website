@@ -58,14 +58,14 @@ const Jobs = () => {
       </Helmet>
       
       <Navbar />
-      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4 pt-24" dir={isRTL ? 'rtl' : 'ltr'}>
-        <div className="container mx-auto max-w-6xl">
+      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4 pt-24 overflow-x-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
+        <div className="container mx-auto max-w-6xl w-full">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-6xl font-bold text-[#422f40] mb-6 text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#422f40] mb-6 text-center break-words px-2">
               {t('jobs.title', 'Career Opportunities')}
             </h1>
-            <p className={`text-xl text-[#422f40] max-w-3xl mx-auto leading-relaxed text-center ${isRTL ? 'text-right' : 'text-left'}`}>
+            <p className={`text-lg sm:text-xl text-[#422f40] max-w-3xl mx-auto leading-relaxed text-center px-4 ${isRTL ? 'text-right' : 'text-left'}`}>
               {t('jobs.subtitle', 'Join our team at Die Drei Zahnärzte and be part of providing exceptional dental care in Berlin-Kreuzberg.')}
             </p>
           </div>

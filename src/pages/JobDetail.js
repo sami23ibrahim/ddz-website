@@ -118,8 +118,8 @@ const JobDetail = () => {
       </Helmet>
 
       <Navbar />
-      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4 pt-24" dir={isRTL ? 'rtl' : 'ltr'}>
-        <div className="container mx-auto max-w-4xl">
+      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4 pt-24 overflow-x-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
+        <div className="container mx-auto max-w-4xl w-full">
           {/* Back Button */}
           <div className="mb-8">
             <Link 
@@ -139,7 +139,7 @@ const JobDetail = () => {
               <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
                 {/* Job Header */}
                 <div className="mb-8">
-                  <h1 className="text-4xl font-bold text-[#422f40] mb-4">{job.title}</h1>
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#422f40] mb-4 break-words">{job.title}</h1>
                   <div className="flex flex-wrap gap-4 text-gray-600 mb-4">
                     <div className="flex items-center">
                       <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
