@@ -42,11 +42,15 @@ async function submitFeedback(req, res) {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const { message, author_name, is_anonymous, is_positive } = req.body;
+  const { message, author_name, is_anonymous, feedback_type } = req.body;
 
   if (!message || message.trim().length === 0) {
     return res.status(400).json({ error: 'message is required' });
   }
+
+  // Validate feedback_type
+  const validTypes = ['positive', 'neutral', 'complaint'];
+  const type = validTypes.includes(feedback_type) ? feedback_type : 'complaint';
 
   // Determine if anonymous based on provided flag or if no name given
   const anonymous = is_anonymous === true || !author_name || author_name.trim().length === 0;
@@ -58,7 +62,7 @@ async function submitFeedback(req, res) {
       message: message.trim(),
       author_name: name,
       is_anonymous: anonymous,
-      is_positive: is_positive === true || is_positive === 'true'
+      feedback_type: type
     }])
     .select('*')
     .single();

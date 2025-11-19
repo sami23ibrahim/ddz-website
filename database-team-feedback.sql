@@ -1,13 +1,17 @@
 -- Team Feedback Table - Anonymous Complaining System
 -- Run this SQL in your Supabase SQL Editor
+-- This will DELETE the existing table and create a fresh one
 
--- Create team_feedback table
-CREATE TABLE IF NOT EXISTS team_feedback (
+-- Step 1: Drop existing table if it exists (this will delete all data!)
+DROP TABLE IF EXISTS team_feedback CASCADE;
+
+-- Step 2: Create team_feedback table
+CREATE TABLE team_feedback (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   message TEXT NOT NULL,
   author_name TEXT, -- NULL for anonymous, or real name if provided
   is_anonymous BOOLEAN DEFAULT true,
-  is_positive BOOLEAN DEFAULT false, -- true = positive (green), false = negative/complaint (red)
+  feedback_type TEXT DEFAULT 'complaint', -- 'positive', 'neutral', or 'complaint'
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
@@ -16,7 +20,7 @@ CREATE INDEX IF NOT EXISTS idx_team_feedback_created_at ON team_feedback(created
 
 -- Add comment for clarity
 COMMENT ON TABLE team_feedback IS 'Team-only anonymous feedback and complaints system';
-COMMENT ON COLUMN team_feedback.is_positive IS 'true = positive feedback (green), false = complaint/negative (red)';
+COMMENT ON COLUMN team_feedback.feedback_type IS 'Type of feedback: positive (green), neutral (gray), or complaint (red)';
 COMMENT ON COLUMN team_feedback.is_anonymous IS 'true = anonymous, false = author_name provided';
 COMMENT ON COLUMN team_feedback.author_name IS 'NULL if anonymous, otherwise the real name of the author';
 
@@ -35,4 +39,7 @@ CREATE POLICY "Allow public insert access" ON team_feedback
 
 -- Done! Team feedback table is ready.
 -- Access at: https://www.diedreizahnaerzte.berlin/secrets
+-- 
+-- Note: All previous feedback data has been deleted.
+-- This is a fresh start with the new schema supporting Positive, Neutral, and Complaint types.
 
