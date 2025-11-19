@@ -195,10 +195,10 @@ export default function Secrets() {
               die drei zahnaerzte und Team
             </h1>
             <p className="text-base sm:text-lg text-[#422f40] max-w-2xl mx-auto px-4 leading-relaxed">
-              This space is for our team — a place to speak freely, safely, and anonymously.
+              Dieser Raum ist für unser Team — ein Ort, um frei, sicher und anonym zu sprechen.
               <br />
               <br />
-              Let's be kind, respectful, and supportive as we build a better workplace for everyone. ❤️
+              Lasst uns freundlich, respektvoll und unterstützend sein, während wir einen besseren Arbeitsplatz für alle schaffen. ❤️
             </p>
           </div>
 
