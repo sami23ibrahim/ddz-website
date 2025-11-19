@@ -11,6 +11,7 @@ import BeforePage from "./pages/beforePage";
 import Impressum from "./pages/Impressum";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import HRDashboard from "./pages/HRDashboard";
+import Secrets from "./pages/Secrets";
 import LanguageSwitcher from './Components/LanguageSwitcher';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/datenschutz" element={<PrivacyPolicy />} />
         <Route path="/hr-admin" element={<HRDashboard />} />
+        <Route path="/secrets" element={<Secrets />} />
       </Routes>
       {/* Show the modal when a background page is set */}
       {background && (
