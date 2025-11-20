@@ -118,90 +118,90 @@ const JobDetail = () => {
       </Helmet>
 
       <Navbar />
-      <div className="min-h-screen bg-[#e8e2d4] py-16 px-4 pt-24 overflow-x-hidden" dir={isRTL ? 'rtl' : 'ltr'}>
-        <div className="container mx-auto max-w-4xl w-full">
+      <div className="min-h-screen bg-[#e8e2d4] py-8 sm:py-12 lg:py-16 px-3 sm:px-4 lg:px-6 pt-20 sm:pt-24 overflow-x-hidden">
+        <div className="container mx-auto max-w-6xl w-full">
           {/* Back Button */}
-          <div className="mb-8">
+          <div className="mb-6 sm:mb-8">
             <Link 
               to="/jobs" 
               className="inline-flex items-center text-[#422f40] hover:text-[#5a3d54] transition-colors duration-300"
             >
-              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg className={`w-5 h-5 ${isRTL ? 'ml-2' : 'mr-2'}`} fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" />
               </svg>
               Back to Jobs
             </Link>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 lg:gap-8 items-center lg:items-start">
             {/* Job Details */}
-            <div className="lg:col-span-2">
-              <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <div className="w-full lg:col-span-2">
+              <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 mb-6 lg:mb-0 mx-auto max-w-full">
                 {/* Job Header */}
-                <div className="mb-8">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#422f40] mb-4 break-words">{job.title}</h1>
-                  <div className="flex flex-wrap gap-4 text-gray-600 mb-4">
+                <div className="mb-6 sm:mb-8">
+                  <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold text-[#422f40] mb-3 sm:mb-4 break-words leading-tight">{job.title}</h1>
+                  <div className="flex flex-wrap gap-3 sm:gap-4 text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                     <div className="flex items-center">
-                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className={`w-4 h-4 sm:w-5 sm:h-5 ${isRTL ? 'ml-2' : 'mr-2'} flex-shrink-0`} fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                       </svg>
-                      <span>{job.location}</span>
+                      <span className="break-words">{job.location}</span>
                     </div>
                     <div className="flex items-center">
-                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className={`w-4 h-4 sm:w-5 sm:h-5 ${isRTL ? 'ml-2' : 'mr-2'} flex-shrink-0`} fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                       </svg>
-                      <span>{job.type}</span>
+                      <span className="break-words">{job.type}</span>
                     </div>
                     <div className="flex items-center">
-                      <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className={`w-4 h-4 sm:w-5 sm:h-5 ${isRTL ? 'ml-2' : 'mr-2'} flex-shrink-0`} fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
                       </svg>
-                      <span>{job.experience}</span>
+                      <span className="break-words">{job.experience}</span>
                     </div>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-[#422f40] text-white text-sm rounded-full">
+                    <span className="px-3 py-1 bg-[#422f40] text-white text-xs sm:text-sm rounded-full break-words">
                       {job.department}
                     </span>
-                    <span className="px-3 py-1 bg-gray-200 text-gray-700 text-sm rounded-full">
+                    <span className="px-3 py-1 bg-gray-200 text-gray-700 text-xs sm:text-sm rounded-full break-words">
                       Veröffentlicht: {new Date(job.postedDate).toLocaleDateString()}
                     </span>
                   </div>
                 </div>
 
                 {/* Job Description */}
-                <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Stellenbeschreibung</h2>
-                  <p className="text-gray-700 leading-relaxed">{job.description}</p>
+                <div className="mb-6 sm:mb-8">
+                  <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#422f40] mb-3 sm:mb-4">Stellenbeschreibung</h2>
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed break-words">{job.description}</p>
                 </div>
 
                 {/* Responsibilities */}
-                <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Aufgaben</h2>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <div className="mb-6 sm:mb-8">
+                  <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#422f40] mb-3 sm:mb-4">Aufgaben</h2>
+                  <ul className={`list-disc space-y-2 text-sm sm:text-base text-gray-700 ${isRTL ? 'list-inside pr-4' : 'list-inside pl-4'}`}>
                     {job.responsibilities.map((responsibility, index) => (
-                      <li key={index}>{responsibility}</li>
+                      <li key={index} className="break-words">{responsibility}</li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Requirements */}
-                <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Anforderungen</h2>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <div className="mb-6 sm:mb-8">
+                  <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#422f40] mb-3 sm:mb-4">Anforderungen</h2>
+                  <ul className={`list-disc space-y-2 text-sm sm:text-base text-gray-700 ${isRTL ? 'list-inside pr-4' : 'list-inside pl-4'}`}>
                     {job.requirements.map((requirement, index) => (
-                      <li key={index}>{requirement}</li>
+                      <li key={index} className="break-words">{requirement}</li>
                     ))}
                   </ul>
                 </div>
 
                 {/* Benefits */}
-                <div className="mb-8">
-                  <h2 className="text-2xl font-bold text-[#422f40] mb-4">Vorteile</h2>
-                  <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <div className="mb-6 sm:mb-8">
+                  <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#422f40] mb-3 sm:mb-4">Vorteile</h2>
+                  <ul className={`list-disc space-y-2 text-sm sm:text-base text-gray-700 ${isRTL ? 'list-inside pr-4' : 'list-inside pl-4'}`}>
                     {job.benefits.map((benefit, index) => (
-                      <li key={index}>{benefit}</li>
+                      <li key={index} className="break-words">{benefit}</li>
                     ))}
                   </ul>
                 </div>
@@ -210,9 +210,9 @@ const JobDetail = () => {
             </div>
 
             {/* Application Form */}
-            <div className="lg:col-span-1">
-              <div className="bg-white rounded-lg shadow-lg p-8 sticky top-8">
-                <h2 className="text-2xl font-bold text-[#422f40] mb-6">Jetzt bewerben</h2>
+            <div className="w-full lg:col-span-1">
+              <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 lg:sticky lg:top-8 mx-auto max-w-full">
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#422f40] mb-4 sm:mb-6">Jetzt bewerben</h2>
                 <ApplyForm jobCode={job.code} />
               </div>
             </div>
