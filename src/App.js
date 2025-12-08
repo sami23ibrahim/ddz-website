@@ -21,7 +21,7 @@ function App() {
 
   return (
     <HelmetProvider>
-      <WelcomePopup showOnce={true} />
+      <WelcomePopup showOnce={false} />
       <LanguageSwitcher />
       {/* <div style={{ position: 'fixed', top: 250, right: 20, zIndex: 1000 }}>
         <Link to="/beforePage">
