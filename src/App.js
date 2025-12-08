@@ -13,6 +13,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import HRDashboard from "./pages/HRDashboard";
 import Secrets from "./pages/Secrets";
 import LanguageSwitcher from './Components/LanguageSwitcher';
+import WelcomePopup from './Components/WelcomePopup';
 
 function App() {
   const location = useLocation();
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <HelmetProvider>
+      <WelcomePopup showOnce={true} />
       <LanguageSwitcher />
       {/* <div style={{ position: 'fixed', top: 250, right: 20, zIndex: 1000 }}>
         <Link to="/beforePage">
