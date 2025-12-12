@@ -8,6 +8,7 @@ export default function HRDashboard() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showJobForm, setShowJobForm] = useState(false);
+  const [editingJob, setEditingJob] = useState(null);
   const [selectedJob, setSelectedJob] = useState(null);
   const [view, setView] = useState('jobs'); // 'jobs' or 'applications'
   
@@ -176,7 +177,13 @@ Are you absolutely sure you want to proceed?`;
 
   const handleJobCreated = (newJob) => {
     setShowJobForm(false);
+    setEditingJob(null);
     fetchJobs();
+  };
+
+  const handleEditJob = (job) => {
+    setEditingJob(job);
+    setShowJobForm(true);
   };
 
   const handleViewApplications = (job) => {
@@ -194,7 +201,8 @@ Are you absolutely sure you want to proceed?`;
       <div className="container mx-auto px-4 py-8">
         <JobForm 
           onJobCreated={handleJobCreated}
-          onCancel={() => setShowJobForm(false)}
+          onCancel={() => { setShowJobForm(false); setEditingJob(null); }}
+          editJob={editingJob}
         />
       </div>
     );
@@ -273,7 +281,7 @@ Are you absolutely sure you want to proceed?`;
           <h1 className="text-3xl font-bold">HR Dashboard</h1>
           <div className="flex space-x-3">
             <button
-              onClick={() => setShowJobForm(true)}
+              onClick={() => { setEditingJob(null); setShowJobForm(true); }}
               className="px-6 py-2 bg-black text-white rounded hover:bg-gray-800"
             >
               + Post New Job
@@ -315,6 +323,13 @@ Are you absolutely sure you want to proceed?`;
                       <p className="text-sm text-gray-600">{job.job_code}</p>
                     </div>
                     <div className="flex gap-2">
+                      <button
+                        onClick={() => handleEditJob(job)}
+                        className="text-blue-600 hover:text-blue-800 text-sm"
+                        title="Edit job"
+                      >
+                        ✏️
+                      </button>
                       {job.status === 'active' ? (
                         <button
                           onClick={() => handleHideJob(job.id, job.job_code)}

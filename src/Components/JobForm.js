@@ -1,21 +1,22 @@
 // src/Components/JobForm.js
 import { useState } from 'react';
 
-export default function JobForm({ onJobCreated, onCancel }) {
+export default function JobForm({ onJobCreated, onCancel, editJob }) {
+  const isEditMode = !!editJob;
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState('');
   
   const [formData, setFormData] = useState({
-    job_code: '',
-    title: '',
-    description: '',
-    location: '',
-    type: 'Full-time',
-    experience_level: 'All levels',
-    department: 'Healthcare',
-    responsibilities: [''],
-    requirements: [''],
-    benefits: ['']
+    job_code: editJob?.job_code || '',
+    title: editJob?.title || '',
+    description: editJob?.description || '',
+    location: editJob?.location || '',
+    type: editJob?.type || 'Vollzeit',
+    experience_level: editJob?.experience_level || 'Alle Level',
+    department: editJob?.department || 'Gesundheitswesen',
+    responsibilities: editJob?.responsibilities?.length > 0 ? editJob.responsibilities : [''],
+    requirements: editJob?.requirements?.length > 0 ? editJob.requirements : [''],
+    benefits: editJob?.benefits?.length > 0 ? editJob.benefits : ['']
   });
 
   const handleChange = (e) => {
@@ -55,10 +56,15 @@ export default function JobForm({ onJobCreated, onCancel }) {
     setMsg('');
 
     try {
-      const response = await fetch('/api/jobs?action=create', {
+      const apiAction = isEditMode ? 'update' : 'create';
+      const bodyData = isEditMode 
+        ? { ...formData, job_id: editJob.id }
+        : formData;
+
+      const response = await fetch(`/api/jobs?action=${apiAction}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(bodyData)
       });
 
       const result = await response.json();
@@ -69,7 +75,7 @@ export default function JobForm({ onJobCreated, onCancel }) {
         return;
       }
 
-      setMsg('✅ Job posted successfully!');
+      setMsg(isEditMode ? '✅ Job updated successfully!' : '✅ Job posted successfully!');
       setTimeout(() => {
         if (onJobCreated) onJobCreated(result.job);
       }, 1000);
@@ -82,7 +88,9 @@ export default function JobForm({ onJobCreated, onCancel }) {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg max-w-4xl mx-auto">
-      <h2 className="text-2xl font-bold mb-6">Neue Stelle erstellen</h2>
+      <h2 className="text-2xl font-bold mb-6">
+        {isEditMode ? 'Stelle bearbeiten' : 'Neue Stelle erstellen'}
+      </h2>
       
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Job Code and Basic Info */}
@@ -94,10 +102,14 @@ export default function JobForm({ onJobCreated, onCancel }) {
               name="job_code"
               value={formData.job_code}
               onChange={handleChange}
-              className="border p-2 w-full rounded"
+              className={`border p-2 w-full rounded ${isEditMode ? 'bg-gray-100 cursor-not-allowed' : ''}`}
               placeholder="z.B. DA-2025-01"
               required
+              disabled={isEditMode}
             />
+            {isEditMode && (
+              <p className="text-xs text-gray-500 mt-1">Stellencode kann nicht geändert werden</p>
+            )}
           </div>
           <div>
             <label className="block mb-1 font-semibold">Standort</label>
@@ -288,7 +300,10 @@ export default function JobForm({ onJobCreated, onCancel }) {
             disabled={loading}
             className="px-6 py-2 rounded bg-black text-white hover:bg-gray-800 disabled:bg-gray-400"
           >
-            {loading ? 'Wird erstellt...' : 'Stelle erstellen'}
+            {loading 
+              ? (isEditMode ? 'Wird aktualisiert...' : 'Wird erstellt...') 
+              : (isEditMode ? 'Änderungen speichern' : 'Stelle erstellen')
+            }
           </button>
           {onCancel && (
             <button

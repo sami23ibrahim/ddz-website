@@ -25,6 +25,8 @@ export default async function handler(req, res) {
     switch (action) {
       case 'create':
         return await createJob(req, res);
+      case 'update':
+        return await updateJob(req, res);
       case 'delete':
         return await deleteJob(req, res);
       case 'hide':
@@ -34,7 +36,7 @@ export default async function handler(req, res) {
       case 'list':
         return await listJobsWithCounts(req, res);
       default:
-        return res.status(400).json({ error: 'Invalid action. Use: create, delete, hide, unhide, list' });
+        return res.status(400).json({ error: 'Invalid action. Use: create, update, delete, hide, unhide, list' });
     }
   } catch (e) {
     console.error('[jobs] Error:', e);
@@ -76,6 +78,49 @@ async function createJob(req, res) {
 
   if (error) throw error;
   return res.status(201).json({ ok: true, job: data[0] });
+}
+
+// Update existing job
+async function updateJob(req, res) {
+  if (req.method !== 'POST') {
+    return res.status(405).json({ error: 'Method not allowed' });
+  }
+
+  const {
+    job_id, title, description, location, type,
+    experience_level, department, responsibilities,
+    requirements, benefits
+  } = req.body;
+
+  if (!job_id) {
+    return res.status(400).json({ error: 'job_id is required' });
+  }
+
+  if (!title || !description) {
+    return res.status(400).json({ error: 'title and description are required' });
+  }
+
+  const { data, error } = await supabase
+    .from('jobs')
+    .update({
+      title,
+      description,
+      location: location || null,
+      type: type || null,
+      experience_level: experience_level || 'Alle Level',
+      department: department || 'Gesundheitswesen',
+      responsibilities: responsibilities || [],
+      requirements: requirements || [],
+      benefits: benefits || []
+    })
+    .eq('id', job_id)
+    .select('*')
+    .single();
+
+  if (error) throw error;
+  if (!data) return res.status(404).json({ error: 'Job not found' });
+
+  return res.status(200).json({ ok: true, job: data });
 }
 
 // Delete job permanently
