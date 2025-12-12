@@ -187,7 +187,7 @@ export default function ApplicationsList({ jobCode, jobTitle }) {
           <thead>
             <tr className="bg-gray-100 border-b">
               <th className="text-center p-3">⭐</th>
-              <th className="text-left p-3">Date</th>
+              <th className="text-left p-3">Applied Date</th>
               <th className="text-left p-3">Name</th>
               <th className="text-left p-3">Email</th>
               <th className="text-left p-3">Phone</th>
@@ -240,9 +240,9 @@ export default function ApplicationsList({ jobCode, jobTitle }) {
                   }`}>
                     {app.status}
                   </span>
-                  {(app.cv_downloaded_at || app.cover_downloaded_at) && (
+                  {(app.first_cv_downloaded_at || app.first_cover_downloaded_at) && (
                     <div className="text-xs text-gray-500 mt-1">
-                      Downloaded: {formatDate(app.cv_downloaded_at || app.cover_downloaded_at)}
+                      Downloaded: {formatDate(app.first_cv_downloaded_at || app.first_cover_downloaded_at)}
                     </div>
                   )}
                 </td>

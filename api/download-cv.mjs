@@ -61,12 +61,12 @@ export default async function handler(req, res) {
 async function trackDownload(applicationId, fileType) {
   try {
     // Determine which field to update based on file type
-    const updateField = fileType === 'cover' ? 'cover_downloaded_at' : 'cv_downloaded_at';
-    
-    // Get current application to check if it's first download
+    const firstDownloadField = fileType === 'cover' ? 'first_cover_downloaded_at' : 'first_cv_downloaded_at';
+
+    // Get current application to check download history
     const { data: currentApp, error: fetchError } = await supabase
       .from('applications')
-      .select('status, cv_downloaded_at, cover_downloaded_at')
+      .select('status, first_cv_downloaded_at, first_cover_downloaded_at')
       .eq('id', applicationId)
       .single();
 
@@ -76,26 +76,33 @@ async function trackDownload(applicationId, fileType) {
     }
 
     // Prepare update data
-    const updateData = {
-      [updateField]: new Date().toISOString()
-    };
+    const updateData = {};
 
-    // If this is the first download of any file, change status to 'downloaded'
-    const isFirstDownload = !currentApp.cv_downloaded_at && !currentApp.cover_downloaded_at;
-    if (isFirstDownload && currentApp.status === 'new') {
-      updateData.status = 'downloaded';
+    // Set first download time only if it hasn't been set before
+    if (!currentApp[firstDownloadField]) {
+      updateData[firstDownloadField] = new Date().toISOString();
+
+      // If this is the first download of any file, change status to 'downloaded'
+      const isFirstDownload = !currentApp.first_cv_downloaded_at && !currentApp.first_cover_downloaded_at;
+      if (isFirstDownload && currentApp.status === 'new') {
+        updateData.status = 'downloaded';
+      }
     }
 
-    // Update the application
-    const { error: updateError } = await supabase
-      .from('applications')
-      .update(updateData)
-      .eq('id', applicationId);
+    // Only update if there's something to update (first time download)
+    if (Object.keys(updateData).length > 0) {
+      const { error: updateError } = await supabase
+        .from('applications')
+        .update(updateData)
+        .eq('id', applicationId);
 
-    if (updateError) {
-      console.error('[trackDownload] Update error:', updateError);
+      if (updateError) {
+        console.error('[trackDownload] Update error:', updateError);
+      } else {
+        console.log(`[trackDownload] Set ${firstDownloadField} for application ${applicationId} (FIRST download)`);
+      }
     } else {
-      console.log(`[trackDownload] Updated ${updateField} for application ${applicationId}`);
+      console.log(`[trackDownload] Application ${applicationId} already downloaded, no update needed`);
     }
   } catch (e) {
     console.error('[trackDownload] Error:', e);
