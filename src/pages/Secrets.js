@@ -83,6 +83,10 @@ export default function Secrets() {
     setSuccess('');
 
     try {
+      // Random delay (2-8 seconds) to prevent timestamp matching with server logs
+      const randomDelay = Math.floor(Math.random() * 6000) + 2000;
+      await new Promise(resolve => setTimeout(resolve, randomDelay));
+
       const response = await fetch('/api/team-feedback?action=submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -317,7 +321,7 @@ export default function Secrets() {
                 disabled={submitting || !message.trim()}
                 className="w-full bg-[#422f40] text-white py-3 sm:py-3.5 px-6 rounded-lg font-semibold text-sm sm:text-base hover:bg-[#5a3f57] active:bg-[#4a3548] transition-colors disabled:opacity-50 disabled:cursor-not-allowed touch-manipulation"
               >
-                {submitting ? 'Submitting...' : 'Submit Feedback'}
+                {submitting ? 'Submitting securely...' : 'Submit Feedback'}
               </button>
             </form>
           </div>
