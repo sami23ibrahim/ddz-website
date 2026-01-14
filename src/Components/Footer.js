@@ -23,14 +23,22 @@ const Footer = () => {
             
             <div className="space-y-2">
               <div className="flex items-center gap-4 sm:gap-8">
-                <span className="font-medium text-lg">{t('footer.mon_thu')}:</span>
-                <span className="font-medium text-base">09:00-18:00</span>
+                <span className="font-medium text-lg">{t('footer.monday')} - {t('footer.thursday')}:</span>
+                <span className="font-medium text-base">09:00-20:00</span>
               </div>
+              
+           
              
               <div className="flex items-center gap-4 sm:gap-8">
-                <span className="font-medium text-lg">{t('footer.fri')}:</span>
+                <span className="font-medium text-lg">{t('footer.friday')}:</span>
                 <span className="font-medium text-base">09:00-15:00</span>
               </div>
+              
+              <div className="flex items-center gap-4 sm:gap-8">
+                <span className="font-medium text-lg">{t('footer.saturday')}:</span>
+                <span className="font-medium text-base">11:00-16:00</span>
+              </div>
+              
             </div>
           </div>
 

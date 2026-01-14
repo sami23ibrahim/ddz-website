@@ -313,9 +313,12 @@
   },
   "footer": {
     "opening_hours": "OPENING HOURS",
-    "mon_thu": "Mon-Thu",
-    "wed": "Wed",
-    "fri": "Fri",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
     "clinic_name": "Die Drei Zahnärzte ",
     "phone_number": "PHONE NUMBER",
     "email": "EMAIL",
@@ -700,7 +703,7 @@
     "additional_address": "Address:",
     "additional_address_text": "Skalitzer Straße 137, 10999 Berlin",
     "opening_hours": "Opening Hours:",
-    "opening_hours_text": "Monday, Tuesday, Thursday: 08:30-20:00<br />Wednesday: 08:30-18:30<br />Friday: 09:00-15:00",
+    "opening_hours_text": "Monday, Tuesday, Thursday: 08:30-20:00<br />Wednesday: 08:30-18:30<br />Friday: 09:00-15:00<br />Saturday: 10:00-14:00",
     "contact_info": "Contact:<br />030 69005528 team@diedreizahnaerzte.berlin"
   },
   "privacy": {

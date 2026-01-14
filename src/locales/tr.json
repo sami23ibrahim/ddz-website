@@ -271,9 +271,12 @@
   },
   "footer": {
     "opening_hours": "ÇALIŞMA SAATLERİ",
-    "mon_thu": "Pzt-Per",
-    "wed": "Çar",
-    "fri": "Cum",
+    "monday": "Pazartesi",
+    "tuesday": "Salı",
+    "wednesday": "Çarşamba",
+    "thursday": "Perşembe",
+    "friday": "Cuma",
+    "saturday": "Cumartesi",
     "clinic_name": "Die Drei Zahnärzte",
     "phone_number": "TELEFON NUMARASI",
     "email": "E-POSTA",
@@ -519,6 +522,13 @@
       "title": "İletişim",
       "content": "Veri koruma hakkında sorularınız varsa veya haklarınızı kullanmak istiyorsanız, lütfen bizimle iletişime geçin:"
     }
+  },
+  "impressum": {
+    "additional_address": "Adres:",
+    "additional_address_text": "Skalitzer Straße 137, 10999 Berlin",
+    "opening_hours": "Çalışma Saatleri:",
+    "opening_hours_text": "Pazartesi, Salı, Perşembe: 08:30-20:00<br />Çarşamba: 08:30-18:30<br />Cuma: 09:00-15:00<br />Cumartesi: 10:00-14:00",
+    "contact_info": "İletişim:<br />030 69005528 team@diedreizahnaerzte.berlin"
   }
 }
   
