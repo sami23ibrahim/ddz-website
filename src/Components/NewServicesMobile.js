@@ -13,7 +13,7 @@ const NewServicesMobile = () => {
             key: 'dental_anxiety',
             title: t('new_services.services.dental_anxiety.title'),
             subtitle: t('new_services.services.dental_anxiety.subtitle'),
-            img: '/Assets/DENTAL ANXIETY.jpg',
+            img: '/new images/anxiety patient.png',
         },
         {
             key: 'aesthetic_dentistry',
@@ -31,7 +31,7 @@ const NewServicesMobile = () => {
             key: 'root_canal_therapy',
             title: t('new_services.services.root_canal_therapy.title'),
             subtitle: t('new_services.services.root_canal_therapy.subtitle'),
-            img: '/Assets/digital3.png',
+            img: '/new images/miko cleaned.png',
         },
         {
             key: 'dental_prosthetics',
@@ -43,7 +43,7 @@ const NewServicesMobile = () => {
             key: 'oral_surgery',
             title: t('new_services.services.oral_surgery.title'),
             subtitle: t('new_services.services.oral_surgery.subtitle'),
-            img: '/Assets/oral.jpg',
+            img: '/new images/ORALCHIRURGIE.png',
         },
         {
             key: 'orthodontics',
@@ -61,13 +61,13 @@ const NewServicesMobile = () => {
             key: 'professional_cleaning',
             title: t('new_services.services.professional_cleaning.title'),
             subtitle: t('new_services.services.professional_cleaning.subtitle'),
-            img: '/Assets/Professional Cleaning.jpg',
+            img: '/new images/prophylaxe.png',
         },
         {
             key: 'bleaching',
             title: t('new_services.services.bleaching.title'),
             subtitle: t('new_services.services.bleaching.subtitle'),
-            img: '/Assets/Bleaching.jpg',
+            img: '/new images/bleaching cleaned 2 .png',
         },
         {
             key: 'periodontitis_therapy',

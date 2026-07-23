@@ -102,6 +102,81 @@ const Team = () => {
       expandedSpecialties: [
         { name: t('team.specialties.majd'), color: "#422f4099", isDescription: true }
       ]
+    },
+    {
+      id: 5,
+      name: t('team.members.juliane.name'),
+      title: t('team.members.juliane.title'),
+      image: "/new doctors/Kevekordes.png",
+      rating: 4.9,
+      reviews: 152,
+      languages: [
+        { code: "de", flag: "/Assets/de.png", name: "German" },
+        { code: "en", flag: "/Assets/en.png", name: "English" }
+      ],
+      baseSpecialties: [
+        { name: t('team.specialties.juliane_preview'), color: "#422f4099", isPreview: true }
+      ],
+      expandedSpecialties: [
+        { name: t('team.specialties.juliane'), color: "#422f4099", isDescription: true }
+      ]
+    },
+    {
+      id: 6,
+      name: t('team.members.feras.name'),
+      title: t('team.members.feras.title'),
+      image: "/new doctors/Nabilsy.png",
+      rating: 4.9,
+      reviews: 152,
+      languages: [
+        { code: "de", flag: "/Assets/de.png", name: "German" },
+        { code: "en", flag: "/Assets/en.png", name: "English" },
+        { code: "ar", flag: "/Assets/pala.jpg", name: "Arabic" }
+      ],
+      baseSpecialties: [
+        { name: t('team.specialties.feras_preview'), color: "#422f4099", isPreview: true }
+      ],
+      expandedSpecialties: [
+        { name: t('team.specialties.feras'), color: "#422f4099", isDescription: true }
+      ]
+    },
+    {
+      id: 7,
+      name: t('team.members.anusha.name'),
+      title: t('team.members.anusha.title'),
+      image: "/new doctors/RAO.png",
+      rating: 4.9,
+      reviews: 152,
+      languages: [
+        { code: "de", flag: "/Assets/de.png", name: "German" },
+        { code: "en", flag: "/Assets/en.png", name: "English" },
+        { code: "hi", flag: "/Assets/india.png", name: "Hindi" }
+      ],
+      baseSpecialties: [
+        { name: t('team.specialties.anusha_preview'), color: "#422f4099", isPreview: true }
+      ],
+      expandedSpecialties: [
+        { name: t('team.specialties.anusha'), color: "#422f4099", isDescription: true }
+      ]
+    },
+    {
+      id: 8,
+      name: t('team.members.ammar.name'),
+      title: t('team.members.ammar.title'),
+      image: "/new doctors/ammar.png",
+      rating: 4.9,
+      reviews: 152,
+      languages: [
+        { code: "de", flag: "/Assets/de.png", name: "German" },
+        { code: "en", flag: "/Assets/en.png", name: "English" },
+        { code: "ar", flag: "/Assets/pala.jpg", name: "Arabic" }
+      ],
+      baseSpecialties: [
+        { name: t('team.specialties.ammar_preview'), color: "#422f4099", isPreview: true }
+      ],
+      expandedSpecialties: [
+        { name: t('team.specialties.ammar'), color: "#422f4099", isDescription: true }
+      ]
     }
   ];
 

@@ -295,6 +295,22 @@
       "majd": {
         "name": "Majd Saad",
         "title": "Dentist"
+      },
+      "juliane": {
+        "name": "Juliane Kevekordes",
+        "title": "Dentist"
+      },
+      "feras": {
+        "name": "Feras Nebilsy",
+        "title": "Emergency Dentist"
+      },
+      "anusha": {
+        "name": "Anusha Rao",
+        "title": "Dentist"
+      },
+      "ammar": {
+        "name": "Ammar Deeb",
+        "title": "Assistant Dentist"
       }
     },
     "specialties": {
@@ -305,7 +321,15 @@
       "prabh": "Prabh specializes in surgery, implantology, prosthetics, and anterior dental aesthetics. With his patient-centered approach, he also dedicates himself to treating anxious patients. Prabjit offers consultations in various languages to ensure comprehensive care for his patients.",
       "prabh_preview": "Prabh specializes in surgery, implantology, prosthetics...",
       "majd": "As the fourth dentist in our team, Majd brings much empathy and warmth to the practice. His focus areas are restorative dentistry, root canal treatment, and periodontitis therapy. With professional expertise and an open smile, he ensures that our patients always feel well taken care of.",
-      "majd_preview": "Majd- Calm, Precise, Caring..."
+      "majd_preview": "Majd- Calm, Precise, Caring...",
+      "juliane": "Since April of this year, we have been delighted to welcome Juliane to our practice team. Her focus is on restorative dentistry, including modern filling therapy and endodontics (root canal treatment), with the goal of preserving natural teeth for as long as possible. With her empathetic and calm manner, she creates a trusting atmosphere in which patients feel well cared for. She also meets our youngest visitors with great patience and a playful approach, helping to make their treatment as pleasant as possible.",
+      "juliane_preview": "Juliane specializes in restorative dentistry, filling therapy, and endodontics...",
+      "feras": "Feras Nebilsy is an emergency dentist with a strong focus on surgical procedures. He is specialized in complex tooth extractions, including challenging wisdom-tooth removals. With meticulous attention to detail and a calm, reassuring presence, he ensures that patients feel safe and supported even during difficult treatments.",
+      "feras_preview": "Feras specializes in surgical procedures and complex extractions...",
+      "anusha": "Anusha Rao is a trained dentist working in prophylaxis and professional dental cleaning at our clinic. She is exceptionally gentle with anxious patients and children, taking the time to explain each step clearly. With her calm, patient-focused approach, she often shares helpful insights, you might even learn a thing or two about general dentistry from her.",
+      "anusha_preview": "Anusha specializes in prophylaxis and professional dental cleaning...",
+      "ammar": "As an assistant dentist and partially working in the field of dental hygiene, Ammar works closely with patients to create a safe and relaxed atmosphere based on trust, especially for those with dental anxiety. His main focus is periodontal therapy and the treatment of gum diseases, as well as conservative treatments. With empathy and patience, he strives to provide patients with a sense of calm and security.",
+      "ammar_preview": "Ammar specializes in periodontal therapy, gum disease, and conservative treatments..."
     }
   },
   "home_video": {

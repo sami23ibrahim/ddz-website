@@ -243,6 +243,22 @@
       "majd": {
         "name": "Majd Saad",
         "title": "Diş Hekimi"
+      },
+      "juliane": {
+        "name": "Juliane Kevekordes",
+        "title": "Diş Hekimi"
+      },
+      "feras": {
+        "name": "Feras Nebilsy",
+        "title": "Acil Diş Hekimi"
+      },
+      "anusha": {
+        "name": "Anusha Rao",
+        "title": "Diş Hekimi"
+      },
+      "ammar": {
+        "name": "Ammar Deeb",
+        "title": "Asistan Diş Hekimi"
       }
     },
     "specialties": {
@@ -254,6 +270,14 @@
       "prabh_preview": "Prabh cerrahi, implantoloji, protez konularında uzmanlaşmıştır...",
       "majd": "Ekibimizin dördüncü diş hekimi olarak Majd, kliniğe çok fazla empati ve sıcaklık getiriyor. Uzmanlık alanları restoratif diş hekimliği, kök kanal tedavisi ve periodontitis tedavisidir. Profesyonel uzmanlığı ve açık gülümsemesiyle, hastalarımızın her zaman iyi bakım gördüklerini hissetmelerini sağlar.",
       "majd_preview": "Dr. Majd Saad - Sakin, Hassas, İlgili...",
+      "juliane": "Bu yılın Nisan ayından bu yana Juliane'yi ekibimizde ağırlamaktan mutluluk duyuyoruz. Odak noktası, doğal dişleri mümkün olduğunca uzun süre korumak amacıyla modern dolgu tedavisi ve endodonti (kök kanal tedavisi) dahil olmak üzere restoratif diş hekimliğidir. Empatik ve sakin tavrıyla, hastaların kendilerini iyi hissettikleri güvenilir bir ortam yaratır. En küçük ziyaretçilerimize de büyük bir sabır ve eğlenceli bir yaklaşımla yaklaşarak tedavilerini mümkün olduğunca keyifli hale getirir.",
+      "juliane_preview": "Juliane restoratif diş hekimliği, dolgu tedavisi ve endodonti konularında uzmanlaşmıştır...",
+      "feras": "Feras Nebilsy, cerrahi işlemlere güçlü bir şekilde odaklanan bir acil diş hekimidir. Zorlu yirmi yaş dişi çekimleri dahil olmak üzere karmaşık diş çekimlerinde uzmanlaşmıştır. Detaylara gösterdiği titiz özen ve sakin, güven veren tavrıyla, zorlu tedaviler sırasında bile hastaların kendilerini güvende ve desteklenmiş hissetmelerini sağlar.",
+      "feras_preview": "Feras cerrahi işlemler ve karmaşık diş çekimleri konularında uzmanlaşmıştır...",
+      "anusha": "Anusha Rao, kliniğimizde profilaksi ve profesyonel diş temizliği alanında çalışan eğitimli bir diş hekimidir. Anksiyete yaşayan hastalara ve çocuklara karşı olağanüstü nazik davranır ve her adımı açıkça anlatmak için zaman ayırır. Sakin, hasta odaklı yaklaşımıyla sık sık faydalı bilgiler paylaşır; ondan genel diş hekimliği hakkında birçok şey öğrenebilirsiniz.",
+      "anusha_preview": "Anusha profilaksi ve profesyonel diş temizliği konularında uzmanlaşmıştır...",
+      "ammar": "Asistan diş hekimi olarak ve kısmen diş hijyeni alanında çalışan Ammar, özellikle diş kaygısı olan hastalar için güvene dayalı, güvenli ve rahat bir ortam yaratmak amacıyla hastalarla yakın çalışır. Ana odak noktası periodontal tedavi ve diş eti hastalıklarının tedavisinin yanı sıra konservatif tedavilerdir. Empati ve sabırla, hastalara huzur ve güven duygusu vermeye çalışır.",
+      "ammar_preview": "Ammar periodontal tedavi, diş eti hastalıkları ve konservatif tedaviler konularında uzmanlaşmıştır...",
       "anxiety_patients": "Anksiyete Hastaları",
       "endodontics": "Endodonti",
       "implantology": "İmplantoloji",

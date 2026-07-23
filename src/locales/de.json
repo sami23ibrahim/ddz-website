@@ -263,6 +263,22 @@
       "majd": {
         "name": "Majd Saad",
         "title": "Zahnarzt"
+      },
+      "juliane": {
+        "name": "Juliane Kevekordes",
+        "title": "Zahnärztin"
+      },
+      "feras": {
+        "name": "Feras Nebilsy",
+        "title": "Zahnarzt (Notdienst)"
+      },
+      "anusha": {
+        "name": "Anusha Rao",
+        "title": "Zahnärztin"
+      },
+      "ammar": {
+        "name": "Ammar Deeb",
+        "title": "Assistenzzahnarzt"
       }
     },
     "specialties": {
@@ -274,6 +290,14 @@
       "prabh_preview": "Prabh ist spezialisiert auf Chirurgie, Implantologie, Zahnersatz...",
       "majd": "Als vierter Zahnarzt in unserem Team bringt Majd viel Einfühlungsvermögen und Herzlichkeit in die Praxis. Seine Schwerpunkte liegen in der restaurativen Zahnmedizin, der Wurzelkanalbehandlung und der Parodontitistherapie. Mit Fachkompetenz und einem offenen Lächeln sorgt er dafür, dass sich unsere Patienten jederzeit gut aufgehoben fühlen.",
       "majd_preview": "Majd - Ruhig, Präzise, Fürsorglich...",
+      "juliane": "Seit April diesen Jahres dürfen wir Juliane in unserem Praxisteam begrüßen. Ihr Fokus liegt auf der restaurativen Zahnmedizin, wie der modernen Füllungstherapie sowie der Endodontie (Wurzelbehandlung), um die natürlichen Zähne möglichst lang zu erhalten. Mit ihrer empathischen und ruhigen Art schafft sie eine vertrauensvolle Atmosphäre, in der sich ihre Patient:innen gut aufgehoben fühlen. Auch unseren jüngsten Praxisbesuchern begegnet sie mit viel Geduld und einer spielerischen Herangehensweise, um ihnen die Behandlung so angenehm wie möglich zu machen.",
+      "juliane_preview": "Juliane ist spezialisiert auf restaurative Zahnmedizin, Füllungstherapie und Endodontie...",
+      "feras": "Feras Nebilsy ist Zahnarzt im Notdienst mit dem Schwerpunkt auf chirurgischen Eingriffen. Er ist spezialisiert auf komplexe Zahnextraktionen, einschließlich schwieriger Weisheitszahnentfernungen. Mit seiner ausgeprägten Liebe zum Detail und einer ruhigen, vertrauensvollen Ausstrahlung sorgt er dafür, dass sich Patientinnen und Patienten auch in anspruchsvollen Situationen gut aufgehoben fühlen.",
+      "feras_preview": "Feras ist spezialisiert auf chirurgische Eingriffe und komplexe Extraktionen...",
+      "anusha": "Anusha Rao ist ausgebildete Zahnärztin und bei uns in der Prophylaxe sowie der Professionellen Zahnreinigung (PZR) tätig. Sie arbeitet besonders einfühlsam mit Angstpatienten und Kindern und nimmt sich die Zeit, jeden Schritt verständlich zu erklären. Mit ihrer ruhigen Art vermittelt sie wertvolles Wissen und zeigt Ihnen gern praktische Tipps rund um die allgemeine Zahnmedizin.",
+      "anusha_preview": "Anusha ist spezialisiert auf Prophylaxe und Professionelle Zahnreinigung (PZR)...",
+      "ammar": "Als Assistenzzahnarzt und teilweise im Bereich der Dentalhygiene tätig, arbeitet Ammar eng mit den Patienten zusammen, um eine sichere und entspannte Atmosphäre zu schaffen, die auf Vertrauen basiert, insbesondere bei Angstpatienten. Sein Schwerpunkt liegt in der Parodontaltherapie und der Behandlung von Zahnfleischerkrankungen sowie konservative Behandlungen. Mit Einfühlungsvermögen und Geduld versucht er, den Patienten ein Gefühl der Ruhe und Geborgenheit zu vermitteln.",
+      "ammar_preview": "Ammar ist spezialisiert auf Parodontaltherapie, Zahnfleischerkrankungen und konservative Behandlungen...",
       "anxiety_patients": "Angstpatienten",
       "endodontics": "Endodontie",
       "implantology": "Implantologie",
