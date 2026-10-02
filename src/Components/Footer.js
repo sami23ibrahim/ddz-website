@@ -31,7 +31,7 @@ const Footer = () => {
              
               <div className="flex items-center gap-4 sm:gap-8">
                 <span className="font-medium text-lg">{t('footer.friday')}:</span>
-                <span className="font-medium text-base">09:00-15:00</span>
+                <span className="font-medium text-base">09:00-20:00</span>
               </div>
               
               <div className="flex items-center gap-4 sm:gap-8">
