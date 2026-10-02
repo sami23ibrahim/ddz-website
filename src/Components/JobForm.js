@@ -135,6 +135,7 @@ export default function JobForm({ onJobCreated, onCancel, editJob }) {
             >
               <option value="Vollzeit">Vollzeit</option>
               <option value="Teilzeit">Teilzeit</option>
+              <option value="Minijob">Minijob</option>
               <option value="Befristet">Befristet</option>
               <option value="Praktikum">Praktikum</option>
             </select>
