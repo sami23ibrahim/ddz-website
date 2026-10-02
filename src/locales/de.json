@@ -272,10 +272,6 @@
         "name": "Feras Nebilsy",
         "title": "Zahnarzt (Notdienst)"
       },
-      "anusha": {
-        "name": "Anusha Rao",
-        "title": "Zahnärztin"
-      },
       "ammar": {
         "name": "Ammar Deeb",
         "title": "Assistenzzahnarzt"
@@ -294,8 +290,6 @@
       "juliane_preview": "Juliane ist spezialisiert auf restaurative Zahnmedizin, Füllungstherapie und Endodontie...",
       "feras": "Feras Nebilsy ist Zahnarzt im Notdienst mit dem Schwerpunkt auf chirurgischen Eingriffen. Er ist spezialisiert auf komplexe Zahnextraktionen, einschließlich schwieriger Weisheitszahnentfernungen. Mit seiner ausgeprägten Liebe zum Detail und einer ruhigen, vertrauensvollen Ausstrahlung sorgt er dafür, dass sich Patientinnen und Patienten auch in anspruchsvollen Situationen gut aufgehoben fühlen.",
       "feras_preview": "Feras ist spezialisiert auf chirurgische Eingriffe und komplexe Extraktionen...",
-      "anusha": "Anusha Rao ist ausgebildete Zahnärztin und bei uns in der Prophylaxe sowie der Professionellen Zahnreinigung (PZR) tätig. Sie arbeitet besonders einfühlsam mit Angstpatienten und Kindern und nimmt sich die Zeit, jeden Schritt verständlich zu erklären. Mit ihrer ruhigen Art vermittelt sie wertvolles Wissen und zeigt Ihnen gern praktische Tipps rund um die allgemeine Zahnmedizin.",
-      "anusha_preview": "Anusha ist spezialisiert auf Prophylaxe und Professionelle Zahnreinigung (PZR)...",
       "ammar": "Als Assistenzzahnarzt und teilweise im Bereich der Dentalhygiene tätig, arbeitet Ammar eng mit den Patienten zusammen, um eine sichere und entspannte Atmosphäre zu schaffen, die auf Vertrauen basiert, insbesondere bei Angstpatienten. Sein Schwerpunkt liegt in der Parodontaltherapie und der Behandlung von Zahnfleischerkrankungen sowie konservative Behandlungen. Mit Einfühlungsvermögen und Geduld versucht er, den Patienten ein Gefühl der Ruhe und Geborgenheit zu vermitteln.",
       "ammar_preview": "Ammar ist spezialisiert auf Parodontaltherapie, Zahnfleischerkrankungen und konservative Behandlungen...",
       "anxiety_patients": "Angstpatienten",
